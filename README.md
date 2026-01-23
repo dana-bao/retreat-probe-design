@@ -1,7 +1,7 @@
 # retreat-probe-design
 Github for Part II Project
 
-List of taxa that may respond to glacier retreat is synthesized from recent literature (see `taxids.txt`). Taxanomic ID were extracted from NCBI. 
+List of taxa that may respond to glacial retreat is synthesized from recent literature (see `taxids.txt`). Taxanomic ID were extracted from NCBI. 
 Using NCBI CLI, a search on the availability of the full genomes for these taxa is conducted:
 ```
 datasets summary genome taxon --inputfile taxids.txt --as-json-lines --limit all > genomes.jsonl
