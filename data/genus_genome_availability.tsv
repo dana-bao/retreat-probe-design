@@ -1,0 +1,699 @@
+Organism Taxonomic ID	Organism Name	Assembly Accession	Source Database	Assembly Level	Assembly Refseq Category	Assembly Status	Assembly Release Date	Priority	Status	_merge
+2857										left_only
+2857										left_only
+2857										left_only
+2995										left_only
+2996	Hydrurus foetidus	GCA_900617105.1	SOURCE_DATABASE_GENBANK	Contig		current	2019-04-01	9.0	Genbank contig	right_only
+3468										left_only
+3469	Papaver somniferum	GCF_003573695.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2018-09-18	1.0	reference genome	right_only
+3469	Papaver somniferum	GCA_003573695.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2018-09-18	1.0	reference genome	right_only
+3573										left_only
+3579										left_only
+3579										left_only
+3618										left_only
+3784										left_only
+3798										left_only
+3798										left_only
+3798										left_only
+3798										left_only
+3798										left_only
+4219										left_only
+4382										left_only
+4544										left_only
+4544										left_only
+4545	Poa pratensis	GCA_947311845.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-12-02	1.0	reference genome	right_only
+4605										left_only
+4958										left_only
+4959	Debaryomyces hansenii	GCA_016097625.1	SOURCE_DATABASE_GENBANK	Complete Genome		current	2020-12-17	7.0	Genbank complete genome	right_only
+4959	Debaryomyces hansenii	GCA_028412075.1	SOURCE_DATABASE_GENBANK	Complete Genome		current	2023-02-02	7.0	Genbank complete genome	right_only
+4959	Debaryomyces hansenii	GCA_028609645.1	SOURCE_DATABASE_GENBANK	Complete Genome		current	2023-02-13	7.0	Genbank complete genome	right_only
+5199										left_only
+5402										left_only
+6668										left_only
+6669	Daphnia pulex	GCF_021134715.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2021-12-09	1.0	reference genome	right_only
+6669	Daphnia pulex	GCA_021134715.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-12-09	1.0	reference genome	right_only
+8386	Rhinella marina	GCA_900303285.2	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-06-11	1.0	reference genome	right_only
+13054										left_only
+13289										left_only
+13290	Tilletia caries	GCA_032718865.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-10-16	1.0	reference genome	right_only
+13291	Tilletia controversa	GCA_905071765.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-02-18	1.0	reference genome	right_only
+13328										left_only
+13398										left_only
+13538										left_only
+13538										left_only
+13645										left_only
+15193	Carex hirta	GCA_965112215.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-01-23	1.0	reference genome	right_only
+15297										left_only
+15452										left_only
+18794										left_only
+21496										left_only
+22774										left_only
+23028	Sedum acre	GCA_966183415.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-08-23	1.0	reference genome	right_only
+23029	Sedum album	GCA_006409495.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2019-06-24	1.0	reference genome	right_only
+23075										left_only
+24956										left_only
+26779										left_only
+26779										left_only
+27295	Debaryomyces castellii	GCA_032927745.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-10-23	1.0	reference genome	right_only
+27296	Debaryomyces coudertii	GCA_030564605.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-07-31	1.0	reference genome	right_only
+27297	Debaryomyces maramus	GCA_030583545.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-07-31	1.0	reference genome	right_only
+27299	Debaryomyces nepalensis	GCA_030583445.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-07-31	1.0	reference genome	right_only
+27339	Cladonia grayi	GCA_964255175.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+27404	Daphnia galeata	GCA_030770115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-08-21	1.0	reference genome	right_only
+27897										left_only
+28551	Debaryomyces udenii	GCA_030556595.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-07-31	1.0	reference genome	right_only
+28555	Debaryomyces robertsiae	GCA_046867545.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-01-21	1.0	reference genome	right_only
+28641										left_only
+28643	Bombus pensylvanicus	GCA_051853225.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-08-06	1.0	reference genome	right_only
+29771	Saxifraga oppositifolia	GCA_032718425.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-10-16	1.0	reference genome	right_only
+29882										left_only
+30191	Bombus hypnorum	GCA_911387925.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-10-14	1.0	reference genome	right_only
+30192	Bombus lapidarius	GCA_964186655.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-07	1.0	reference genome	right_only
+30193	Bombus lucorum	GCA_965261305.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-27	1.0	reference genome	right_only
+30194	Bombus pratorum	GCA_930367275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-02-13	1.0	reference genome	right_only
+30195	Bombus terrestris	GCF_910591885.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-02-09	1.0	reference genome	right_only
+30195	Bombus terrestris	GCA_910591885.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-02-09	1.0	reference genome	right_only
+30201	Bombus sylvestris	GCA_911622165.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-10-15	1.0	reference genome	right_only
+30202	Bombus vestalis	GCA_963556215.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-10	1.0	reference genome	right_only
+32118										left_only
+32119	Rumohra adiantiformis	GCA_033807815.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-11-20	1.0	reference genome	right_only
+33132	Epilobium ciliatum	GCA_965637465.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-09	1.0	reference genome	right_only
+33644										left_only
+34444										left_only
+34451										left_only
+34451										left_only
+34453										left_only
+35140										left_only
+35523	Daphnia pulicaria	GCF_021234035.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-01-11	1.0	reference genome	right_only
+35523	Daphnia pulicaria	GCA_021234035.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-01-11	1.0	reference genome	right_only
+35525	Daphnia magna	GCF_020631705.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2021-10-27	1.0	reference genome	right_only
+35525	Daphnia magna	GCA_020631705.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-10-27	1.0	reference genome	right_only
+35527	Daphnia obtusa	GCA_052054635.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-08-15	1.0	reference genome	right_only
+35608	Artemisia annua	GCA_014162995.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-08-11	1.0	reference genome	right_only
+37657	Silene latifolia	GCF_048544455.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2025-03-12	1.0	reference genome	right_only
+37657	Silene latifolia	GCA_048544455.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-12	1.0	reference genome	right_only
+39875	Silene conica	GCA_029255685.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-09-29	1.0	reference genome	right_only
+39899	Silene noctiflora	GCA_009801015.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2019-12-27	1.0	reference genome	right_only
+39919	Silene uniflora	GCA_018983105.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-06-21	1.0	reference genome	right_only
+40490	Russula compacta	GCA_022376555.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-02-23	1.0	reference genome	right_only
+40568										left_only
+40685										left_only
+40685										left_only
+40686	Salix viminalis	GCA_965648455.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-28	1.0	reference genome	right_only
+41043										left_only
+41074										left_only
+41162										left_only
+41307										left_only
+41487										left_only
+42034	Silene coronaria	GCA_028566215.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-02-09	1.0	reference genome	right_only
+42043	Silene vulgaris	GCA_036897335.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-02-28	1.0	reference genome	right_only
+42854	Daphnia dubia	GCA_013387435.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-07-02	1.0	reference genome	right_only
+43049	Tilletia indica	GCA_001689995.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2016-07-20	1.0	reference genome	right_only
+43170										left_only
+43171	Linaria vulgaris	GCA_948329865.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-01-28	1.0	reference genome	right_only
+45577	[Candida] psychrophila	GCA_900186205.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2017-06-20	1.0	reference genome	right_only
+46053										left_only
+46318										left_only
+46322										left_only
+49178										left_only
+49179	Lepidocyrtus paradoxus	GCA_034696885.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+49233										left_only
+49291	Carabus problematicus	GCA_963422195.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-09-11	1.0	reference genome	right_only
+49296	Carabus blaptoides fortunei	GCA_050785175.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-01-11	1.0	reference genome	right_only
+49647										left_only
+49647										left_only
+50451										left_only
+50452	Arabis alpina	GCA_900128785.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2016-12-31	1.0	reference genome	right_only
+50765	Gentiana macrophylla	GCA_026214975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-11-18	1.0	reference genome	right_only
+50768	Gentiana straminea	GCA_036785695.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-02-22	1.0	reference genome	right_only
+50926	Cladonia diversa	GCA_964605785.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-01-02	1.0	reference genome	right_only
+50938										left_only
+50943	Cladonia portentosa	GCA_965153415.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-26	1.0	reference genome	right_only
+50949										left_only
+52853	Silene latifolia subsp. alba	GCA_001412135.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2015-10-23	10.0	Genbank scaffold	right_only
+55514	Lactarius deliciosus	GCA_021525775.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-01-19	1.0	reference genome	right_only
+56489										left_only
+56493	Thelephora terrestris	GCA_015956445.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2020-12-08	1.0	reference genome	right_only
+56494										left_only
+56494										left_only
+57133										left_only
+57735										left_only
+58627	Debaryomyces fabryi	GCF_001447935.2	SOURCE_DATABASE_REFSEQ	Contig	reference genome	current	2015-11-25	1.0	reference genome	right_only
+58627	Debaryomyces fabryi	GCA_001447935.2	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2015-11-25	1.0	reference genome	right_only
+59018	Luzula sylvatica	GCA_946800325.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-09-15	1.0	reference genome	right_only
+60752										left_only
+60755										left_only
+60755										left_only
+60755										left_only
+60787										left_only
+60800										left_only
+60834										left_only
+60834										left_only
+60834										left_only
+60834										left_only
+60834										left_only
+60834										left_only
+60834										left_only
+63632	Agrostis stolonifera	GCA_052724335.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-09-19	1.0	reference genome	right_only
+65598	Bombus pascuorum	GCF_905332965.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2021-03-19	1.0	reference genome	right_only
+65598	Bombus pascuorum	GCA_905332965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-03-19	1.0	reference genome	right_only
+68809										left_only
+70137										left_only
+71688	Russula virescens	GCA_042920275.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-10-10	1.0	reference genome	right_only
+71953										left_only
+71953										left_only
+71954	Inocybe geophylla	GCA_043165475.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-15	1.0	reference genome	right_only
+71955	Inocybe lilacina	GCA_043251785.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-16	1.0	reference genome	right_only
+71964	Russula earlei	GCA_025769875.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-10-20	1.0	reference genome	right_only
+72766										left_only
+72779	Formica fusca	GCA_052642515.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-09-15	1.0	reference genome	right_only
+72781	Formica exsecta	GCF_003651465.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2018-10-15	1.0	reference genome	right_only
+72781	Formica exsecta	GCA_003651465.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-10-15	1.0	reference genome	right_only
+73102	Gaultheria shallon	GCA_046119095.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-12-17	1.0	reference genome	right_only
+74822	Papaver californicum	GCA_023531435.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-05-23	1.0	reference genome	right_only
+74823	Papaver nudicaule	GCA_023529015.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-05-23	1.0	reference genome	right_only
+74980										left_only
+74980										left_only
+74980										left_only
+75699	Salix arbutifolia	GCA_025169955.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-09-14	1.0	reference genome	right_only
+75706	Salix babylonica	GCA_040801835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-07-22	1.0	reference genome	right_only
+75717	Salix reticulata	GCA_965648395.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-28	1.0	reference genome	right_only
+76578	Lobelia cardinalis	GCA_028566635.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-02-09	1.0	reference genome	right_only
+76867	Hebeloma cylindrosporum	GCA_000827355.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-01-30	1.0	reference genome	right_only
+77062	Salix exigua	GCA_032356905.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-06	1.0	reference genome	right_only
+77064	Salix herbacea	GCA_965644465.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-28	1.0	reference genome	right_only
+77065	Salix purpurea	GCA_027405865.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-01-03	1.0	reference genome	right_only
+78191	Arabis hirsuta	GCA_964056655.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-05-17	1.0	reference genome	right_only
+79036										left_only
+81838										left_only
+82105										left_only
+84560	Formica lemani	GCA_965197165.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2026-01-07	1.0	reference genome	right_only
+85163										left_only
+85163										left_only
+85468	Daphnia longicephala	GCA_050575195.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-05-27	1.0	reference genome	right_only
+85657	Bombus balteatus	GCA_019201815.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2021-07-13	1.0	reference genome	right_only
+85658	Bombus dahlbomii	GCA_037178635.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-03-18	1.0	reference genome	right_only
+85660	Bombus hortorum	GCA_905332935.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-03-19	1.0	reference genome	right_only
+85661	Bombus huntii	GCF_024542735.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-08-09	1.0	reference genome	right_only
+85661	Bombus huntii	GCA_024542735.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-08-09	1.0	reference genome	right_only
+85663	Bombus jonellus	GCA_964197665.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-07-03	1.0	reference genome	right_only
+85668	Bombus pullatus	GCA_051167345.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-01	1.0	reference genome	right_only
+85882	Senecio viscosus	GCA_965637395.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-09	1.0	reference genome	right_only
+86049	Cladophialophora carrionii	GCA_001700775.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2016-08-09	10.0	Genbank scaffold	right_only
+86312	Artemisia ludoviciana	GCA_034509245.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-12-21	1.0	reference genome	right_only
+88641										left_only
+88642	Rhizocarpon geographicum	GCA_964257585.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+88878	Saxifraga vayredana	GCA_977964015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-17	1.0	reference genome	right_only
+89681	Festuca glaucescens	GCA_052817425.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-09-24	1.0	reference genome	right_only
+89940	Cladophialophora bantiana	GCA_054502105.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2026-01-15	10.0	Genbank scaffold	right_only
+89940	Cladophialophora bantiana	GCA_054502125.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2026-01-15	10.0	Genbank scaffold	right_only
+89940	Cladophialophora bantiana	GCA_054502145.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2026-01-15	10.0	Genbank scaffold	right_only
+89940	Cladophialophora bantiana	GCA_054502165.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2026-01-15	10.0	Genbank scaffold	right_only
+89940	Cladophialophora bantiana	GCA_054502185.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2026-01-15	10.0	Genbank scaffold	right_only
+89940	Cladophialophora bantiana	GCA_900092765.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2016-09-07	10.0	Genbank scaffold	right_only
+91804										left_only
+92074										left_only
+93036	Poa annua	GCA_026929855.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-12-16	1.0	reference genome	right_only
+93484										left_only
+94021										left_only
+97226										left_only
+98861	Russula brevipes	GCA_022496215.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-03-07	1.0	reference genome	right_only
+100296	Carex kokanica	GCA_025461125.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-09-28	1.0	reference genome	right_only
+102714	Saxifraga aizoides	GCA_965199075.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1.0	reference genome	right_only
+103933	Bombus bifarius	GCF_011952205.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2020-04-03	1.0	reference genome	right_only
+103933	Bombus bifarius	GCA_011952205.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-04-03	1.0	reference genome	right_only
+103934	Bombus flavifrons	GCF_040668555.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2024-07-12	1.0	reference genome	right_only
+103934	Bombus flavifrons	GCA_040668555.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-12-13	1.0	reference genome	right_only
+103936	Bombus monticola	GCA_965178685.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-04	1.0	reference genome	right_only
+109557										left_only
+110024	Nebria brevicollis	GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	1.0	reference genome	right_only
+111137	Lactarius sanguifluus	GCA_021527775.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-01-19	1.0	reference genome	right_only
+111140	Russula delica	GCA_965112905.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-01-24	1.0	reference genome	right_only
+111141	Lactarius quietus	GCA_015025155.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2020-10-27	1.0	reference genome	right_only
+111661										left_only
+111670	Cladonia rangiferina	GCA_023065455.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-04-20	1.0	reference genome	right_only
+112253	Escallonia rubra	GCA_033065855.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-10-26	1.0	reference genome	right_only
+117179	Tilletia walkeri	GCA_009428295.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2019-10-30	1.0	reference genome	right_only
+118889										left_only
+118891	Anthyllis vulneraria	GCA_965615755.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-08	1.0	reference genome	right_only
+120202	Daphnia carinata	GCF_022539665.2	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2023-08-08	1.0	reference genome	right_only
+120202	Daphnia carinata	GCA_022539665.4	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-08-08	1.0	reference genome	right_only
+121540	Senecio aethnensis	GCA_965282855.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-18	1.0	reference genome	right_only
+121554	Senecio squalidus	GCA_910822075.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-02-18	1.0	reference genome	right_only
+121557	Senecio sylvaticus	GCA_965199645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-14	1.0	reference genome	right_only
+121720	Berberis thunbergii	GCA_003290165.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2018-07-06	1.0	reference genome	right_only
+127313										left_only
+127563	Chrysochromulina parva	GCA_002887195.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2018-01-17	1.0	reference genome	right_only
+128014										left_only
+128015	Platynothrus peltifer	GCA_051820355.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-08-05	1.0	reference genome	right_only
+129211										left_only
+129212	Polytrichastrum alpinum	GCA_048933195.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-25	1.0	reference genome	right_only
+130686	Bombus consobrinus	GCA_014737455.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-25	1.0	reference genome	right_only
+130704	Bombus ignitus	GCA_014825875.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2020-10-02	1.0	reference genome	right_only
+130707	Bombus patagiatus	GCA_054051605.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-17	1.0	reference genome	right_only
+130708	Bombus polaris	GCA_014737335.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-24	1.0	reference genome	right_only
+131541	Russula foetens	GCA_003316565.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-13	1.0	reference genome	right_only
+131699										left_only
+132113	Bombus impatiens	GCF_000188095.3	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2011-09-22	1.0	reference genome	right_only
+132113	Bombus impatiens	GCA_000188095.4	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2011-09-22	1.0	reference genome	right_only
+135145	Carabus depressus	GCA_048127345.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-02-26	1.0	reference genome	right_only
+135865										left_only
+137247										left_only
+137682										left_only
+140783	Carex acutiformis	GCA_964417155.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	1.0	reference genome	right_only
+140873	Carex myosuroides	GCA_028015225.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-01-31	1.0	reference genome	right_only
+143734										left_only
+143735	Leuctra nigra	GCA_934045905.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-03-27	1.0	reference genome	right_only
+148098	Debaryomyces prosopidis	GCA_030578795.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-07-31	1.0	reference genome	right_only
+150173										left_only
+152933	Lactarius blennius	GCA_964235335.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-31	1.0	reference genome	right_only
+152947	Lactarius tabidus	GCA_963281015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-08-20	1.0	reference genome	right_only
+152958	Russula emetica	GCA_015178925.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2020-11-02	1.0	reference genome	right_only
+152963	Russula lepida	GCA_003316425.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-13	1.0	reference genome	right_only
+152964	Russula nigricans	GCA_964656355.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-12-20	1.0	reference genome	right_only
+152965	Russula ochroleuca	GCA_015178965.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2020-11-02	1.0	reference genome	right_only
+152966	Russula olivacea	GCA_963926505.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-01-28	1.0	reference genome	right_only
+152972	Russula vesca	GCA_965121685.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-11	1.0	reference genome	right_only
+153320										left_only
+153785	Phratora vitellinae	GCA_977071015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-29	1.0	reference genome	right_only
+154135										left_only
+155126	Tilletia horrida	GCA_001006505.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-05-14	1.0	reference genome	right_only
+157179	Tilletia bromi	GCA_045933385.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-12-10	1.0	reference genome	right_only
+157181	Tilletia fusca	GCA_045933415.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-12-10	1.0	reference genome	right_only
+157182	Tilletia goloskokovii	GCA_045931945.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-12-10	1.0	reference genome	right_only
+157183	Tilletia laevis	GCA_009428275.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2019-10-30	1.0	reference genome	right_only
+164535										left_only
+164538	Tetracladium marchalianum	GCA_037074945.2	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-01-19	1.0	reference genome	right_only
+164539	Tetracladium maxilliforme	GCA_037074925.2	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-01-19	1.0	reference genome	right_only
+164540	Tetracladium setigerum	GCA_031472005.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-09-14	1.0	reference genome	right_only
+165094	Poa infirma	GCA_040144145.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-13	1.0	reference genome	right_only
+165582	Inocybe corydalina	GCA_043167085.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-15	1.0	reference genome	right_only
+165583	Inocybe dulcamara	GCA_043251965.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-16	1.0	reference genome	right_only
+165588	Inocybe lanuginosa	GCA_043251745.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-16	1.0	reference genome	right_only
+168555	Tilletia setariae	GCA_023634365.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-06-01	1.0	reference genome	right_only
+169226										left_only
+169227	Moehringia trinervia	GCA_964106765.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-06	1.0	reference genome	right_only
+170927	Primula veris	GCA_963682055.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-06	1.0	reference genome	right_only
+172267	Salix caprea	GCA_964035475.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-04-29	1.0	reference genome	right_only
+174043	Stereocaulon dactylophyllum	GCA_964254575.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174044	Cladonia arbuscula	GCA_964255635.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174045	Cladonia stellaris	GCA_040955005.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-07-30	1.0	reference genome	right_only
+174049	Cladonia caroliniana	GCA_964256855.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174053	Cladonia coccifera	GCA_964254445.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174056	Cladonia didyma	GCA_964255485.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174060	Cladonia furcata	GCA_964255445.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174062	Cladonia ochrochlora	GCA_964256405.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174067	Cladonia pyxidata	GCA_964254885.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174070	Cladonia robbinsii	GCA_964255325.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174074	Cladonia squamosa	GCA_947623385.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-05-13	1.0	reference genome	right_only
+174076	Cladonia strepsilis	GCA_964254655.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+174080	Cladonia uncialis	GCA_977014525.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-11-08	1.0	reference genome	right_only
+174915										left_only
+174915										left_only
+175095	Primula scotica	GCA_965240305.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-14	1.0	reference genome	right_only
+175104	Primula vulgaris	GCA_963920805.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-25	1.0	reference genome	right_only
+176794	Russula gracillima	GCA_975961605.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-07	1.0	reference genome	right_only
+177632										left_only
+177632										left_only
+177632										left_only
+177636	Rhyacophila brunnea	GCA_022495005.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-07	1.0	reference genome	right_only
+177679										left_only
+177679										left_only
+181886	Inocybe petiginosa	GCA_043251805.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-16	1.0	reference genome	right_only
+184059	Bombus soroeensis	GCA_014737365.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-24	1.0	reference genome	right_only
+184061	Cladonia borealis	GCA_018257855.2	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-07-12	1.0	reference genome	right_only
+184081										left_only
+184108	Cladonia peziziformis	GCA_964256715.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+184183	Primula hirsuta	GCA_965603815.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-07	1.0	reference genome	right_only
+187617										left_only
+187635	Isotoma viridis	GCA_034696425.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+189838										left_only
+189839	Baetis rhodani	GCA_001676355.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2016-06-24	1.0	reference genome	right_only
+191398	Boloria selene	GCA_905231865.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-03-24	1.0	reference genome	right_only
+195770	Cladonia leporina	GCA_964254565.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+195777	Cladonia petrophila	GCA_964256395.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+195789	Cladonia subtenuis	GCA_964256865.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+196637										left_only
+196765	Cladonia macilenta	GCA_964254615.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2024-09-21	10.0	Genbank scaffold	right_only
+198256										left_only
+198258	Camisia spinifer	GCA_034694065.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+198301										left_only
+198303	Tectocepheus sarekensis	GCA_034700505.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+203270	Berberis aquifolium	GCA_965233575.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-03	1.0	reference genome	right_only
+203806	Bombus bellicosus	GCA_048430905.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-05-01	1.0	reference genome	right_only
+203811	Bombus fervidus	GCF_041682495.2	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2025-04-10	1.0	reference genome	right_only
+203811	Bombus fervidus	GCA_041682495.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-10	1.0	reference genome	right_only
+203813	Bombus muscorum	GCA_963971185.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-03-04	1.0	reference genome	right_only
+203818	Bombus sonorus	GCA_029958995.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-05-09	1.0	reference genome	right_only
+204737										left_only
+207624	Bombus campestris	GCA_905333015.3	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-10-16	1.0	reference genome	right_only
+207634	Bombus griseocollis	GCA_050437465.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-19	1.0	reference genome	right_only
+207636	Bombus haemorrhoidalis	GCA_014825975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2020-10-02	1.0	reference genome	right_only
+207645	Bombus ruderatus	GCA_977009165.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-19	1.0	reference genome	right_only
+207650	Bombus vosnesenskii	GCF_011952255.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2020-04-03	1.0	reference genome	right_only
+207650	Bombus vosnesenskii	GCA_011952255.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-04-03	1.0	reference genome	right_only
+208978	Formica rufibarbis	GCA_965197155.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2026-01-07	1.0	reference genome	right_only
+208979	Formica selysi	GCA_009859135.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2020-01-14	1.0	reference genome	right_only
+208980	Formica sanguinea	GCA_048542805.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-03-11	1.0	reference genome	right_only
+209733	Carabus staehlini	GCA_977013385.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-07	1.0	reference genome	right_only
+210355	Epilobium hirsutum	GCA_965153245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-26	1.0	reference genome	right_only
+210448	Fragilaria crotonensis	GCA_022925895.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-04-12	1.0	reference genome	right_only
+215227	Papaver bracteatum	GCA_023529315.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-05-23	1.0	reference genome	right_only
+216616										left_only
+216736										left_only
+216746										left_only
+217217	Bombus confusus	GCA_014737475.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-25	1.0	reference genome	right_only
+217426	Inocybe nitidiuscula	GCA_043168825.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-15	1.0	reference genome	right_only
+217427	Lactarius trivialis	GCA_003315845.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-13	1.0	reference genome	right_only
+218388	Salix lanata	GCA_976975055.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	1.0	reference genome	right_only
+222702	Lactarius indigo	GCA_025766275.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-10-20	1.0	reference genome	right_only
+223870	Artemisia princeps	GCA_035048425.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-01-03	1.0	reference genome	right_only
+225431	Inocybe flocculosa	GCA_043167125.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-15	1.0	reference genome	right_only
+227362										left_only
+229869	Tectocepheus velatus	GCA_034700625.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+234461	Carex depauperata	GCA_964197715.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-07-06	1.0	reference genome	right_only
+234464	Carex nigra	GCA_965278315.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-08	1.0	reference genome	right_only
+234466	Carex arenaria	GCA_964058765.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-05	1.0	reference genome	right_only
+234467	Carex echinata	GCA_965279795.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-10	1.0	reference genome	right_only
+240680	Carex divulsa	GCA_964058785.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-05	1.0	reference genome	right_only
+240682	Carex spicata	GCA_977035945.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-13	1.0	reference genome	right_only
+241205	Carex distans	GCA_964659625.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	1.0	reference genome	right_only
+241206	Carex elata	GCA_965260875.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-06	1.0	reference genome	right_only
+241207	Carex extensa	GCA_964341605.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-28	1.0	reference genome	right_only
+241230	Carex rostrata	GCF_964058835.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2024-11-21	1.0	reference genome	right_only
+241230	Carex rostrata	GCA_964058835.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-21	1.0	reference genome	right_only
+241234	Carex sylvatica	GCA_964058815.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-05	1.0	reference genome	right_only
+242528	Rumex scutatus	GCA_046244935.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-12-21	1.0	reference genome	right_only
+242533	Rumex bucephalophorus	GCA_049309485.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-05	1.0	reference genome	right_only
+245076										left_only
+245076										left_only
+247611	Isotoma anglicana	GCA_034694685.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+247612	Lepidocyrtus cyaneus	GCA_034696785.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+247614										left_only
+247614										left_only
+247614										left_only
+255794	Formica japonica	GCA_048543455.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-03-11	1.0	reference genome	right_only
+258209	Berberis vulgaris	GCA_963556465.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-17	1.0	reference genome	right_only
+258705	Formica paralugubris	GCA_977017635.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-11-08	1.0	reference genome	right_only
+258706	Formica rufa	GCA_964276525.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-06	1.0	reference genome	right_only
+258981	Russula dissimulans	GCA_022376545.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-02-23	1.0	reference genome	right_only
+259893	Artemisia argyi	GCA_030686995.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-08-09	1.0	reference genome	right_only
+265567										left_only
+265567										left_only
+265583										left_only
+269367	Poa chaixii	GCA_964215705.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-27	1.0	reference genome	right_only
+273503	Rumex hastatulus	GCA_053572225.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-20	1.0	reference genome	right_only
+281417										left_only
+284366	Oxyria digyna	GCA_053567975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-19	1.0	reference genome	right_only
+284592	Debaryomyces hansenii CBS767	GCF_000006445.2	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2008-09-16	1.0	reference genome	right_only
+284592	Debaryomyces hansenii CBS767	GCA_000006445.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2008-09-16	1.0	reference genome	right_only
+285026	Inocybe asterospora	GCA_043251865.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-16	1.0	reference genome	right_only
+286656										left_only
+287110										left_only
+287238	Zygaena carniolica	GCA_964261665.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-10	1.0	reference genome	right_only
+287248	Zygaena fausta	GCA_964505435.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-05	1.0	reference genome	right_only
+287327	Zygaena laeta	GCA_976954175.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-08	1.0	reference genome	right_only
+287345	Zygaena purpuralis	GCA_964270835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-29	1.0	reference genome	right_only
+287354	Zygaena sarpedon	GCA_964338965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-09	1.0	reference genome	right_only
+287362	Zygaena angelicae	GCA_977845545.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2026-01-18	1.0	reference genome	right_only
+287365	Zygaena armena	GCA_964264925.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-21	1.0	reference genome	right_only
+287367	Zygaena dorycnii	GCA_964275295.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-28	1.0	reference genome	right_only
+287373	Zygaena exulans	GCA_964261585.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-10	1.0	reference genome	right_only
+287375	Zygaena filipendulae	GCA_907165275.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-11-18	1.0	reference genome	right_only
+288800										left_only
+288843										left_only
+288843										left_only
+288843										left_only
+288845										left_only
+288845										left_only
+289064	Poa supina	GCA_040143895.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-13	1.0	reference genome	right_only
+289077	Poa arachnifera	GCA_047665955.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-02-11	1.0	reference genome	right_only
+290665										left_only
+303400	Nitzschia palea	GCA_019593585.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-08-13	1.0	reference genome	right_only
+303405	Nitzschia inconspicua	GCA_019154785.2	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2021-07-07	1.0	reference genome	right_only
+307890										left_only
+307890										left_only
+308473	Isotoma caerulea	GCA_034696405.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+308926										left_only
+309941	Bombus affinis	GCF_024516045.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-08-05	1.0	reference genome	right_only
+309941	Bombus affinis	GCA_024516045.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-08-05	1.0	reference genome	right_only
+309944	Bombus bimaculatus	GCA_050437405.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-19	1.0	reference genome	right_only
+309970	Bombus picipes	GCA_014737485.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-25	1.0	reference genome	right_only
+309971	Bombus rufofasciatus	GCA_040285845.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-28	1.0	reference genome	right_only
+309975	Bombus sylvicola	GCA_019677175.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2021-08-18	1.0	reference genome	right_only
+312236	Tipula oleracea	GCA_001017535.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-06-01	1.0	reference genome	right_only
+312760	Carex pendula	GCA_964058885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-05	1.0	reference genome	right_only
+312762	Carex punctata	GCA_051252855.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-07-08	1.0	reference genome	right_only
+312765	Carex riparia	GCA_964374305.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	1.0	reference genome	right_only
+314410	Carex cristatella	GCA_024447775.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-07-26	1.0	reference genome	right_only
+314463	Carex scoparia	GCA_024447655.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-07-26	1.0	reference genome	right_only
+315084										left_only
+315503	Tilletia rugispora	GCA_045934365.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-12-10	1.0	reference genome	right_only
+318408										left_only
+326039	Lactarius evosmus	GCA_951394315.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-05-13	1.0	reference genome	right_only
+330961	Pardosa pseudoannulata	GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-04	1.0	reference genome	right_only
+338156										left_only
+338156										left_only
+338156										left_only
+338156										left_only
+338156										left_only
+338156										left_only
+338700										left_only
+344589	Laccaria trichodermophora	GCA_018417955.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-05-20	1.0	reference genome	right_only
+345914	Agrostis castellana	GCA_050573615.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-05-26	1.0	reference genome	right_only
+346692	Amara ovata	GCA_965279835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-10	1.0	reference genome	right_only
+346753	Catops nigricans	GCA_965642125.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-18	1.0	reference genome	right_only
+346812	Notiophilus biguttatus	GCA_965642445.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-19	1.0	reference genome	right_only
+347474										left_only
+350623	Stereocaulon alpinum	GCA_018257865.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-05-04	1.0	reference genome	right_only
+357465	Papaver armeniacum	GCA_023531295.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-05-23	1.0	reference genome	right_only
+357466	Papaver atlanticum	GCA_023531105.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-05-23	1.0	reference genome	right_only
+368684	Lobelia dortmanna	GCA_965199305.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1.0	reference genome	right_only
+370026	Desoria olivacea	GCA_034695115.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+370036	Desoria tigrina	GCA_906901685.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-05-13	1.0	reference genome	right_only
+370292	Thelephora ganbajun	GCA_014904855.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-20	1.0	reference genome	right_only
+372269	Carex hochstetteriana	GCA_051253675.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-07-08	1.0	reference genome	right_only
+372271	Carex laevigata	GCA_964214065.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-26	1.0	reference genome	right_only
+373712	Stereocaulon virgatum	GCA_042464655.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-09-30	1.0	reference genome	right_only
+386627	Cladophialophora chaetospira	GCA_030247875.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-06-09	1.0	reference genome	right_only
+391960										left_only
+395515	Bombus breviceps	GCA_014825925.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2020-10-02	1.0	reference genome	right_only
+395520	Bombus difficillimus	GCA_014737525.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-25	1.0	reference genome	right_only
+395565	Bombus skorikovi	GCA_014737355.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-24	1.0	reference genome	right_only
+395577	Bombus waltoni	GCA_014737395.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-24	1.0	reference genome	right_only
+396416	Bombus pyrosoma	GCF_014825855.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2020-10-02	1.0	reference genome	right_only
+396416	Bombus pyrosoma	GCA_014825855.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2020-10-02	1.0	reference genome	right_only
+405021	Boloria aquilonaris	GCA_964270775.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-29	1.0	reference genome	right_only
+405022	Boloria eunomia	GCA_966096485.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-08-23	1.0	reference genome	right_only
+405023	Boloria euphrosyne	GCA_951802675.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-07-14	1.0	reference genome	right_only
+405024	Boloria pales	GCA_964275235.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-28	1.0	reference genome	right_only
+414939	Thanatophilus sinuatus	GCA_051122355.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-06-27	1.0	reference genome	right_only
+416441	Lactarius akahatsu	GCA_021524915.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-01-19	1.0	reference genome	right_only
+416442	Lactarius hatsudake	GCA_024734325.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-08-23	1.0	reference genome	right_only
+418179	Carex pumila	GCA_033356055.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-11-06	1.0	reference genome	right_only
+421273	Bombus sibiricus	GCA_014737505.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-25	1.0	reference genome	right_only
+426661										left_only
+439828										left_only
+446376										left_only
+449168										left_only
+450005										left_only
+464051	Festuca francoi	GCA_051253515.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-07-08	1.0	reference genome	right_only
+464072	Festuca petraea	GCA_051419415.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-07-20	1.0	reference genome	right_only
+466726										left_only
+466727	Lednia tumana	GCA_003287335.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-03	1.0	reference genome	right_only
+466936	Russula griseocarnosa	GCA_022884055.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-04-11	1.0	reference genome	right_only
+467613	Salix repens	GCA_965260945.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-27	1.0	reference genome	right_only
+467854	Inocybe glabripes	GCA_043251705.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-16	1.0	reference genome	right_only
+467864	Inocybe oblectabilis	GCA_043251875.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-16	1.0	reference genome	right_only
+467873	Inocybe ochroalba	GCA_043167045.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-15	1.0	reference genome	right_only
+467874	Inocybe fuscidula	GCA_043170655.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-15	1.0	reference genome	right_only
+470278	Salix cinerea	GCA_965260955.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-27	1.0	reference genome	right_only
+474999	Euphrasia arctica	GCA_014843705.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-05	1.0	reference genome	right_only
+475003	Euphrasia confusa	GCA_954870475.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-07-15	1.0	reference genome	right_only
+475394	Euphrasia tetraquetra	GCA_965276645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-03	1.0	reference genome	right_only
+482377	Russula abietina	GCA_003313715.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-11	1.0	reference genome	right_only
+485107	Formica gagates	GCA_976983035.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-08	1.0	reference genome	right_only
+486041	Laccaria bicolor S238N-H82	GCF_000143565.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2008-01-11	1.0	reference genome	right_only
+486041	Laccaria bicolor S238N-H82	GCA_000143565.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2008-01-11	1.0	reference genome	right_only
+492533	Drusus annulatus	GCA_022651775.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-03-21	1.0	reference genome	right_only
+502401	Carex caryophyllea	GCA_964339005.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-18	1.0	reference genome	right_only
+517384	Russula vinacea	GCA_022376525.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-02-23	1.0	reference genome	right_only
+522358	Debaryomyces tyrocola	GCA_900006135.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-06-12	1.0	reference genome	right_only
+522693	Debaryomyces subglobosus	GCA_003708965.2	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-07-13	1.0	reference genome	right_only
+525641	Artemisia tridentata subsp. tridentata	GCA_037465115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-03-22	1.0	reference genome	right_only
+526733	Debaryomyces singareniensis	GCA_031081795.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-09-02	1.0	reference genome	right_only
+544730	Carex littledalei	GCA_011114355.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2020-03-17	1.0	reference genome	right_only
+544733	Carex parvula	GCA_025461045.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-09-28	1.0	reference genome	right_only
+553044	Gentiana dahurica var. dahurica	GCA_024500145.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-08-03	1.0	reference genome	right_only
+569365	Cladophialophora immunda	GCF_000835495.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2015-02-23	1.0	reference genome	right_only
+569365	Cladophialophora immunda	GCA_000835495.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-02-23	1.0	reference genome	right_only
+571359	Arabis nordmanniana	GCA_001484925.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2016-01-04	10.0	Genbank scaffold	right_only
+575233	Daphnia hispanica	GCA_047655985.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-02-11	1.0	reference genome	right_only
+576137	Phialocephala subalpina	GCA_900073065.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2016-12-03	1.0	reference genome	right_only
+585988	Amara aenea	GCA_973350105.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	1.0	reference genome	right_only
+586526	Arabis nemorensis	GCA_976985625.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-04	1.0	reference genome	right_only
+596532	Boloria dia	GCA_964264805.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-21	1.0	reference genome	right_only
+596533	Boloria freija	GCA_964273495.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-04	1.0	reference genome	right_only
+596534	Boloria frigga	GCA_964273715.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-05	1.0	reference genome	right_only
+596536	Boloria titania	GCA_964270595.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-29	1.0	reference genome	right_only
+609761	Formica cinerea	GCA_048541745.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-03-11	1.0	reference genome	right_only
+611344										left_only
+611373										left_only
+611397										left_only
+611398										left_only
+619403										left_only
+630110	Luzula pallescens	GCA_964274315.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-08	1.0	reference genome	right_only
+649659	Campanula jacobaea	GCA_040965415.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-07-30	1.0	reference genome	right_only
+651667										left_only
+654496	Thelephora aurantiotincta	GCA_003316405.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-13	1.0	reference genome	right_only
+657340										left_only
+660911	uncultured Chrysochromulina	GCA_947538835.1	SOURCE_DATABASE_GENBANK	Contig		current	2023-04-19	9.0	Genbank contig	right_only
+660911	uncultured Chrysochromulina	GCA_947538845.1	SOURCE_DATABASE_GENBANK	Contig		current	2023-04-19	9.0	Genbank contig	right_only
+664873										left_only
+673751										left_only
+685671										left_only
+685683										left_only
+686820	Bombus turneri	GCA_014825825.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2020-10-02	1.0	reference genome	right_only
+707887	Lepidocyrtus curvicollis	GCA_964276635.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-28	1.0	reference genome	right_only
+707889	Lepidocyrtus lignorum	GCA_034696835.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+707891	Lepidocyrtus violaceus	GCA_034696905.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+746018	Arabis montbretiana	GCA_001484125.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-10-04	1.0	reference genome	right_only
+752062	Polytrichastrum ohioense	GCA_050002035.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-04-29	1.0	reference genome	right_only
+752065	Polytrichastrum sexangulare	GCA_965127125.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	1.0	reference genome	right_only
+866018	Atheta pasadenae	GCA_030264155.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-06-13	1.0	reference genome	right_only
+878211	Nebria salina	GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	1.0	reference genome	right_only
+889485	Salix udensis	GCA_029204005.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-03-14	1.0	reference genome	right_only
+925970										left_only
+928250	Ceratophysella denticulata	GCA_034694925.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+932988										left_only
+933046										left_only
+977896	Boloria thore	GCA_964338675.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-09	1.0	reference genome	right_only
+984905	Diamesa hyperborea	GCA_975301275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-13	1.0	reference genome	right_only
+989334	Campanula takesimana	GCA_026119855.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-11-10	1.0	reference genome	right_only
+995051	Boloria caucasica	GCA_964332085.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-08	1.0	reference genome	right_only
+1031713	Tilletia maclaganii	GCA_052422275.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-09-03	1.0	reference genome	right_only
+1032817	Inocybe grammopodia	GCA_965154565.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-28	1.0	reference genome	right_only
+1033783	Russula faginea	GCA_964330295.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-07	1.0	reference genome	right_only
+1046861										left_only
+1053324	Agrostis congestiflora	GCA_050573515.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-05-26	1.0	reference genome	right_only
+1053365	Lobelia urens	GCA_965199505.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1.0	reference genome	right_only
+1053388	Rumex azoricus	GCA_040496175.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-07-03	1.0	reference genome	right_only
+1091537	Gaultheria prostrata	GCA_036023075.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-01-25	1.0	reference genome	right_only
+1095629	Laccaria amethystina LaAM-08-1	GCA_000827195.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-01-26	1.0	reference genome	right_only
+1118155	Debaryomyces hansenii var. hansenii MTCC 234	GCA_000239015.2	SOURCE_DATABASE_GENBANK	Contig		current	2011-12-20	9.0	Genbank contig	right_only
+1149847	Salix arbuscula	GCA_976941345.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	1.0	reference genome	right_only
+1164557	Bombus lantschouensis	GCA_054051615.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-17	1.0	reference genome	right_only
+1169566	Inocybe tigrina	GCA_964248975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-31	1.0	reference genome	right_only
+1182543	Cladophialophora psammophila CBS 110553	GCF_000585535.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2014-03-05	1.0	reference genome	right_only
+1182543	Cladophialophora psammophila CBS 110553	GCA_000585535.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2014-03-05	1.0	reference genome	right_only
+1182544	Cladophialophora yegresii CBS 114405	GCF_000585515.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2014-03-05	1.0	reference genome	right_only
+1182544	Cladophialophora yegresii CBS 114405	GCA_000585515.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2014-03-05	1.0	reference genome	right_only
+1184801	Desoria trispinata	GCA_047667415.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-02-11	1.0	reference genome	right_only
+1196864	Bombus pauloensis	GCA_051167325.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-01	1.0	reference genome	right_only
+1213867	Diversispora eburnea	GCA_910592015.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2021-11-11	1.0	reference genome	right_only
+1218962	Ceratophysella granulata	GCA_034694905.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+1218965	Ceratophysella sigillata	GCA_034693865.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+1234504	Rumex salicifolius	GCA_051903605.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-08-08	1.0	reference genome	right_only
+1250648										left_only
+1263258										left_only
+1278906	Salix suchowensis	GCA_029030765.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-03-14	1.0	reference genome	right_only
+1279043	Cladophialophora carrionii CBS 160.54	GCF_000365165.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2013-12-11	1.0	reference genome	right_only
+1279043	Cladophialophora carrionii CBS 160.54	GCA_000365165.2	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2013-12-11	1.0	reference genome	right_only
+1293975	Escallonia herrerae	GCA_033070095.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-10-26	1.0	reference genome	right_only
+1348612	Diversispora epigaea	GCA_003547095.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-09-12	1.0	reference genome	right_only
+1353983	Cladonia macilenta KoLRI003786	GCA_000444155.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2013-08-06	1.0	reference genome	right_only
+1400770	Cladonia metacorallifera KoLRI002260	GCA_000482085.2	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2014-01-07	1.0	reference genome	right_only
+1413687	Salix dunnii	GCA_040801865.1	SOURCE_DATABASE_GENBANK	Complete Genome	reference genome	current	2024-07-22	1.0	reference genome	right_only
+1442370	Cladophialophora bantiana CBS 173.52	GCF_000835475.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2015-02-23	1.0	reference genome	right_only
+1442370	Cladophialophora bantiana CBS 173.52	GCA_000835475.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-02-23	1.0	reference genome	right_only
+1448309	Hydnum rufescens UP504	GCA_014904985.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-20	1.0	reference genome	right_only
+1460289	Chrysochromulina tobinii	GCA_001275005.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2015-08-26	1.0	reference genome	right_only
+1490962										left_only
+1519100	Ceratophysella communis	GCA_046718835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-01-17	1.0	reference genome	right_only
+1521163	Baetis atlanticus	GCA_977112325.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2026-01-18	1.0	reference genome	right_only
+1553347										left_only
+1553372										left_only
+1553384										left_only
+1553406										left_only
+1553836										left_only
+1637976	Primula kwangtungensis	GCA_054094925.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-10	1.0	reference genome	right_only
+1707114										left_only
+1740625	Lactarius vividus	GCA_021527035.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-01-19	1.0	reference genome	right_only
+1751538	Diamesa tonsa	GCA_975301885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	1.0	reference genome	right_only
+1751543										left_only
+1795229										left_only
+1795229										left_only
+1820382	Daphnia sinensis	GCA_013167095.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-10-20	1.0	reference genome	right_only
+1830378	Formica aserva	GCA_037039905.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-03-07	1.0	reference genome	right_only
+1853546	Debaryomyces sp.	GCA_054123475.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2025-12-22	10.0	Genbank scaffold	right_only
+1857566	Silene undulata	GCA_036897945.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-02-28	1.0	reference genome	right_only
+1868146	Inocybe suecica	GCA_043168805.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-10-15	1.0	reference genome	right_only
+1869276	Bombus superbus	GCA_014737385.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-24	1.0	reference genome	right_only
+1875977	Rhyacophila evoluta	GCA_022683975.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-23	1.0	reference genome	right_only
+1876356										left_only
+1897646	Russula aff. rugulosa BPL654	GCA_022496225.1	SOURCE_DATABASE_GENBANK	Contig		current	2022-03-07	9.0	Genbank contig	right_only
+1903206	Artemisia ifranensis	GCA_040967555.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-07-30	1.0	reference genome	right_only
+1907521	Lactarius psammicola	GCA_025769895.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-10-20	1.0	reference genome	right_only
+1918518	Rhizocarpon subgeminatum	GCA_964255705.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+1932122	Lactarius hengduanensis	GCA_021525025.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-01-19	1.0	reference genome	right_only
+1932123	Lactarius pseudohatsudake	GCA_021525015.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-01-19	1.0	reference genome	right_only
+1943797	Boloria chariclea	GCA_977013735.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-07	1.0	reference genome	right_only
+1949210	Cladophialophora exuberans	GCA_030068005.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-05-24	1.0	reference genome	right_only
+2014063										left_only
+2017508	Russula aff. compacta	GCA_003313875.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2018-07-11	10.0	Genbank scaffold	right_only
+2024865	Bombus opulentus	GCA_034509555.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-26	1.0	reference genome	right_only
+2025111	Tipula lateralis	GCA_963932295.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-02-07	1.0	reference genome	right_only
+2040733	Cladonia sp.	GCA_937857105.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857195.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857205.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857275.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857405.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857425.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857785.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857855.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2040733	Cladonia sp.	GCA_937857955.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-12	10.0	Genbank scaffold	right_only
+2041349	Nitzschia sp. Nitz4	GCA_013372465.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2020-06-24	10.0	Genbank scaffold	right_only
+2109649	Fragilaria radians	GCA_900642245.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2019-02-06	1.0	reference genome	right_only
+2175969	Russula sp. MG48	GCA_003313725.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2018-07-11	10.0	Genbank scaffold	right_only
+2175975	Lactarius sp. MG50	GCA_003314065.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2018-07-11	10.0	Genbank scaffold	right_only
+2175976	Lactarius sp. MG121	GCA_003315925.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2018-07-13	10.0	Genbank scaffold	right_only
+2182728	Salix brachista	GCA_049639585.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-15	1.0	reference genome	right_only
+2282635										left_only
+2316158	Phialocephala sp. D728	GCA_003988865.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2018-12-31	10.0	Genbank scaffold	right_only
+2448088	Cladophialophora brunneola	GCA_040207545.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2024-06-17	1.0	reference genome	right_only
+2487584	Cladonia polycarpoides	GCA_964256725.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+2487631	Cladonia mateocyatha	GCA_964254505.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	right_only
+2511006	Salix koriyanagi	GCA_029228605.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-03-20	1.0	reference genome	right_only
+2562068	Bombus cullumanus	GCA_014737535.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-09-25	1.0	reference genome	right_only
+2578515	Diamesa serratosioi	GCA_975302115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	1.0	reference genome	right_only
+2583952	Lepidocyrtus fimetarius	GCA_036507315.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-02-09	1.0	reference genome	right_only
+2705178	Bombus vancouverensis nearcticus	GCF_051014615.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2025-06-20	1.0	reference genome	right_only
+2705178	Bombus vancouverensis nearcticus	GCA_051014615.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-06-20	1.0	reference genome	right_only
+2719107	Tipula fascipennis	GCA_965151645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-15	1.0	reference genome	right_only
+2736688	Tipula scripta	GCA_965197115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-10	1.0	reference genome	right_only
+2741129	Tipula vernalis	GCA_958295665.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-07-06	1.0	reference genome	right_only
+2742595	Nitzschia putrida	GCA_016586335.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2020-12-09	1.0	reference genome	right_only
+2768093	Lepidocyrtus cf. nigrosetosus NNG-2020	GCA_027744615.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-11	10.0	Genbank scaffold	right_only
+2768094	Lepidocyrtus cf. sotoi NNG-2020	GCA_027744475.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2023-01-11	10.0	Genbank scaffold	right_only
+2783810	Nebria ingens riversi	GCA_018344505.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-05-12	1.0	reference genome	right_only
+2785798	Tetracladium sp. T11_2_10C	GCA_017654775.1	SOURCE_DATABASE_GENBANK	Contig		current	2021-03-31	9.0	Genbank contig	right_only
+2796348	Formica aquilonia x Formica polyctena	GCA_907163055.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2021-05-15	1.0	reference genome	right_only
+2822767	Inocybe obscuroides	GCA_965233645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-03	1.0	reference genome	right_only
+2867262	Tipula helvola	GCA_963556165.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-07	1.0	reference genome	right_only
+2867263	Tipula unca	GCA_951394425.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-06-16	1.0	reference genome	right_only
+2881124	Tipula confusa	GCA_963556175.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-07	1.0	reference genome	right_only
+2890055	Androsace saussurei	GCA_964267185.3	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-28	1.0	reference genome	right_only
+2905844	Ceratophysella scotica	GCA_034694025.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+2926725	Isotoma decorata	GCA_034698605.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	right_only
+2951366	Debaryomyces sp. S3305	GCA_024586305.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2022-08-08	10.0	Genbank scaffold	right_only
+2994438	Rhyacophila sp. 25_7	GCA_036584705.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2024-02-13	10.0	Genbank scaffold	right_only
+2994440	Rhyacophila sp. Rhy_31_5	GCA_036584685.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2024-02-13	10.0	Genbank scaffold	right_only
+3023605	Carabus banonii	GCA_964291765.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-04	1.0	reference genome	right_only
+3034176	Nitzschia sp. pyKryTriq1	GCA_956465555.1	SOURCE_DATABASE_GENBANK	Chromosome		current	2023-07-14	8.0	Genbank complete chromosome	right_only
+3041873	Nitzschia sp. DOCU1	GCA_951394045.1	SOURCE_DATABASE_GENBANK	Chromosome		current	2023-05-13	8.0	Genbank complete chromosome	right_only
+3044281	Cladophialophora endolichena	GCA_049996375.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-04-29	1.0	reference genome	right_only
+3097545	Gentiana crassa subsp. rigescens	GCA_054135205.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-23	1.0	reference genome	right_only
+3163303	Russula aff. farinipes	GCA_964199335.1	SOURCE_DATABASE_GENBANK	Chromosome		current	2024-07-13	8.0	Genbank complete chromosome	right_only
+3380366	Formica cf. japonica GAGA-0350	GCA_048543915.1	SOURCE_DATABASE_GENBANK	Scaffold		current	2025-03-11	10.0	Genbank scaffold	right_only
+3398185	Nitzschia sp. sing1	GCA_047456565.1	SOURCE_DATABASE_GENBANK	Contig		current	2025-02-05	9.0	Genbank contig	right_only
+3420003	Cladonia sp. ERGA_PR_AT_01	GCA_963971245.1	SOURCE_DATABASE_GENBANK	Chromosome		current	2024-03-02	8.0	Genbank complete chromosome	right_only

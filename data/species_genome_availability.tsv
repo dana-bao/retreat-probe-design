@@ -1,0 +1,215 @@
+Organism Taxonomic ID	Organism Name	Assembly Accession	Source Database	Assembly Level	Assembly Refseq Category	Assembly Status	Assembly Release Date	Priority	Status	_merge
+2996	Hydrurus foetidus	GCA_900617105.1	SOURCE_DATABASE_GENBANK	Contig		current	2019-04-01	8.0	Genbank contig	both
+4959	Debaryomyces hansenii	GCA_016097625.1	SOURCE_DATABASE_GENBANK	Complete Genome		current	2020-12-17	5.0	Genbank complete genome	both
+4959	Debaryomyces hansenii	GCA_028412075.1	SOURCE_DATABASE_GENBANK	Complete Genome		current	2023-02-02	5.0	Genbank complete genome	both
+4959	Debaryomyces hansenii	GCA_028609645.1	SOURCE_DATABASE_GENBANK	Complete Genome		current	2023-02-13	5.0	Genbank complete genome	both
+27898										left_only
+28933										left_only
+28935										left_only
+29672										left_only
+29771	Saxifraga oppositifolia	GCA_032718425.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-10-16	1.0	reference genome	both
+32119	Rumohra adiantiformis	GCA_033807815.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-11-20	1.0	reference genome	both
+36063										left_only
+39862										left_only
+42846										left_only
+46319										left_only
+50452	Arabis alpina	GCA_900128785.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2016-12-31	1.0	reference genome	both
+52153										left_only
+56490										left_only
+62722										left_only
+74982										left_only
+74988										left_only
+74994										left_only
+77067										left_only
+81839										left_only
+83410										left_only
+85263										left_only
+85710										left_only
+87701										left_only
+88642	Rhizocarpon geographicum	GCA_964257585.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	1.0	reference genome	both
+92075										left_only
+93036	Poa annua	GCA_026929855.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-12-16	1.0	reference genome	both
+95767										left_only
+97227										left_only
+102714	Saxifraga aizoides	GCA_965199075.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1.0	reference genome	both
+111071										left_only
+122554										left_only
+127563	Chrysochromulina parva	GCA_002887195.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2018-01-17	1.0	reference genome	both
+128766										left_only
+128767										left_only
+129212	Polytrichastrum alpinum	GCA_048933195.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-25	1.0	reference genome	both
+134639										left_only
+135145	Carabus depressus	GCA_048127345.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-02-26	1.0	reference genome	both
+138601										left_only
+139363										left_only
+140628										left_only
+140813										left_only
+157178										left_only
+157520										left_only
+159298										left_only
+164537										left_only
+168919										left_only
+175055										left_only
+176815										left_only
+184082										left_only
+184104										left_only
+185980										left_only
+186513										left_only
+186720										left_only
+187635	Isotoma viridis	GCA_034696425.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	both
+199609										left_only
+204742										left_only
+212688										left_only
+214434										left_only
+216617										left_only
+220395										left_only
+220402										left_only
+221504										left_only
+223866										left_only
+226588										left_only
+229869	Tectocepheus velatus	GCA_034700625.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	both
+230722										left_only
+242528	Rumex scutatus	GCA_046244935.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-12-21	1.0	reference genome	both
+245077										left_only
+271024										left_only
+271547										left_only
+282750										left_only
+284366	Oxyria digyna	GCA_053567975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-19	1.0	reference genome	both
+284592	Debaryomyces hansenii CBS767	GCF_000006445.2	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2008-09-16	1.0	reference genome	right_only
+284592	Debaryomyces hansenii CBS767	GCA_000006445.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2008-09-16	1.0	reference genome	right_only
+285081										left_only
+286097										left_only
+287373	Zygaena exulans	GCA_964261585.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-10	1.0	reference genome	both
+299780										left_only
+303395										left_only
+304816										left_only
+309942										left_only
+315203										left_only
+315524										left_only
+324491										left_only
+327266										left_only
+328905										left_only
+332565										left_only
+338686										left_only
+338688										left_only
+342899										left_only
+344590										left_only
+346724										left_only
+350623	Stereocaulon alpinum	GCA_018257865.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-05-04	1.0	reference genome	both
+357475										left_only
+362598										left_only
+370026	Desoria olivacea	GCA_034695115.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	both
+370683										left_only
+391068										left_only
+395313										left_only
+397257										left_only
+408822										left_only
+410632										left_only
+415614										left_only
+426662										left_only
+428162										left_only
+431330										left_only
+431333										left_only
+431400										left_only
+431577										left_only
+431585										left_only
+439840										left_only
+441507										left_only
+450006										left_only
+466727	Lednia tumana	GCA_003287335.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-03	1.0	reference genome	both
+467821										left_only
+475014										left_only
+484033										left_only
+525771										left_only
+596920										left_only
+611450										left_only
+611584										left_only
+611691										left_only
+630096										left_only
+651695										left_only
+651987										left_only
+664874										left_only
+685684										left_only
+707889	Lepidocyrtus lignorum	GCA_034696835.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	both
+749266										left_only
+795044										left_only
+795045										left_only
+858854										left_only
+903422										left_only
+903428										left_only
+925971										left_only
+984906										left_only
+1042862										left_only
+1085736										left_only
+1091530										left_only
+1107644										left_only
+1118155	Debaryomyces hansenii var. hansenii MTCC 234	GCA_000239015.2	SOURCE_DATABASE_GENBANK	Contig		current	2011-12-20	8.0	Genbank contig	right_only
+1149905										left_only
+1177201										left_only
+1250597										left_only
+1267525										left_only
+1293966										left_only
+1351830										left_only
+1355900										left_only
+1385497										left_only
+1395542										left_only
+1398205										left_only
+1405138										left_only
+1435664										left_only
+1448309	Hydnum rufescens UP504	GCA_014904985.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-20	1.0	reference genome	right_only
+1483593										left_only
+1483842										left_only
+1485667										left_only
+1501873										left_only
+1532265										left_only
+1534596										left_only
+1553251										left_only
+1553348										left_only
+1553373										left_only
+1553385										left_only
+1553407										left_only
+1553531										left_only
+1553643										left_only
+1553662										left_only
+1553837										left_only
+1577080										left_only
+1659357										left_only
+1659903										left_only
+1678822										left_only
+1715899										left_only
+1751537										left_only
+1751540										left_only
+1751541										left_only
+1751544										left_only
+1753982										left_only
+1780255										left_only
+1790224										left_only
+1795230										left_only
+1875977	Rhyacophila evoluta	GCA_022683975.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-23	1.0	reference genome	both
+1875987										left_only
+1876357										left_only
+1886436										left_only
+1926177										left_only
+1963269										left_only
+1982783										left_only
+2014047										left_only
+2045230										left_only
+2267583										left_only
+2528720										left_only
+2578536										left_only
+2604012										left_only
+2707515										left_only
+2717729										left_only
+2864982										left_only
+2875554										left_only
+2881961										left_only
+2886538										left_only
+2890055	Androsace saussurei	GCA_964267185.3	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-28	1.0	reference genome	both
+2891110										left_only
+2905844	Ceratophysella scotica	GCA_034694025.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	1.0	reference genome	both
+2961521										left_only
+2998212										left_only
+3040858										left_only
+3123227										left_only
+3123433										left_only
+3135909										left_only

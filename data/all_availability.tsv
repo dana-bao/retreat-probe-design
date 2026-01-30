@@ -1,0 +1,314 @@
+Species Taxonomic ID	Species Name	Species level Assembly	Genus Taxonomic ID	Genus Name	Assembly Accession	Source Database	Assembly Level	Assembly Refseq Category	Assembly Status	Assembly Release Date	Assembly Stats Total Sequence Length	Status	_merge
+2996	Hydrurus foetidus	yes	2995.0	Hydrurus	GCA_900617105.1	SOURCE_DATABASE_GENBANK	Contig		current	2019-04-01	171182409.0	Largest total sequence length	both
+4959	Debaryomyces hansenii	yes	4958.0	Debaryomyces	GCA_024256405.1	SOURCE_DATABASE_GENBANK	Contig		current	2022-07-13	24773645.0	Largest total sequence length	both
+29771	Saxifraga oppositifolia	yes	3798.0	Saxifraga	GCA_032718425.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-10-16	1325903.0	Genbank reference genome, scaffold	both
+32119	Rumohra adiantiformis	yes	32118.0	Rumohra	GCA_033807815.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-11-20	2307496354.0	Genbank reference genome, scaffold	both
+50452	Arabis alpina	yes	50451.0	Arabis	GCA_900128785.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2016-12-31	311642060.0	Genbank reference genome, chromosome	both
+88642	Rhizocarpon geographicum	yes	88641.0	Rhizocarpon	GCA_964257585.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-09-21	27286209.0	Genbank reference genome, scaffold	both
+93036	Poa annua	yes	4544.0	Poa	GCA_026929855.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-12-16	1779762036.0	Genbank reference genome, chromosome	both
+102714	Saxifraga aizoides	yes	3798.0	Saxifraga	GCA_965199075.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1445080489.0	Genbank reference genome, chromosome	both
+127563	Chrysochromulina parva	yes	35140.0	Chrysochromulina	GCA_002887195.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2018-01-17	65752923.0	Genbank reference genome, contig	both
+129212	Polytrichastrum alpinum	yes	129211.0	Polytrichastrum	GCA_048933195.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-25	498256416.0	Genbank reference genome, chromosome	both
+135145	Carabus depressus	yes	41074.0	Carabus	GCA_048127345.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2025-02-26	190418360.0	Genbank reference genome, contig	both
+187635	Isotoma viridis	yes	57735.0	Isotoma	GCA_034696425.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	211144109.0	Genbank reference genome, contig	both
+229869	Tectocepheus velatus	yes	198301.0	Tectocepheus	GCA_034700625.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	118622841.0	Genbank reference genome, contig	both
+242528	Rumex scutatus	yes	3618.0	Rumex	GCA_046244935.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-12-21	1631492059.0	Genbank reference genome, scaffold	both
+284366	Oxyria digyna	yes	137682.0	Oxyria	GCA_053567975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-19	548593125.0	Genbank reference genome, chromosome	both
+284592	Debaryomyces hansenii CBS767	yes			GCF_000006445.2	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2008-09-16	12152486.0	RefSeq reference genome, chromosome	right_only
+287373	Zygaena exulans	yes	287110.0	Zygaena	GCA_964261585.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-10	366422188.0	Genbank reference genome, chromosome	both
+350623	Stereocaulon alpinum	yes	50938.0	Stereocaulon	GCA_018257865.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-05-04	38279440.0	Genbank reference genome, scaffold	both
+370026	Desoria olivacea	yes	281417.0	Desoria	GCA_034695115.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	177300040.0	Genbank reference genome, contig	both
+466727	Lednia tumana	yes	466726.0	Lednia	GCA_003287335.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-03	304502267.0	Genbank reference genome, scaffold	both
+707889	Lepidocyrtus lignorum	yes	49178.0	Lepidocyrtus	GCA_034696835.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	250812609.0	Genbank reference genome, contig	both
+1118155	Debaryomyces hansenii var. hansenii MTCC 234	yes			GCA_000239015.2	SOURCE_DATABASE_GENBANK	Contig		current	2011-12-20	11462343.0	Largest total sequence length	right_only
+1448309	Hydnum rufescens UP504	yes			GCA_014904985.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-20	67135451.0	Genbank reference genome, scaffold	right_only
+1875977	Rhyacophila evoluta	yes	177632.0	Rhyacophila	GCA_022683975.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-23	565818603.0	Genbank reference genome, scaffold	both
+2890055	Androsace saussurei	yes	85163.0	Androsace	GCA_964267185.3	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-28	412629385.0	Genbank reference genome, chromosome	both
+2905844	Ceratophysella scotica	yes	187617.0	Ceratophysella	GCA_034694025.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	258688745.0	Genbank reference genome, contig	both
+27898	Crenobia alpina	no	27897.0										left_only
+28933	Nothofagus antarctica	no	26779.0										left_only
+28935	Nothofagus betuloides	no	26779.0										left_only
+29672	Avenella flexuosa	no	391960.0										left_only
+36063	Hebeloma mesophaeum	no	34453.0		GCA_000827355.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-01-30	38226047.0	Genbank reference genome, scaffold	left_only
+39862	Silene acaulis	no	3573.0		GCF_048544455.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2025-03-12	2716323241.0	RefSeq reference genome, chromosome	left_only
+42846	Daphnia longispina	no	6668.0		GCF_022539665.2	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2023-08-08	108144665.0	RefSeq reference genome, chromosome	left_only
+42846	Daphnia longispina	no	6668.0		GCF_020631705.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2021-10-27	161452108.0	RefSeq reference genome, chromosome	left_only
+42846	Daphnia longispina	no	6668.0		GCF_021134715.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2021-12-09	133181052.0	RefSeq reference genome, chromosome	left_only
+42846	Daphnia longispina	no	6668.0		GCF_021234035.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-01-11	185057732.0	RefSeq reference genome, chromosome	left_only
+46319	Marsippospermum grandiflorum	no	46318.0										left_only
+52153	Festuca rubra	no	4605.0		GCA_051253515.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-07-08	780447117.0	Genbank reference genome, scaffold	left_only
+52153	Festuca rubra	no	4605.0		GCA_051419415.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-07-20	1188724153.0	Genbank reference genome, scaffold	left_only
+56490	Thelephora americana	no	56489.0		GCA_003316405.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-07-13	29413264.0	Genbank reference genome, scaffold	left_only
+56490	Thelephora americana	no	56489.0		GCA_014904855.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-20	36335475.0	Genbank reference genome, scaffold	left_only
+62722	Phialocephala fortinii	no	150173.0		GCA_900073065.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2016-12-03	69693031.0	Genbank reference genome, scaffold	left_only
+74982	Pardosa nigra	no	74980.0		GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-04	2416637544.0	Genbank reference genome, chromosome	left_only
+74988	Pardosa pullata	no	74980.0		GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-04	2416637544.0	Genbank reference genome, chromosome	left_only
+74994	Pardosa lugubris	no	74980.0		GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-04	2416637544.0	Genbank reference genome, chromosome	left_only
+77067	Salix serpyllifolia	no	40685.0		GCA_040801865.1	SOURCE_DATABASE_GENBANK	Complete Genome	reference genome	current	2024-07-22	335997017.0	Genbank reference genome, complete genome	left_only
+81839	Bathyphantes gracilis	no	81838.0										left_only
+83410	Saxifraga exarata	no	3798.0		GCA_965199075.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1445080489.0	Genbank reference genome, chromosome	left_only
+83410	Saxifraga exarata	no	3798.0		GCA_977964015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-17	542591247.0	Genbank reference genome, chromosome	left_only
+85263	Saxifraga retusa	no	3798.0		GCA_965199075.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1445080489.0	Genbank reference genome, chromosome	left_only
+85263	Saxifraga retusa	no	3798.0		GCA_977964015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-17	542591247.0	Genbank reference genome, chromosome	left_only
+85710	Nebria castanea	no	60834.0		GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	241909001.0	Genbank reference genome, chromosome	left_only
+85710	Nebria castanea	no	60834.0		GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	256715385.0	Genbank reference genome, chromosome	left_only
+87701	Poa alpina	no	4544.0		GCA_026929855.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-12-16	1779762036.0	Genbank reference genome, chromosome	left_only
+87701	Poa alpina	no	4544.0		GCA_964215705.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-27	1422738331.0	Genbank reference genome, chromosome	left_only
+87701	Poa alpina	no	4544.0		GCA_040144145.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-13	1151728964.0	Genbank reference genome, chromosome	left_only
+87701	Poa alpina	no	4544.0		GCA_040143895.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-13	648010102.0	Genbank reference genome, chromosome	left_only
+92075	Trombidium holosericeum	no	92074.0										left_only
+95767	Niphotrichum canescens	no	657340.0										left_only
+97227	Gomphonema parvulum	no	97226.0										left_only
+111071	Formica lugubris	no	72766.0		GCF_003651465.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2018-10-15	277633851.0	RefSeq reference genome, scaffold	left_only
+122554	Chlorocrepis staticifolia	no	1263258.0										left_only
+128766	Tomentella atramentaria	no	56494.0										left_only
+128767	Tomentella badia	no	56494.0										left_only
+134639	Amara alpina	no	60755.0		GCA_973350105.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	880371727.0	Genbank reference genome, chromosome	left_only
+134639	Amara alpina	no	60755.0		GCA_965279835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-10	812765457.0	Genbank reference genome, chromosome	left_only
+138601	Gunnera magellanica	no	24956.0										left_only
+139363	Hydnum rufescens	no	57133.0		GCA_014904985.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-20	67135451.0	Genbank reference genome, scaffold	left_only
+140628	Racomitrium lanuginosum	no	70137.0										left_only
+140813	Carex firma	no	13398.0		GCF_964058835.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2024-11-21	380999594.0	RefSeq reference genome, chromosome	left_only
+157178	Tilletia barclayana	no	13289.0		GCA_032718865.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-10-16	38181211.0	Genbank reference genome, scaffold	left_only
+157178	Tilletia barclayana	no	13289.0		GCA_905071765.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-02-18	49872806.0	Genbank reference genome, scaffold	left_only
+157178	Tilletia barclayana	no	13289.0		GCA_001006505.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2015-05-14	20105270.0	Genbank reference genome, scaffold	left_only
+157178	Tilletia barclayana	no	13289.0		GCA_001689995.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2016-07-20	37460344.0	Genbank reference genome, scaffold	left_only
+157178	Tilletia barclayana	no	13289.0		GCA_009428275.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2019-10-30	28777633.0	Genbank reference genome, scaffold	left_only
+157178	Tilletia barclayana	no	13289.0		GCA_009428295.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2019-10-30	24274610.0	Genbank reference genome, scaffold	left_only
+157520	Gaultheria pumila	no	13538.0		GCA_036023075.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-01-25	408494255.0	Genbank reference genome, scaffold	left_only
+157520	Gaultheria pumila	no	13538.0		GCA_046119095.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-12-17	673248660.0	Genbank reference genome, scaffold	left_only
+159298	Deschampsia antarctica	no	15452.0										left_only
+164537	Tetracladium furcatum	no	164535.0		GCA_031472005.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-09-14	39220606.0	Genbank reference genome, scaffold	left_only
+168919	Placopsis perrugosa	no	91804.0										left_only
+175055	Primula denticulata	no	49647.0		GCA_965603815.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-07	1521142265.0	Genbank reference genome, chromosome	left_only
+175055	Primula denticulata	no	49647.0		GCA_054094925.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-10	1289405155.0	Genbank reference genome, chromosome	left_only
+175055	Primula denticulata	no	49647.0		GCA_965240305.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-14	2627377735.0	Genbank reference genome, chromosome	left_only
+175055	Primula denticulata	no	49647.0		GCA_963682055.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-06	436168066.0	Genbank reference genome, chromosome	left_only
+175055	Primula denticulata	no	49647.0		GCA_963920805.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-25	417752201.0	Genbank reference genome, chromosome	left_only
+176815	Russula pascua	no	5402.0		GCA_965112905.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-01-24	49022622.0	Genbank reference genome, chromosome	left_only
+176815	Russula pascua	no	5402.0		GCA_964330295.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-07	41716408.0	Genbank reference genome, chromosome	left_only
+176815	Russula pascua	no	5402.0		GCA_975961605.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-07	41361926.0	Genbank reference genome, chromosome	left_only
+176815	Russula pascua	no	5402.0		GCA_964656355.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-12-20	45011098.0	Genbank reference genome, chromosome	left_only
+176815	Russula pascua	no	5402.0		GCA_963926505.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-01-28	38334703.0	Genbank reference genome, chromosome	left_only
+176815	Russula pascua	no	5402.0		GCA_965121685.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-11	55098841.0	Genbank reference genome, chromosome	left_only
+184082	Eritrichium nanum	no	184081.0										left_only
+184104	Cladonia lepidophora	no	5199.0		GCA_964605785.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-01-02	35919776.0	Genbank reference genome, chromosome	left_only
+184104	Cladonia lepidophora	no	5199.0		GCA_965153415.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-26	35063374.0	Genbank reference genome, chromosome	left_only
+184104	Cladonia lepidophora	no	5199.0		GCA_947623385.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-05-13	38047994.0	Genbank reference genome, chromosome	left_only
+185980	Fragilaria capucina	no	33644.0		GCA_900642245.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2019-02-06	98377760.0	Genbank reference genome, scaffold	left_only
+186513	Nebria angustata	no	60834.0		GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	241909001.0	Genbank reference genome, chromosome	left_only
+186513	Nebria angustata	no	60834.0		GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	256715385.0	Genbank reference genome, chromosome	left_only
+186720	Berberis buxifolia	no	22774.0		GCA_965233575.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-03	1020928172.0	Genbank reference genome, chromosome	left_only
+186720	Berberis buxifolia	no	22774.0		GCA_963556465.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-17	1297525870.0	Genbank reference genome, chromosome	left_only
+199609	Androsace alpina	no	85163.0		GCA_964267185.3	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-28	412629385.0	Genbank reference genome, chromosome	left_only
+204742	Keratella quadrata	no	204737.0										left_only
+212688	Scorzoneroides helvetica	no	673751.0										left_only
+214434	Staurosirella pinnata	no	449168.0										left_only
+216617	Fragilariforma virescens	no	216616.0										left_only
+220395	Nebria jockischii	no	60834.0		GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	241909001.0	Genbank reference genome, chromosome	left_only
+220395	Nebria jockischii	no	60834.0		GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	256715385.0	Genbank reference genome, chromosome	left_only
+220402	Nebria hellwigii	no	60834.0		GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	241909001.0	Genbank reference genome, chromosome	left_only
+220402	Nebria hellwigii	no	60834.0		GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	256715385.0	Genbank reference genome, chromosome	left_only
+221504	Otiorhynchus nodosus	no	41162.0										left_only
+223866	Artemisia genipi	no	4219.0		GCA_030686995.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-08-09	8003642285.0	Genbank reference genome, chromosome	left_only
+223866	Artemisia genipi	no	4219.0		GCA_037465115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-03-22	3593360174.0	Genbank reference genome, chromosome	left_only
+226588	Inocybe curvipes	no	71953.0		GCA_965154565.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-28	49423315.0	Genbank reference genome, chromosome	left_only
+226588	Inocybe curvipes	no	71953.0		GCA_965233645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-03	49949292.0	Genbank reference genome, chromosome	left_only
+226588	Inocybe curvipes	no	71953.0		GCA_964248975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-31	42009716.0	Genbank reference genome, chromosome	left_only
+230722	Cerastium fontanum	no	3579.0										left_only
+245077	Acanthocyclops vernalis	no	245076.0										left_only
+271024	Telmatobius marmoratus	no	93484.0										left_only
+271547	Cerastium uniflorum	no	3579.0										left_only
+282750	Achillea erba-rotta subsp. moschata	no	13328.0										left_only
+285081	Aulacoseira alpigena	no	49233.0										left_only
+286097	Rhinella spinulosa	no	651667.0		GCA_900303285.2	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-06-11	3473313001.0	Genbank reference genome, scaffold	left_only
+299780	Linaria alpina	no	43170.0		GCA_948329865.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-01-28	759825098.0	Genbank reference genome, chromosome	left_only
+303395	Eunotia bilunaris	no	196637.0										left_only
+304816	Cortinarius rubricosus	no	34451.0										left_only
+309942	Bombus alpinus	no	28641.0		GCF_024516045.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-08-05	365123313.0	RefSeq reference genome, chromosome	left_only
+309942	Bombus alpinus	no	28641.0		GCF_041682495.2	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2025-04-10	314276726.0	RefSeq reference genome, chromosome	left_only
+309942	Bombus alpinus	no	28641.0		GCF_024542735.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-08-09	317402180.0	RefSeq reference genome, chromosome	left_only
+309942	Bombus alpinus	no	28641.0		GCF_905332965.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2021-03-19	307548333.0	RefSeq reference genome, chromosome	left_only
+309942	Bombus alpinus	no	28641.0		GCF_014825855.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2020-10-02	254804690.0	RefSeq reference genome, chromosome	left_only
+309942	Bombus alpinus	no	28641.0		GCF_910591885.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2022-02-09	392962041.0	RefSeq reference genome, chromosome	left_only
+309942	Bombus alpinus	no	28641.0		GCF_051014615.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2025-06-20	345734396.0	RefSeq reference genome, chromosome	left_only
+315203	Sarcoleotia globosa	no	315084.0										left_only
+315524	Micropsectra atrofasciata	no	288800.0										left_only
+324491	Psilopilum cavifolium	no	111661.0										left_only
+327266	Drusus discolor	no	177679.0		GCA_022651775.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-03-21	727941535.0	Genbank reference genome, contig	left_only
+328905	Baetis alpinus	no	189838.0		GCA_977112325.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2026-01-18	199869330.0	Genbank reference genome, chromosome	left_only
+332565	Pleurodema marmoratum	no	318408.0										left_only
+338686	Byrrhus arietinus	no	174915.0										left_only
+338688	Byrrhus fasciatus	no	174915.0										left_only
+342899	Perla grandis	no	227362.0										left_only
+344590	Laccaria montana	no	29882.0		GCF_000143565.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2008-01-11	64877444.0	RefSeq reference genome, scaffold	left_only
+346724	Atheta hypnorum	no	135865.0		GCA_030264155.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2023-06-13	230256031.0	Genbank reference genome, scaffold	left_only
+357475	Papaver radicatum	no	3468.0		GCF_003573695.1	SOURCE_DATABASE_REFSEQ	Chromosome	reference genome	current	2018-09-18	2715377404.0	RefSeq reference genome, chromosome	left_only
+362598	Hornungia alpina	no	153320.0										left_only
+370683	Primula stuartii	no	49647.0		GCA_965603815.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-07	1521142265.0	Genbank reference genome, chromosome	left_only
+370683	Primula stuartii	no	49647.0		GCA_054094925.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-10	1289405155.0	Genbank reference genome, chromosome	left_only
+370683	Primula stuartii	no	49647.0		GCA_965240305.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-14	2627377735.0	Genbank reference genome, chromosome	left_only
+370683	Primula stuartii	no	49647.0		GCA_963682055.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-06	436168066.0	Genbank reference genome, chromosome	left_only
+370683	Primula stuartii	no	49647.0		GCA_963920805.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-25	417752201.0	Genbank reference genome, chromosome	left_only
+391068	Geopora cervina	no	137247.0										left_only
+395313	Salix arctica	no	40685.0		GCA_040801865.1	SOURCE_DATABASE_GENBANK	Complete Genome	reference genome	current	2024-07-22	335997017.0	Genbank reference genome, complete genome	left_only
+397257	Typhula variabilis	no	68809.0										left_only
+408822	Cladophialophora minutissima	no	82105.0		GCF_000835475.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2015-02-23	36722552.0	RefSeq reference genome, scaffold	left_only
+408822	Cladophialophora minutissima	no	82105.0		GCF_000365165.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2013-12-11	28991111.0	RefSeq reference genome, scaffold	left_only
+408822	Cladophialophora minutissima	no	82105.0		GCF_000835495.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2015-02-23	43029152.0	RefSeq reference genome, scaffold	left_only
+408822	Cladophialophora minutissima	no	82105.0		GCF_000585535.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2014-03-05	39420127.0	RefSeq reference genome, scaffold	left_only
+408822	Cladophialophora minutissima	no	82105.0		GCF_000585515.1	SOURCE_DATABASE_REFSEQ	Scaffold	reference genome	current	2014-03-05	27898422.0	RefSeq reference genome, scaffold	left_only
+410632	Moehringia ciliata	no	169226.0		GCA_964106765.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-06-06	1244268398.0	Genbank reference genome, chromosome	left_only
+415614	Acanthocyclops robustus	no	245076.0										left_only
+426662	Tabellaria flocculosa	no	426661.0										left_only
+428162	Campanula cochleariifolia	no	40568.0		GCA_040965415.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-07-30	859415109.0	Genbank reference genome, scaffold	left_only
+428162	Campanula cochleariifolia	no	40568.0		GCA_026119855.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-11-10	1621268297.0	Genbank reference genome, scaffold	left_only
+431330	Encyonema minutum	no	216746.0										left_only
+431333	Achnanthidium minutissimum	no	265567.0										left_only
+431400	Navicula cryptotenella	no	50949.0										left_only
+431577	Pinnularia microstauron	no	216736.0										left_only
+431585	Stauroneis anceps	no	265583.0										left_only
+439840	Spadicoides bina	no	439828.0										left_only
+441507	Leuctra fusca	no	143734.0		GCA_934045905.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-03-27	536280668.0	Genbank reference genome, chromosome	left_only
+450006	Quinchamalium chilense	no	450005.0										left_only
+467821	Inocybe egenula	no	71953.0		GCA_965154565.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-28	49423315.0	Genbank reference genome, chromosome	left_only
+467821	Inocybe egenula	no	71953.0		GCA_965233645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-04-03	49949292.0	Genbank reference genome, chromosome	left_only
+467821	Inocybe egenula	no	71953.0		GCA_964248975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-31	42009716.0	Genbank reference genome, chromosome	left_only
+475014	Euphrasia minima	no	46053.0		GCA_954870475.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-07-15	976479663.0	Genbank reference genome, chromosome	left_only
+475014	Euphrasia minima	no	46053.0		GCA_965276645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-03	951355569.0	Genbank reference genome, chromosome	left_only
+484033	Drusus destitutus	no	177679.0		GCA_022651775.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2022-03-21	727941535.0	Genbank reference genome, contig	left_only
+525771	Boloria napaea	no	127313.0		GCA_964270775.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-29	415842648.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_964332085.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-08	341488785.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_977013735.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-07	497730790.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_964264805.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-21	366127185.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_966096485.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-08-23	444776941.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_951802675.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-07-14	400436497.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_964273495.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-04	462773524.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_964273715.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-05	395422787.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_964275235.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-10-28	382992164.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_905231865.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2021-03-24	399902484.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_964338675.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-09	427953672.0	Genbank reference genome, chromosome	left_only
+525771	Boloria napaea	no	127313.0		GCA_964270595.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-09-29	496638844.0	Genbank reference genome, chromosome	left_only
+596920	Lactarius griseus	no	34444.0		GCA_964235335.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-08-31	68853849.0	Genbank reference genome, chromosome	left_only
+596920	Lactarius griseus	no	34444.0		GCA_951394315.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-05-13	57231665.0	Genbank reference genome, chromosome	left_only
+596920	Lactarius griseus	no	34444.0		GCA_963281015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-08-20	52334816.0	Genbank reference genome, chromosome	left_only
+611450	Corynoneura scutellata	no	611344.0										left_only
+611584	Parametriocnemus stylatus	no	611373.0										left_only
+611691	Tvetenia calvescens	no	611398.0										left_only
+630096	Luzula confusa	no	46322.0		GCA_964274315.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-11-08	337670911.0	Genbank reference genome, chromosome	left_only
+630096	Luzula confusa	no	46322.0		GCA_946800325.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-09-15	444535728.0	Genbank reference genome, chromosome	left_only
+651695	Xenostigmina zilleri	no	286656.0										left_only
+651987	Catops tristis	no	290665.0		GCA_965642125.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-18	209696841.0	Genbank reference genome, chromosome	left_only
+664874	Petrocallis pyrenaica	no	664873.0										left_only
+685684	Gonatium rubellum	no	685683.0										left_only
+749266	Chloraea alpina	no	79036.0										left_only
+795044	Amara erratica	no	60755.0		GCA_973350105.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	880371727.0	Genbank reference genome, chromosome	left_only
+795044	Amara erratica	no	60755.0		GCA_965279835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-10	812765457.0	Genbank reference genome, chromosome	left_only
+795045	Amara quenseli	no	60755.0		GCA_973350105.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-26	880371727.0	Genbank reference genome, chromosome	left_only
+795045	Amara quenseli	no	60755.0		GCA_965279835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-10	812765457.0	Genbank reference genome, chromosome	left_only
+858854	Cortinarius alpinus	no	34451.0										left_only
+903422	Orthocladius luteipes	no	288845.0										left_only
+903428	Eukiefferiella claripennis	no	288843.0										left_only
+925971	Pseudodiamesa branickii	no	925970.0										left_only
+984906	Diamesa latitarsis	no	338156.0		GCA_975301275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-13	104918785.0	Genbank reference genome, chromosome	left_only
+984906	Diamesa latitarsis	no	338156.0		GCA_975302115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	98976556.0	Genbank reference genome, chromosome	left_only
+984906	Diamesa latitarsis	no	338156.0		GCA_975301885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	104481022.0	Genbank reference genome, chromosome	left_only
+1042862	Diamesa bertrami	no	338156.0		GCA_975301275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-13	104918785.0	Genbank reference genome, chromosome	left_only
+1042862	Diamesa bertrami	no	338156.0		GCA_975302115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	98976556.0	Genbank reference genome, chromosome	left_only
+1042862	Diamesa bertrami	no	338156.0		GCA_975301885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	104481022.0	Genbank reference genome, chromosome	left_only
+1085736	Gentiana orbicularis	no	21496.0		GCA_054135205.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-23	2061134395.0	Genbank reference genome, chromosome	left_only
+1085736	Gentiana orbicularis	no	21496.0		GCA_024500145.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-08-03	1416543111.0	Genbank reference genome, chromosome	left_only
+1085736	Gentiana orbicularis	no	21496.0		GCA_026214975.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-11-18	1791703142.0	Genbank reference genome, chromosome	left_only
+1091530	Gaultheria caespitosa	no	13538.0		GCA_036023075.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-01-25	408494255.0	Genbank reference genome, scaffold	left_only
+1091530	Gaultheria caespitosa	no	13538.0		GCA_046119095.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-12-17	673248660.0	Genbank reference genome, scaffold	left_only
+1107644	Erigone tirolensis	no	247614.0										left_only
+1149905	Nebria nivalis	no	60834.0		GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	241909001.0	Genbank reference genome, chromosome	left_only
+1149905	Nebria nivalis	no	60834.0		GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	256715385.0	Genbank reference genome, chromosome	left_only
+1177201	Nebria rufescens	no	60834.0		GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	241909001.0	Genbank reference genome, chromosome	left_only
+1177201	Nebria rufescens	no	60834.0		GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	256715385.0	Genbank reference genome, chromosome	left_only
+1250597	Platynothrus punctatus	no	128014.0		GCA_051820355.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-08-05	202584216.0	Genbank reference genome, scaffold	left_only
+1267525	Mitopus morio	no	1046861.0										left_only
+1293966	Escallonia alpina	no	23075.0		GCA_033070095.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-10-26	994359942.0	Genbank reference genome, contig	left_only
+1293966	Escallonia alpina	no	23075.0		GCA_033065855.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-10-26	566446937.0	Genbank reference genome, contig	left_only
+1351830	Epilobium fleischeri	no	13054.0		GCA_965637465.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-09	274878083.0	Genbank reference genome, chromosome	left_only
+1351830	Epilobium fleischeri	no	13054.0		GCA_965153245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-26	336043468.0	Genbank reference genome, chromosome	left_only
+1355900	Diamesa cinerella	no	338156.0		GCA_975301275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-13	104918785.0	Genbank reference genome, chromosome	left_only
+1355900	Diamesa cinerella	no	338156.0		GCA_975302115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	98976556.0	Genbank reference genome, chromosome	left_only
+1355900	Diamesa cinerella	no	338156.0		GCA_975301885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	104481022.0	Genbank reference genome, chromosome	left_only
+1385497	Saxifraga bryoides	no	3798.0		GCA_965199075.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1445080489.0	Genbank reference genome, chromosome	left_only
+1385497	Saxifraga bryoides	no	3798.0		GCA_977964015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-12-17	542591247.0	Genbank reference genome, chromosome	left_only
+1395542	Agrostis rupestris	no	15297.0		GCA_052724335.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-09-19	2738132926.0	Genbank reference genome, chromosome	left_only
+1398205	Notiophilus aquaticus	no	41307.0		GCA_965642445.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-19	490357287.0	Genbank reference genome, chromosome	left_only
+1405138	Erigone arctica	no	247614.0										left_only
+1435664	Cherleria sedoides	no	1707114.0										left_only
+1483593	Simplocaria metallica	no	338700.0										left_only
+1483842	Thanatophilus lapponicus	no	347474.0		GCA_051122355.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-06-27	288948613.0	Genbank reference genome, chromosome	left_only
+1485667	Diplocephalus helleri	no	932988.0										left_only
+1501873	Helophorus glacialis	no	154135.0										left_only
+1532265	Anthyllis vulneraria subsp. alpestris	no	118889.0		GCA_965615755.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-08	334471635.0	Genbank reference genome, chromosome	left_only
+1534596	Sedum atratum	no	3784.0		GCA_966183415.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-08-23	666176718.0	Genbank reference genome, chromosome	left_only
+1553251	Cymindis vaporariorum	no	60752.0										left_only
+1553348	Acidota crenata	no	1553347.0										left_only
+1553373	Boreaphilus henningianus	no	1553372.0										left_only
+1553385	Cephalocousya nivicola	no	1553384.0										left_only
+1553407	Geodromicus longipes	no	1553406.0										left_only
+1553531	Liogluta alpestris	no	619403.0										left_only
+1553643	Patrobus septentrionis	no	60787.0										left_only
+1553662	Phratora polaris	no	131699.0		GCA_977071015.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-11-29	565066841.0	Genbank reference genome, chromosome	left_only
+1553837	Miscodera arctica	no	1553836.0										left_only
+1577080	Achnanthidium rivulare	no	265567.0										left_only
+1659357	Collinsia holmgreni	no	933046.0										left_only
+1659903	Agyneta nigripes	no	685671.0										left_only
+1678822	Rhithrogena nivata	no	307890.0										left_only
+1715899	Lobelia telekii	no	4382.0		GCA_965199305.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	780100038.0	Genbank reference genome, chromosome	left_only
+1715899	Lobelia telekii	no	4382.0		GCA_965199505.2	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	393054755.0	Genbank reference genome, chromosome	left_only
+1751537	Diamesa steinboecki	no	338156.0		GCA_975301275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-13	104918785.0	Genbank reference genome, chromosome	left_only
+1751537	Diamesa steinboecki	no	338156.0		GCA_975302115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	98976556.0	Genbank reference genome, chromosome	left_only
+1751537	Diamesa steinboecki	no	338156.0		GCA_975301885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	104481022.0	Genbank reference genome, chromosome	left_only
+1751540	Diamesa zernyi	no	338156.0		GCA_975301275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-13	104918785.0	Genbank reference genome, chromosome	left_only
+1751540	Diamesa zernyi	no	338156.0		GCA_975302115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	98976556.0	Genbank reference genome, chromosome	left_only
+1751540	Diamesa zernyi	no	338156.0		GCA_975301885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	104481022.0	Genbank reference genome, chromosome	left_only
+1751541	Orthocladius frigidus	no	288845.0										left_only
+1751544	Pseudokiefferiella parva	no	1751543.0										left_only
+1753982	Nitzschia hantzschiana	no	2857.0		GCA_019593585.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-08-13	41156031.0	Genbank reference genome, scaffold	left_only
+1780255	Prosimulium latimucro	no	13645.0										left_only
+1790224	Tokunagaia rectangularis	no	611397.0										left_only
+1795230	Maraenobiotus brucei	no	1795229.0										left_only
+1875987	Rhyacophila intermedia	no	177632.0		GCA_022495005.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-07	1086872238.0	Genbank reference genome, scaffold	left_only
+1875987	Rhyacophila intermedia	no	177632.0		GCA_022683975.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-23	565818603.0	Genbank reference genome, scaffold	left_only
+1876357	Pseudopsilopteryx zimmeri	no	1876356.0										left_only
+1886436	Senecio keniophytum	no	18794.0		GCA_965282855.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-05-18	676054498.0	Genbank reference genome, chromosome	left_only
+1886436	Senecio keniophytum	no	18794.0		GCA_965199645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-14	1815561282.0	Genbank reference genome, chromosome	left_only
+1886436	Senecio keniophytum	no	18794.0		GCA_965637395.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-09	2015832850.0	Genbank reference genome, chromosome	left_only
+1926177	Erigone longipalpis	no	247614.0										left_only
+1963269	Diversispora versiformis	no	308926.0		GCA_003547095.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2018-09-12	156576535.0	Genbank reference genome, scaffold	left_only
+1982783	Coelotes pickardi tirolensis	no	94021.0										left_only
+2014047	Rhithrogena loyolaea	no	307890.0										left_only
+2045230	Dendrosenecio keniodendron	no	109557.0										left_only
+2267583	Nitzschia perminuta	no	2857.0		GCA_019593585.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-08-13	41156031.0	Genbank reference genome, scaffold	left_only
+2528720	Nitzschia gracilis	no	2857.0		GCA_019593585.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2021-08-13	41156031.0	Genbank reference genome, scaffold	left_only
+2578536	Eukiefferiella minor	no	288843.0										left_only
+2604012	Rhabdiopteryx alpina	no	2014063.0										left_only
+2707515	Baccharis racemosa	no	41487.0										left_only
+2717729	Habroleptoides berthelemyi	no	446376.0										left_only
+2864982	Nebria germarii	no	60834.0		GCA_944738965.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-07-13	241909001.0	Genbank reference genome, chromosome	left_only
+2864982	Nebria germarii	no	60834.0		GCA_944039245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-06-24	256715385.0	Genbank reference genome, chromosome	left_only
+2875554	Atheniella amabillissima	no	2282635.0										left_only
+2881961	Eukiefferiella brevicalcar	no	288843.0										left_only
+2886538	Tipula excisa	no	41043.0		GCA_963556175.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-07	728102519.0	Genbank reference genome, chromosome	left_only
+2886538	Tipula excisa	no	41043.0		GCA_965151645.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-02-15	1137007198.0	Genbank reference genome, chromosome	left_only
+2886538	Tipula excisa	no	41043.0		GCA_963556165.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-12-07	1204747486.0	Genbank reference genome, chromosome	left_only
+2886538	Tipula excisa	no	41043.0		GCA_963932295.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-02-07	701319157.0	Genbank reference genome, chromosome	left_only
+2886538	Tipula excisa	no	41043.0		GCA_965197115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-10	599163531.0	Genbank reference genome, chromosome	left_only
+2886538	Tipula excisa	no	41043.0		GCA_951394425.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-06-16	692206499.0	Genbank reference genome, chromosome	left_only
+2886538	Tipula excisa	no	41043.0		GCA_958295665.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-07-06	1272252786.0	Genbank reference genome, chromosome	left_only
+2891110	Bembidion fellmanni	no	60800.0										left_only
+2961521	Maraenobiotus insignipes	no	1795229.0										left_only
+2998212	Camisia foveolata	no	198256.0		GCA_034694065.1	SOURCE_DATABASE_GENBANK	Contig	reference genome	current	2023-12-27	373715713.0	Genbank reference genome, contig	left_only
+3040858	Diamesa davisi	no	338156.0		GCA_975301275.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-13	104918785.0	Genbank reference genome, chromosome	left_only
+3040858	Diamesa davisi	no	338156.0		GCA_975302115.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	98976556.0	Genbank reference genome, chromosome	left_only
+3040858	Diamesa davisi	no	338156.0		GCA_975301885.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-10-04	104481022.0	Genbank reference genome, chromosome	left_only
+3123227	Svalbardia bicuspidata	no	1250648.0										left_only
+3123433	Rhyacophila angelieri	no	177632.0		GCA_022495005.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-07	1086872238.0	Genbank reference genome, scaffold	left_only
+3123433	Rhyacophila angelieri	no	177632.0		GCA_022683975.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-03-23	565818603.0	Genbank reference genome, scaffold	left_only
+3135909	Meridion circulare	no	1490962.0										left_only
