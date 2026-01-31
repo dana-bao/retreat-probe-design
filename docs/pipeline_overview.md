@@ -90,9 +90,7 @@ output files:
 ``` 
 From the test runs, it can be inferred that the output file size shares a relatively linear relationship with coverages. This is later used as a reference to infer the appropriate coverage to avoid storage issue.  
 To acquire the optimal coverage, we assume that read assignment follows a poisson distribution and calculate as follow: 
-$$
-C = - \ln\!\left(1 - P^{L/G}\right)
-$$
+$C = - \ln\!\left(1 - P^{L/G}\right)$
 Where L is average length of reads, G is genome assembly length, and P is the probability of genome covered entirely.  
 Longest assemblies are sorted using `long_assemblies_sort.sh`. Outputs are as follow:
 ``` 
