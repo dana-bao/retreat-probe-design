@@ -68,6 +68,7 @@ perl ./gargammel.pl -c 1 -f ./src/sizefreq.size.gz -matfile ./src/matrices/singl
 * `-f`: file containing list of frequency of different fragment sizes
 * `-matfile`: matrix file containing substitution misincorporation due to deamination
 * `-o`: specify output directory and file name
+
 As empirical evidence of for frequency and deamination of aeDNA in glacial retreat context is lacking, precalculated values provided by gargammel based on chosen studies are used (`sizefreq.size.gz` and `src/matrices/`).  
 
 Gargammel read simulation adopts a structure similar to sequencing for generating reads from reference genome, instead of using deterministic, tiling approach. Therefore, to ensure the reads to cover as much of the full assemblies as possible without compromising memory space and efficiency, test runs with different coverage is done with one specific assembly, `GCA_000239015.2`.  
@@ -90,7 +91,7 @@ output files:
 ``` 
 From the test runs, it can be inferred that the output file size shares a relatively linear relationship with coverages. This is later used as a reference to infer the appropriate coverage to avoid storage issue.  
 To acquire the optimal coverage, we assume that read assignment follows a poisson distribution and calculate as follow: 
-$C = - \ln\!\left(1 - P^{L/G}\right)$
+$C = - \ln\left(1 - P^{L/G}\right)$
 Where L is average length of reads, G is genome assembly length, and P is the probability of genome covered entirely.  
 Longest assemblies are sorted using `long_assemblies_sort.sh`. Outputs are as follow:
 ``` 
