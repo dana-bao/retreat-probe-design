@@ -1,0 +1,8 @@
+
+# Large local data
+/data/
+*.fasta
+*.fna
+*.fastq
+*.fq
+*.gz
