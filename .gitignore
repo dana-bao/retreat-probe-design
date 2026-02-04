@@ -1,14 +1,20 @@
+# macOS
+.DS_Store
+
 # R / RStudio
-.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
+.Rproj.user/
+*.Rproj
 
-# Large local data
+# IDEs
+.idea/
+
+# Large local data / sequencing files
 /data/
 *.fasta
 *.fna
 *.fastq
 *.fq
 *.gz
-
