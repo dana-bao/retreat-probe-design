@@ -193,6 +193,22 @@ left_only_rows = left_only_rows.merge(
 
 final = pd.concat([other_rows, left_only_rows], ignore_index=True)
 
+# if a species still has more than 1 assemblies, keep the one with the longest total length
+final["Assembly Stats Total Sequence Length"] = pd.to_numeric(
+    final["Assembly Stats Total Sequence Length"],
+    errors="coerce"
+)
+
+final = (
+    final.sort_values(
+        by=["Species Taxonomic ID", "Assembly Stats Total Sequence Length"],
+        ascending=[True, False]
+    )
+    .drop_duplicates(subset=["Species Taxonomic ID"], keep="first")
+    .reset_index(drop=True)
+)
+
+
 final = final[[
     "Species Taxonomic ID",
     "Species Name",
