@@ -3,7 +3,7 @@ This document contains approaches that was attempted but failed or deemed inappr
 **Genome Assemblies Acquisition**
 Acquiring only species level assembly without falling back to genus level was attempted, but later discarded due to the low number of assemblies acquired. 
 
-**Genome Assemblies Acquisition**
+**Ancient DNA Read Simulation**
 To simulate ancient DNA reads from modern assemblies, gargammel was attempted.  
 
 Reorganize the downloaded assemblies using:
@@ -65,9 +65,28 @@ Longest assemblies are sorted using `long_assemblies_sort.sh`. Outputs are as fo
 ``` 
 Considering the storage limit of 1T for this project, risk of overflowing the storage space exists. Additionally, even with a high coverage, there is no guarantee that the final read set will cover the entire genome. Therefore, a deterministic tiling approach was adopted instead. 
 
-Attempted running all 84 assemblies in parallel using `run_tiling_array.sbatch`, while the storage limit was not reached, further processing are difficult due to limited headroom. Therefore, batch processing was adopted instead. 
+As there is limited storage, an effort to split the assemblies into different batches for tiling was made. Assemblies selected for each batch was based on total_seq_length and test runs.  
+This is then run with `slurm_tile.sbatch` using:
+```
+BATCH=batches/batch_XXX.list
+N=$(wc -l < "$BATCH")
+sbatch --array=1-"$N"%6 slurm_tile.sbatch "$BATCH"
+```
+where `batch_XXX.list` contains the list of assemblies directories for this particular batch.  
 
+However, this greatly compromised downstream analysis as the newest release of Kraken2 core_nt database also requires 316.2G storage, and splitting into multiple batches will require much more rounds of processing.  
+Extra research storage space was thus used, allowing for parallel processing of all 84 assemblies.  
 
+**Reassigning Reads with Taxonomic Identification Algorithms**
+When running Kraken2 with core_nt database on Cambridge HPC using SL-3 account, as core_nt database exceed the RAM limit, parameter `--memory-mapping` was used, which allows Kraken2 to search for alignments without loading the entire database into RAM.  
+However, this requires Kraken2 to frequently load and reload pages during processing, which greatly reduced its efficiency.  
+As an effort to overcome this, running it in parallel on smaller files split from the orignal read files was attempted using `kraken.sbatch`.  
+There were little to no improvements in processing efficiency. A node with higher RAM limit was thus borrowed to run without using `--memory-mapping`.  
 
+When merging and sorting bam files produced by bowtie2, the bowtie2 index was built from the full core_nt database. Each shard alignment BAM file therefore carries @SQ header lines for every reference in the database. When these BAMs are subsequently merged, the combined header exceeds bam format header limits for species with more reads.  
 
+The first attempted approach in `bamsort.sbatch` used the standard `samtools merge` followed by `samtools sort -n -O bam` pipeline, outputting a `.merged.sorted.bam` file. This failed because writing a valid BAM file requires encoding all @SQ headers in a binary block, and the sheer number of references from core_nt caused this block to overflow samtools' limits.  
 
+The second attempted approach in `bamsort_sam.sbatch` avoided BAM format by extracting the header from one BAM with `samtools view -H`, streaming reads by looping through each input BAM with `samtools view`, and piping the combined stream through `samtools sort -n -O SAM` before gzipping to `.merged.sorted.sam.gz`. This bypassed writing a BAM-format output file, but `samtools sort` still creates intermediate temporary BAM files internally during its merge-sort passes, making it subject to the same header size constraint.   
+
+Thus, `bamsort_merge_sam.sbatch` was used to resolve this issue by replacing `samtools sort` with GNU `sort`, which operates on plain text and creates no BAM temp files.  

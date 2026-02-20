@@ -56,7 +56,7 @@ To simulate ancient DNA reads from modern assemblies, `aeDNA_simulation.py` is d
 * `--deamination`: adding deamination damage that turns C to T at the firt 3bp of the 5' end of each tiled read
 * `--mutation`: adding 1bp of mutation at the center of the read (e.g. bp 26 for the default 52bp length)
 * `--seed`: setting randomize seed, only when testing
-* `--wrap`: output fasta file wrapping, suitable for long tiled reads, default 80bp
+* `--wrap`: output FASTA file wrapping, suitable for long tiled reads, default 80bp
 
 for the purpose of this project, parameters used are as follow:
 ```
@@ -74,22 +74,95 @@ wc -l assemblies.list
 head assemblies.list
 ``` 
 
-As there is limited storage, the assemblies are split into different batches for tiling. Assemblies selected for each batch is based on total_seq_length and test runs.  
-This is then run with `slurm_tile.sbatch` using:
+All 84 assemblies were tiled in parallel using `run_tiling_array.sbatch`.  
+Sample tiling output is in `1118155.fasta`.  
+
+**Reassigning Reads with Taxonomic Identification Algorithms**
+An existing, wildly adopted taxonomic identification tools, Kraken2, is first used. 
+Kraken2 core_nt database is chosen as the reference database for the purpose of this project.  
+Prebuild core_nt database is acquired from Kraken 2 index zone. It is subsequently run using `sbatch_mom2.sh` with the following relevant parameters: 
+``` 
+kraken2 \
+  --db cort_nt \
+  --threads 48 \
+  --confidence 0.05 \
+  --report-minimizer-data \
+  --report species_id.c0.2.report.txt" \
+  --output species_id.c0.2.kraken.out" \
+``` 
+* `--db`: reference database
+* `--threads`: number of cpus exploited
+* `--confidence`: threshold for fraction of k-mers supporting the classification, otherwise considered unclassified
+* `--report-minimizer-data`: report minimizer and distinct minimizer count information
+* `--report`: return summary report
+* `--output`: return output
+
+Sample Kraken2 output can be found in `kraken2_sample_output`.  
+
+To evaluate the best confidence threshold, 4 different values (0, 0.05, 0.1, 0.2) are tested on 10 sample species selected to represent the diversity of glacial retreat taxa composition.  The resulting kraken2 outputs are compared on their sensitivity (percentage of correctly assigned reads out of all reads) and precision (percentage of correctly assigned reads out of all classified reads) using f1 score calculated in `kraken_eval.py`. The 10 sample species can be found in `sample_10_species.txt`, with evaluation results in `kraken_eval.csv`. For this speicfic project, the most ideal confidence threshold have been identified as 0.05 and is adopted for further processing.  
+
+The Kraken2 outputs are filtered to only include reads with a correct genus level assignment using `kraken_filter.py`. Sample output can be found in `129212_task1.k2.0.05.core_nt.correct_genus.out`.  
+
+In addition, an in-house competitive mapping pipeline is used to compare the quality of resulting probes.  
+The pipeline requires bowtie2. To ensure that bowtie2 uses the same database as Kraken2, NCBI BLAST core_nt is acquired and converted to FASTA files via BLAST: 
+``` 
+update_blastdb.pl --decompress core_nt
+blastdbcmd -db core_nt -entry all -out core_nt.fasta
+``` 
+Bowtie2 database is then built and indexed using `bowtie2_index.sbatch`.  
+Alignment is done using `bowtie2_run.sbatch`, where each array task aligns one FASTA file against one database shard. An example command with relevant parameters for a single task is:
 ```
-BATCH=batches/batch_XXX.list
-N=$(wc -l < "$BATCH")
-sbatch --array=1-"$N"%6 slurm_tile.sbatch "$BATCH"
+bowtie2 -p 16 -k 100 -x core_nt.00 -f -U species.fasta --no-unal 2> logfile | samtools view -@ 16 -b -o tmp_bam -
 ```
-where `batch_XXX.list` contains the list of assemblies directories for this particular batch.  
-Sample tiling output is in `1118155.fasta`
+* `-p`: number of threads
+* `-k`: maximum number of alignments to report per read
+* `-x`: bowtie2 index prefix (one shard of core_nt)
+* `-f`: input in FASTA format
+* `-U`: unpaired input reads
+* `--no-unal`: suppress unaligned reads in output
+* `-@` (samtools): number of threads for BAM compression
+* `-b` (samtools): output in BAM format
+* `-o` (samtools): output file path
 
+After bowtie2 alignment, the output BAM files are merged and name-sorted with `bamsort.sbatch`. For species with more aligned reads, the merged BAM header can exceed the BAM format limit; `bamsort_merge_sam.sbatch` is used for these species instead, streaming reads from each BAM individually with `samtools view` rather than `samtools merge`, and sorting with GNU sort, outputting gzip-compressed SAM to bypass the limit.  
 
+ngsLCA is then run on the sorted files with `ngslca.sbatch`. An example command with relevant parameters for a single species is:
+```
+ngsLCA \
+    -simscorelow 0.95 \
+    -simscorehigh 1.0 \
+    -fix-ncbi 0 \
+    -names names.dmp \
+    -nodes nodes.dmp \
+    -acc2tax nucl_gb.accession2taxid \
+    -bam species_id.merged.sorted.bam \
+    -outnames species_id
+```
+* `-simscorelow`: minimum alignment similarity score to consider a read
+* `-simscorehigh`: maximum alignment similarity score to consider a read
+* `-fix-ncbi`: whether to apply NCBI-specific accession fixes (0 = off)
+* `-names`: NCBI taxonomy names file
+* `-nodes`: NCBI taxonomy nodes file
+* `-acc2tax`: accession-to-taxid mapping file
+* `-bam`: input name-sorted BAM or SAM file
+* `-outnames`: prefix for output files
 
+Bamdam is then run on the ngsLCA outputs with `bamdam.sbatch` to filter the BAM and LCA files down to reads assigned at genus level or below. An example command with relevant parameters is:
+```
+bamdam shrink \
+    --in_bam species_id.merged.sorted.bam \
+    --in_lca species_id.lca \
+    --out_bam species_id.shrunk.bam \
+    --out_lca species_id.shrunk.lca \
+    --stranded ss \
+    --upto genus
+```
+* `--in_bam`: input name-sorted BAM file
+* `--in_lca`: input LCA file from ngsLCA
+* `--out_bam`: output filtered BAM
+* `--out_lca`: output filtered LCA
+* `--stranded`: library strandedness (`ss` = single-stranded)
+* `--upto`: taxonomic rank to filter reads up to
 
+For species with sorted file in `.sam.gz` format, the script first converts it to BAM with `samtools view`, as bamdam requires BAM input.  
 
-
-cd hit
-kraken2
-
-The running process is then done using `run_tiling_array.sbatch`.  
