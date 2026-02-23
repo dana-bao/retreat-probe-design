@@ -1,0 +1,212 @@
+target_taxid	organism_taxid	assembly_accession	note
+2996	2996	GCA_900617105.1	species_level
+4959	4959	GCA_024256405.1	species_level
+27898			no_assembly
+28933			no_assembly
+28935			no_assembly
+29672			no_assembly
+29771	29771	GCA_032718425.1	species_level
+32119	32119	GCA_033807815.1	species_level
+36063	76867	GCA_000827355.1	genus_representative
+39862	37657	GCF_048544455.1	genus_representative
+42846	35523	GCF_021234035.1	genus_representative
+46319			no_assembly
+50452	50452	GCA_900128785.1	species_level
+52153	464072	GCA_051419415.1	genus_representative
+56490	370292	GCA_014904855.1	genus_representative
+62722	576137	GCA_900073065.1	genus_representative
+74982	330961	GCA_032207245.1	genus_representative
+74988	330961	GCA_032207245.1	genus_representative
+74994	330961	GCA_032207245.1	genus_representative
+77067	1413687	GCA_040801865.1	genus_representative
+81839			no_assembly
+83410	102714	GCA_965199075.1	genus_representative
+85263	102714	GCA_965199075.1	genus_representative
+85710	878211	GCA_944039245.1	genus_representative
+87701	93036	GCA_026929855.1	genus_representative
+88642	88642	GCA_964257585.1	species_level
+92075			no_assembly
+93036	93036	GCA_026929855.1	species_level
+95767			no_assembly
+97227			no_assembly
+102714	102714	GCA_965199075.1	species_level
+111071	72781	GCF_003651465.1	genus_representative
+122554			no_assembly
+127563	127563	GCA_002887195.1	species_level
+128766			no_assembly
+128767			no_assembly
+129212	129212	GCA_048933195.1	species_level
+134639	585988	GCA_973350105.1	genus_representative
+135145	135145	GCA_048127345.1	species_level
+138601			no_assembly
+139363	1448309	GCA_014904985.1	genus_representative
+140628			no_assembly
+140813	241230	GCF_964058835.1	genus_representative
+157178	13291	GCA_905071765.1	genus_representative
+157520	73102	GCA_046119095.1	genus_representative
+159298			no_assembly
+164537	164540	GCA_031472005.1	genus_representative
+168919			no_assembly
+175055	175095	GCA_965240305.1	genus_representative
+176815	152972	GCA_965121685.1	genus_representative
+184082			no_assembly
+184104	174074	GCA_947623385.2	genus_representative
+185980	2109649	GCA_900642245.1	genus_representative
+186513	878211	GCA_944039245.1	genus_representative
+186720	258209	GCA_963556465.1	genus_representative
+187635	187635	GCA_034696425.1	species_level
+199609	2890055	GCA_964267185.3	genus_representative
+204742			no_assembly
+212688			no_assembly
+214434			no_assembly
+216617			no_assembly
+220395	878211	GCA_944039245.1	genus_representative
+220402	878211	GCA_944039245.1	genus_representative
+221504			no_assembly
+223866	259893	GCA_030686995.1	genus_representative
+226588	2822767	GCA_965233645.1	genus_representative
+229869	229869	GCA_034700625.1	species_level
+230722			no_assembly
+242528	242528	GCA_046244935.1	species_level
+245077			no_assembly
+271024			no_assembly
+271547			no_assembly
+282750			no_assembly
+284366	284366	GCA_053567975.1	species_level
+284592	284592	GCF_000006445.2	species_level
+285081			no_assembly
+286097	8386	GCA_900303285.2	genus_representative
+287373	287373	GCA_964261585.1	species_level
+299780	43171	GCA_948329865.1	genus_representative
+303395			no_assembly
+304816			no_assembly
+309942	30195	GCF_910591885.1	genus_representative
+315203			no_assembly
+315524			no_assembly
+324491			no_assembly
+327266	492533	GCA_022651775.1	genus_representative
+328905	1521163	GCA_977112325.1	genus_representative
+332565			no_assembly
+338686			no_assembly
+338688			no_assembly
+342899			no_assembly
+344590	486041	GCF_000143565.1	genus_representative
+346724	866018	GCA_030264155.1	genus_representative
+350623	350623	GCA_018257865.1	species_level
+357475	3469	GCF_003573695.1	genus_representative
+362598			no_assembly
+370026	370026	GCA_034695115.1	species_level
+370683	175095	GCA_965240305.1	genus_representative
+391068			no_assembly
+395313	1413687	GCA_040801865.1	genus_representative
+397257			no_assembly
+408822	569365	GCF_000835495.1	genus_representative
+410632	169227	GCA_964106765.1	genus_representative
+415614			no_assembly
+426662			no_assembly
+428162	989334	GCA_026119855.1	genus_representative
+431330			no_assembly
+431333			no_assembly
+431400			no_assembly
+431577			no_assembly
+431585			no_assembly
+439840			no_assembly
+441507	143735	GCA_934045905.1	genus_representative
+450006			no_assembly
+466727	466727	GCA_003287335.1	species_level
+467821	2822767	GCA_965233645.1	genus_representative
+475014	475003	GCA_954870475.1	genus_representative
+484033	492533	GCA_022651775.1	genus_representative
+525771	1943797	GCA_977013735.1	genus_representative
+596920	152933	GCA_964235335.1	genus_representative
+611450			no_assembly
+611584			no_assembly
+611691			no_assembly
+630096	59018	GCA_946800325.1	genus_representative
+651695			no_assembly
+651987	346753	GCA_965642125.1	genus_representative
+664874			no_assembly
+685684			no_assembly
+707889	707889	GCA_034696835.1	species_level
+749266			no_assembly
+795044	585988	GCA_973350105.1	genus_representative
+795045	585988	GCA_973350105.1	genus_representative
+858854			no_assembly
+903422			no_assembly
+903428			no_assembly
+925971			no_assembly
+984906	984905	GCA_975301275.1	genus_representative
+1042862	984905	GCA_975301275.1	genus_representative
+1085736	3097545	GCA_054135205.1	genus_representative
+1091530	73102	GCA_046119095.1	genus_representative
+1107644			no_assembly
+1118155	1118155	GCA_000239015.2	species_level
+1149905	878211	GCA_944039245.1	genus_representative
+1177201	878211	GCA_944039245.1	genus_representative
+1250597	128015	GCA_051820355.1	genus_representative
+1267525			no_assembly
+1293966	1293975	GCA_033070095.1	genus_representative
+1351830	210355	GCA_965153245.1	genus_representative
+1355900	984905	GCA_975301275.1	genus_representative
+1385497	102714	GCA_965199075.1	genus_representative
+1395542	63632	GCA_052724335.1	genus_representative
+1398205	346812	GCA_965642445.1	genus_representative
+1405138			no_assembly
+1435664			no_assembly
+1448309	1448309	GCA_014904985.1	species_level
+1483593			no_assembly
+1483842	414939	GCA_051122355.1	genus_representative
+1485667			no_assembly
+1501873			no_assembly
+1532265	118891	GCA_965615755.1	genus_representative
+1534596	23028	GCA_966183415.1	genus_representative
+1553251			no_assembly
+1553348			no_assembly
+1553373			no_assembly
+1553385			no_assembly
+1553407			no_assembly
+1553531			no_assembly
+1553643			no_assembly
+1553662	153785	GCA_977071015.1	genus_representative
+1553837			no_assembly
+1577080			no_assembly
+1659357			no_assembly
+1659903			no_assembly
+1678822			no_assembly
+1715899	368684	GCA_965199305.1	genus_representative
+1751537	984905	GCA_975301275.1	genus_representative
+1751540	984905	GCA_975301275.1	genus_representative
+1751541			no_assembly
+1751544			no_assembly
+1753982	303400	GCA_019593585.1	genus_representative
+1780255			no_assembly
+1790224			no_assembly
+1795230			no_assembly
+1875977	1875977	GCA_022683975.1	species_level
+1875987	177636	GCA_022495005.1	genus_representative
+1876357			no_assembly
+1886436	85882	GCA_965637395.1	genus_representative
+1926177			no_assembly
+1963269	1348612	GCA_003547095.1	genus_representative
+1982783			no_assembly
+2014047			no_assembly
+2045230			no_assembly
+2267583	303400	GCA_019593585.1	genus_representative
+2528720	303400	GCA_019593585.1	genus_representative
+2578536			no_assembly
+2604012			no_assembly
+2707515			no_assembly
+2717729			no_assembly
+2864982	878211	GCA_944039245.1	genus_representative
+2875554			no_assembly
+2881961			no_assembly
+2886538	2741129	GCA_958295665.1	genus_representative
+2890055	2890055	GCA_964267185.3	species_level
+2891110			no_assembly
+2905844	2905844	GCA_034694025.1	species_level
+2961521			no_assembly
+2998212	198258	GCA_034694065.1	genus_representative
+3040858	984905	GCA_975301275.1	genus_representative
+3123227			no_assembly
+3123433	177636	GCA_022495005.1	genus_representative
+3135909			no_assembly

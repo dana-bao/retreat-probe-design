@@ -1,15 +1,18 @@
 '''
-Filter Kraken2 .out file to keep only reads correctly classified at genus level.
+Filter Kraken2 .out file to keep reads classified at genus level.
 
-Keeps a read if: 
-  1. Classified
-  2. Assigned taxid is at genus level or below
-  3. Assigned genus matches the true genus encoded in the read name
+Produces two output files per input:
+  1. correct_genus.out, which contain reads assigned to the correct genus (strict filter):
+       1. Classified
+       2. Assigned taxid is at genus level or below
+       3. Assigned genus matches the true genus encoded in the read name
+  2. genus_level.out, which contain reads assigned to any genus (relaxed filter, analogous to bamdam --upto genus):
+       1. Classified
+       2. Assigned taxid is at genus level or below
+       (genus does not need to match true genus)
 
 Read names expected in format: {true_species_taxid}|{contig}|{tile}|{pos}
 True species taxid is acquired from the filename: {species_id}_task{N}.k2.{conf}.core_nt.out
-
-Output files are named: {species_id}_task{N}.k2.{conf}.core_nt.correct_genus.out
 '''
 
 import argparse
@@ -67,8 +70,8 @@ def get_genus_taxid(taxid, taxonomy):
     _genus_cache[taxid] = result
     return result
 
-# filter based on the 3 criteria described on top
-def filter_file(in_file, out_file, taxonomy, true_species_taxid):
+# filter based on the criteria described on top, writing two output files
+def filter_file(in_file, out_correct, out_genus, taxonomy, true_species_taxid):
     true_genus = get_genus_taxid(true_species_taxid, taxonomy)
     if true_genus is None:
         print(f"  WARNING: no genus found for true species {true_species_taxid}", flush=True)
@@ -76,7 +79,7 @@ def filter_file(in_file, out_file, taxonomy, true_species_taxid):
     counts = {"total": 0, "unclassified": 0, "above_genus": 0,
               "correct_genus": 0, "wrong_genus": 0}
 
-    with open(in_file) as fin, open(out_file, "w") as fout:
+    with open(in_file) as fin, open(out_correct, "w") as fout_correct, open(out_genus, "w") as fout_genus:
         for line in fin:
             counts["total"] += 1
 
@@ -96,9 +99,11 @@ def filter_file(in_file, out_file, taxonomy, true_species_taxid):
                 counts["above_genus"] += 1
             elif assigned_genus == true_genus:
                 counts["correct_genus"] += 1
-                fout.write(line)
+                fout_correct.write(line)
+                fout_genus.write(line)
             else:
                 counts["wrong_genus"] += 1
+                fout_genus.write(line)
 
     return counts
 
@@ -136,16 +141,21 @@ def main():
     print(f"Found {len(files)} files to process.", flush=True)
 
     for species_id, confidence, fname, filepath in files:
-        out_fname = fname.replace(".core_nt.out", ".core_nt.correct_genus.out")
-        out_path  = os.path.join(args.out_dir, out_fname)
+        out_correct_fname = fname.replace(".core_nt.out", ".core_nt.correct_genus.out")
+        out_correct_path  = os.path.join(args.out_dir, out_correct_fname)
+        out_genus_fname   = fname.replace(".core_nt.out", ".core_nt.genus_level.out")
+        out_genus_path    = os.path.join(args.out_dir, out_genus_fname)
 
-        print(f"  [conf={confidence}] species {species_id} -> {out_fname}", flush=True)
-        counts = filter_file(filepath, out_path, taxonomy, species_id)
+        print(f"  [conf={confidence}] species {species_id} -> {out_correct_fname}, {out_genus_fname}", flush=True)
+        counts = filter_file(filepath, out_correct_path, out_genus_path, taxonomy, species_id)
 
         total   = counts["total"]
         correct = counts["correct_genus"]
-        pct     = 100 * correct / total if total > 0 else 0
-        print(f"    kept {correct:,} / {total:,} reads ({pct:.3f}%)", flush=True)
+        genus   = counts["correct_genus"] + counts["wrong_genus"]
+        pct_correct = 100 * correct / total if total > 0 else 0
+        pct_genus   = 100 * genus   / total if total > 0 else 0
+        print(f"    correct_genus: {correct:,} / {total:,} reads ({pct_correct:.3f}%)", flush=True)
+        print(f"    genus_level:   {genus:,} / {total:,} reads ({pct_genus:.3f}%)", flush=True)
 
 
 if __name__ == "__main__":

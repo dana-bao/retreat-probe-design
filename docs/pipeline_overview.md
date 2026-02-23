@@ -99,9 +99,23 @@ kraken2 \
 
 Sample Kraken2 output can be found in `kraken2_sample_output`.  
 
-To evaluate the best confidence threshold, 4 different values (0, 0.05, 0.1, 0.2) are tested on 10 sample species selected to represent the diversity of glacial retreat taxa composition.  The resulting kraken2 outputs are compared on their sensitivity (percentage of correctly assigned reads out of all reads) and precision (percentage of correctly assigned reads out of all classified reads) using f1 score calculated in `kraken_eval.py`. The 10 sample species can be found in `sample_10_species.txt`, with evaluation results in `kraken_eval.csv`. For this speicfic project, the most ideal confidence threshold have been identified as 0.05 and is adopted for further processing.  
+To evaluate the best confidence threshold, 4 different values (0, 0.05, 0.1, 0.2) are tested on 10 sample species selected to represent the diversity of glacial retreat taxa composition.  The resulting kraken2 outputs are compared on their sensitivity (percentage of correctly assigned reads out of all reads) and precision (percentage of correctly assigned reads out of all classified reads) using f1 score calculated in `kraken_eval.py`. The 10 sample species can be found in `sample_10_species.txt`, with evaluation results in `kraken_eval.csv`. For this speicfic project, the most ideal confidence threshold have been identified as 0.05 and is adopted for further processing.
 
-The Kraken2 outputs are filtered to only include reads with a correct genus level assignment using `kraken_filter.py`. Sample output can be found in `129212_task1.k2.0.05.core_nt.correct_genus.out`.  
+`kraken_eval.py` accepts the following arguments:
+* `--results_dir`: directory containing Kraken2 `.out` files
+* `--nodes`: path to `nodes.dmp` from the Kraken2 database taxonomy
+* `--out`: output CSV file path, default to `kraken_eval.csv`
+
+The Kraken2 outputs are then filtered using `kraken_filter.py`, which produces two output files per input:
+1. `correct_genus.out`: reads classified at genus level or below where the assigned genus matches the true genus encoded in the read name
+2. `genus_level.out`: reads classified at genus level or below regardless of whether the genus is correct
+
+`kraken_filter.py` accepts the following arguments:
+* `--results_dir`: directory containing Kraken2 `.out` files 
+* `--nodes`: path to `nodes.dmp` from the Kraken2 database taxonomy 
+* `--out_dir`: directory to write filtered output files 
+
+Sample output can be found in `129212_task1.k2.0.05.core_nt.correct_genus.out`.
 
 In addition, an in-house competitive mapping pipeline is used to compare the quality of resulting probes.  
 The pipeline requires bowtie2. To ensure that bowtie2 uses the same database as Kraken2, NCBI BLAST core_nt is acquired and converted to FASTA files via BLAST: 
@@ -166,3 +180,47 @@ bamdam shrink \
 
 For species with sorted file in `.sam.gz` format, the script first converts it to BAM with `samtools view`, as bamdam requires BAM input.  
 
+**FASTA Extraction from Taxonomic Assignment Results**
+To prepare reads for probe design, the shrunk BAM files are converted to FASTA format using `bamdam_to_fasta.sbatch`. The script dynamically discovers all completed shrunk BAMs and extracts one FASTA record per read, skipping secondary and supplementary alignments:
+```
+samtools fasta \
+    -F 2304 \
+    -@ 4 \
+    species_id.shrunk.bam \
+    > species_id.shrunk.fasta
+```
+* `-F 2304`: exclude secondary (flag 256) and supplementary (flag 2048) alignments, ensuring one record per read
+* `-@`: number of threads for decompression
+
+Output FASTA files are written to `bamdam_fasta/`. The script skips species whose output FASTA already exists, so it can be safely rerun as new shrunk BAMs become available.  
+
+
+
+**Database Coverage Check**
+To ensure a fair comparison between the competitive mapping (ngsLCA) and Kraken2 pipelines, only species represented in both databases are used. If a species is absent from one database, reads from that species cannot be classified regardless of probe quality, introducing bias in the comparison. This is done using `check_db_coverage.py`, which first checks for the list of representative species taxid by referring to `all_availability.tsv` and `genus_metadata.tsv`: 
+```
+python3 check_db_coverage.py \
+  --all_avail data/all_availability.tsv \
+  --genus_meta data/genus_metadata.tsv \
+  --out_dir data/
+```
+Outputs `organism_taxid_mapping.tsv` and `organism_taxids_to_check.txt` are then compared to ngsLCA and Kraken2 accession-taxid metadata: 
+```
+awk 'NR==FNR{t[$1]=1;next} $3 in t {print $3}' \
+  organism_taxids_to_check.txt \
+  nucl_gb.accession2taxid \
+  | sort -u > in_ngslca.txt
+
+awk '$1>0 {print $5}' inspect.txt | sort -u > kraken2_all_taxids.txt
+grep -Fwf organism_taxids_to_check.txt kraken2_all_taxids.txt | sort -u > in_kraken2.txt
+```
+`check_db_coverage.py` are then run again with the ngslca and kraken2 comparison results: 
+```
+python3 check_db_coverage.py \
+  --all_avail data/all_availability.tsv \
+  --genus_meta data/genus_metadata.tsv \
+  --out_dir data/ \
+  --in_ngslca data/in_ngslca.txt \
+  --in_kraken data/in_kraken2.txt
+```
+Outputs `db_coverage.tsv` with per-species database presence flags, and `species_in_both_dbs.txt` listing target taxids found in both databases. Only species in `species_in_both_dbs.txt` are used for downstream pipeline comparison.  

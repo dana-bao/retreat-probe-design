@@ -1,0 +1,212 @@
+target_taxid	organism_taxid	assembly_accession	note	in_ngslca	in_kraken2	in_both
+2996	2996	GCA_900617105.1	species_level	True	False	False
+4959	4959	GCA_024256405.1	species_level	True	False	False
+27898			no_assembly	False	False	False
+28933			no_assembly	False	False	False
+28935			no_assembly	False	False	False
+29672			no_assembly	False	False	False
+29771	29771	GCA_032718425.1	species_level	True	False	False
+32119	32119	GCA_033807815.1	species_level	True	False	False
+36063	76867	GCA_000827355.1	genus_representative	True	False	False
+39862	37657	GCF_048544455.1	genus_representative	True	True	True
+42846	35523	GCF_021234035.1	genus_representative	True	True	True
+46319			no_assembly	False	False	False
+50452	50452	GCA_900128785.1	species_level	True	False	False
+52153	464072	GCA_051419415.1	genus_representative	True	False	False
+56490	370292	GCA_014904855.1	genus_representative	True	False	False
+62722	576137	GCA_900073065.1	genus_representative	True	False	False
+74982	330961	GCA_032207245.1	genus_representative	True	False	False
+74988	330961	GCA_032207245.1	genus_representative	True	False	False
+74994	330961	GCA_032207245.1	genus_representative	True	False	False
+77067	1413687	GCA_040801865.1	genus_representative	True	False	False
+81839			no_assembly	False	False	False
+83410	102714	GCA_965199075.1	genus_representative	True	False	False
+85263	102714	GCA_965199075.1	genus_representative	True	False	False
+85710	878211	GCA_944039245.1	genus_representative	True	False	False
+87701	93036	GCA_026929855.1	genus_representative	True	False	False
+88642	88642	GCA_964257585.1	species_level	True	False	False
+92075			no_assembly	False	False	False
+93036	93036	GCA_026929855.1	species_level	True	False	False
+95767			no_assembly	False	False	False
+97227			no_assembly	False	False	False
+102714	102714	GCA_965199075.1	species_level	True	False	False
+111071	72781	GCF_003651465.1	genus_representative	True	True	True
+122554			no_assembly	False	False	False
+127563	127563	GCA_002887195.1	species_level	True	False	False
+128766			no_assembly	False	False	False
+128767			no_assembly	False	False	False
+129212	129212	GCA_048933195.1	species_level	True	False	False
+134639	585988	GCA_973350105.1	genus_representative	True	False	False
+135145	135145	GCA_048127345.1	species_level	True	False	False
+138601			no_assembly	False	False	False
+139363	1448309	GCA_014904985.1	genus_representative	False	False	False
+140628			no_assembly	False	False	False
+140813	241230	GCF_964058835.1	genus_representative	True	False	False
+157178	13291	GCA_905071765.1	genus_representative	True	False	False
+157520	73102	GCA_046119095.1	genus_representative	True	False	False
+159298			no_assembly	False	False	False
+164537	164540	GCA_031472005.1	genus_representative	True	False	False
+168919			no_assembly	False	False	False
+175055	175095	GCA_965240305.1	genus_representative	True	False	False
+176815	152972	GCA_965121685.1	genus_representative	True	False	False
+184082			no_assembly	False	False	False
+184104	174074	GCA_947623385.2	genus_representative	True	False	False
+185980	2109649	GCA_900642245.1	genus_representative	True	False	False
+186513	878211	GCA_944039245.1	genus_representative	True	False	False
+186720	258209	GCA_963556465.1	genus_representative	True	False	False
+187635	187635	GCA_034696425.1	species_level	True	False	False
+199609	2890055	GCA_964267185.3	genus_representative	True	False	False
+204742			no_assembly	False	False	False
+212688			no_assembly	False	False	False
+214434			no_assembly	False	False	False
+216617			no_assembly	False	False	False
+220395	878211	GCA_944039245.1	genus_representative	True	False	False
+220402	878211	GCA_944039245.1	genus_representative	True	False	False
+221504			no_assembly	False	False	False
+223866	259893	GCA_030686995.1	genus_representative	True	False	False
+226588	2822767	GCA_965233645.1	genus_representative	True	False	False
+229869	229869	GCA_034700625.1	species_level	True	False	False
+230722			no_assembly	False	False	False
+242528	242528	GCA_046244935.1	species_level	True	False	False
+245077			no_assembly	False	False	False
+271024			no_assembly	False	False	False
+271547			no_assembly	False	False	False
+282750			no_assembly	False	False	False
+284366	284366	GCA_053567975.1	species_level	True	False	False
+284592	284592	GCF_000006445.2	species_level	True	False	False
+285081			no_assembly	False	False	False
+286097	8386	GCA_900303285.2	genus_representative	True	False	False
+287373	287373	GCA_964261585.1	species_level	True	False	False
+299780	43171	GCA_948329865.1	genus_representative	True	False	False
+303395			no_assembly	False	False	False
+304816			no_assembly	False	False	False
+309942	30195	GCF_910591885.1	genus_representative	True	False	False
+315203			no_assembly	False	False	False
+315524			no_assembly	False	False	False
+324491			no_assembly	False	False	False
+327266	492533	GCA_022651775.1	genus_representative	True	False	False
+328905	1521163	GCA_977112325.1	genus_representative	True	False	False
+332565			no_assembly	False	False	False
+338686			no_assembly	False	False	False
+338688			no_assembly	False	False	False
+342899			no_assembly	False	False	False
+344590	486041	GCF_000143565.1	genus_representative	True	True	True
+346724	866018	GCA_030264155.1	genus_representative	True	False	False
+350623	350623	GCA_018257865.1	species_level	True	False	False
+357475	3469	GCF_003573695.1	genus_representative	True	True	True
+362598			no_assembly	False	False	False
+370026	370026	GCA_034695115.1	species_level	True	False	False
+370683	175095	GCA_965240305.1	genus_representative	True	False	False
+391068			no_assembly	False	False	False
+395313	1413687	GCA_040801865.1	genus_representative	True	False	False
+397257			no_assembly	False	False	False
+408822	569365	GCF_000835495.1	genus_representative	True	True	True
+410632	169227	GCA_964106765.1	genus_representative	True	False	False
+415614			no_assembly	False	False	False
+426662			no_assembly	False	False	False
+428162	989334	GCA_026119855.1	genus_representative	True	False	False
+431330			no_assembly	False	False	False
+431333			no_assembly	False	False	False
+431400			no_assembly	False	False	False
+431577			no_assembly	False	False	False
+431585			no_assembly	False	False	False
+439840			no_assembly	False	False	False
+441507	143735	GCA_934045905.1	genus_representative	True	False	False
+450006			no_assembly	False	False	False
+466727	466727	GCA_003287335.1	species_level	True	False	False
+467821	2822767	GCA_965233645.1	genus_representative	True	False	False
+475014	475003	GCA_954870475.1	genus_representative	True	False	False
+484033	492533	GCA_022651775.1	genus_representative	True	False	False
+525771	1943797	GCA_977013735.1	genus_representative	True	False	False
+596920	152933	GCA_964235335.1	genus_representative	True	False	False
+611450			no_assembly	False	False	False
+611584			no_assembly	False	False	False
+611691			no_assembly	False	False	False
+630096	59018	GCA_946800325.1	genus_representative	True	False	False
+651695			no_assembly	False	False	False
+651987	346753	GCA_965642125.1	genus_representative	True	False	False
+664874			no_assembly	False	False	False
+685684			no_assembly	False	False	False
+707889	707889	GCA_034696835.1	species_level	True	False	False
+749266			no_assembly	False	False	False
+795044	585988	GCA_973350105.1	genus_representative	True	False	False
+795045	585988	GCA_973350105.1	genus_representative	True	False	False
+858854			no_assembly	False	False	False
+903422			no_assembly	False	False	False
+903428			no_assembly	False	False	False
+925971			no_assembly	False	False	False
+984906	984905	GCA_975301275.1	genus_representative	True	False	False
+1042862	984905	GCA_975301275.1	genus_representative	True	False	False
+1085736	3097545	GCA_054135205.1	genus_representative	True	False	False
+1091530	73102	GCA_046119095.1	genus_representative	True	False	False
+1107644			no_assembly	False	False	False
+1118155	1118155	GCA_000239015.2	species_level	False	False	False
+1149905	878211	GCA_944039245.1	genus_representative	True	False	False
+1177201	878211	GCA_944039245.1	genus_representative	True	False	False
+1250597	128015	GCA_051820355.1	genus_representative	True	True	True
+1267525			no_assembly	False	False	False
+1293966	1293975	GCA_033070095.1	genus_representative	True	False	False
+1351830	210355	GCA_965153245.1	genus_representative	True	False	False
+1355900	984905	GCA_975301275.1	genus_representative	True	False	False
+1385497	102714	GCA_965199075.1	genus_representative	True	False	False
+1395542	63632	GCA_052724335.1	genus_representative	True	False	False
+1398205	346812	GCA_965642445.1	genus_representative	True	False	False
+1405138			no_assembly	False	False	False
+1435664			no_assembly	False	False	False
+1448309	1448309	GCA_014904985.1	species_level	False	False	False
+1483593			no_assembly	False	False	False
+1483842	414939	GCA_051122355.1	genus_representative	True	False	False
+1485667			no_assembly	False	False	False
+1501873			no_assembly	False	False	False
+1532265	118891	GCA_965615755.1	genus_representative	True	False	False
+1534596	23028	GCA_966183415.1	genus_representative	True	False	False
+1553251			no_assembly	False	False	False
+1553348			no_assembly	False	False	False
+1553373			no_assembly	False	False	False
+1553385			no_assembly	False	False	False
+1553407			no_assembly	False	False	False
+1553531			no_assembly	False	False	False
+1553643			no_assembly	False	False	False
+1553662	153785	GCA_977071015.1	genus_representative	True	False	False
+1553837			no_assembly	False	False	False
+1577080			no_assembly	False	False	False
+1659357			no_assembly	False	False	False
+1659903			no_assembly	False	False	False
+1678822			no_assembly	False	False	False
+1715899	368684	GCA_965199305.1	genus_representative	True	False	False
+1751537	984905	GCA_975301275.1	genus_representative	True	False	False
+1751540	984905	GCA_975301275.1	genus_representative	True	False	False
+1751541			no_assembly	False	False	False
+1751544			no_assembly	False	False	False
+1753982	303400	GCA_019593585.1	genus_representative	True	False	False
+1780255			no_assembly	False	False	False
+1790224			no_assembly	False	False	False
+1795230			no_assembly	False	False	False
+1875977	1875977	GCA_022683975.1	species_level	True	False	False
+1875987	177636	GCA_022495005.1	genus_representative	True	False	False
+1876357			no_assembly	False	False	False
+1886436	85882	GCA_965637395.1	genus_representative	True	False	False
+1926177			no_assembly	False	False	False
+1963269	1348612	GCA_003547095.1	genus_representative	True	False	False
+1982783			no_assembly	False	False	False
+2014047			no_assembly	False	False	False
+2045230			no_assembly	False	False	False
+2267583	303400	GCA_019593585.1	genus_representative	True	False	False
+2528720	303400	GCA_019593585.1	genus_representative	True	False	False
+2578536			no_assembly	False	False	False
+2604012			no_assembly	False	False	False
+2707515			no_assembly	False	False	False
+2717729			no_assembly	False	False	False
+2864982	878211	GCA_944039245.1	genus_representative	True	False	False
+2875554			no_assembly	False	False	False
+2881961			no_assembly	False	False	False
+2886538	2741129	GCA_958295665.1	genus_representative	True	False	False
+2890055	2890055	GCA_964267185.3	species_level	True	False	False
+2891110			no_assembly	False	False	False
+2905844	2905844	GCA_034694025.1	species_level	False	False	False
+2961521			no_assembly	False	False	False
+2998212	198258	GCA_034694065.1	genus_representative	True	False	False
+3040858	984905	GCA_975301275.1	genus_representative	True	False	False
+3123227			no_assembly	False	False	False
+3123433	177636	GCA_022495005.1	genus_representative	True	False	False
+3135909			no_assembly	False	False	False
