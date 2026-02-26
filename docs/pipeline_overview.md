@@ -138,9 +138,13 @@ bowtie2 -p 16 -k 100 -x core_nt.00 -f -U species.fasta --no-unal 2> logfile | sa
 * `-b` (samtools): output in BAM format
 * `-o` (samtools): output file path
 
-After bowtie2 alignment, the output BAM files are merged and name-sorted with `bamsort.sbatch`. For species with more aligned reads, the merged BAM header can exceed the BAM format limit; `bamsort_merge_sam.sbatch` is used for these species instead, streaming reads from each BAM individually with `samtools view` rather than `samtools merge`, and sorting with GNU sort, outputting gzip-compressed SAM to bypass the limit.  
+After bowtie2 alignment, the output BAM files are merged and name-sorted with `bamsort.sbatch`. For species with larger read volumes, `bamsort.sbatch` fails due to hard header size limit or out of memory issue. `bamsort_merge_sam.sbatch` is used for these species instead, replacing `samtools sort` with GNU `sort`, which operates on plain text, does not pre-allocate a fixed buffer, and spills to disk freely, and avoid header issue by writing it directly to the output stream, passing only alignment lines through `sort`.  
 
-ngsLCA is then run on the sorted files with `ngslca.sbatch`. An example command with relevant parameters for a single species is:
+For species with exceptionally large intermediate tmp files, a two-phase approach is further used. `bamsort_presort.sbatch` first namesorts each bowtie2 shard BAM independently into SAM.gz, `bamsort_merge_presorted.sbatch` then performs a streaming merge with `sort -m` and splits the merged output into multiple chunks as these typically produce large outputs and would risk hitting downstream wall time if output as a single file.  
+
+For species that completed `bamsort_merge_sam.sbatch` successfully but hit downstream ngsLCA wall time limit, `bamsort_split.sbatch` is used to retroactively split the existing merged sorted SAM.gz into `*.chunkNN.sorted.sam.gz` files at read-name boundaries.  
+
+ngsLCA is then run on the sorted files with `ngslca.sbatch`, which prioritises chunk files over any full-length file for the same species. An example command with relevant parameters for a single species is:
 ```
 ngsLCA \
     -simscorelow 0.95 \
@@ -180,6 +184,15 @@ bamdam shrink \
 
 For species with sorted file in `.sam.gz` format, the script first converts it to BAM with `samtools view`, as bamdam requires BAM input.  
 
+The shrunk LCA files are then further filtered using `bamdam_filter.py`, which produces two output files per species:
+1. `correct_genus.lca`: reads assigned at genus level or below where the assigned genus matches the true genus encoded in the read name
+2. `genus_level.lca`: reads assigned at genus level or below regardless of whether the genus is correct
+
+`bamdam_filter.py` accepts the following arguments:
+* `--lca_dir`: directory containing bamdam `.shrunk.lca` files
+* `--nodes`: path to `nodes.dmp` from the NCBI taxonomy
+* `--out_dir`: directory to write filtered output files
+
 **FASTA Extraction from Taxonomic Assignment Results**
 To prepare reads for probe design, the shrunk BAM files are converted to FASTA format using `bamdam_to_fasta.sbatch`. The script dynamically discovers all completed shrunk BAMs and extracts one FASTA record per read, skipping secondary and supplementary alignments:
 ```
@@ -193,8 +206,6 @@ samtools fasta \
 * `-@`: number of threads for decompression
 
 Output FASTA files are written to `bamdam_fasta/`. The script skips species whose output FASTA already exists, so it can be safely rerun as new shrunk BAMs become available.  
-
-
 
 **Database Coverage Check**
 To ensure a fair comparison between the competitive mapping (ngsLCA) and Kraken2 pipelines, only species represented in both databases are used. If a species is absent from one database, reads from that species cannot be classified regardless of probe quality, introducing bias in the comparison. This is done using `check_db_coverage.py`, which first checks for the list of representative species taxid by referring to `all_availability.tsv` and `genus_metadata.tsv`: 
@@ -223,4 +234,12 @@ python3 check_db_coverage.py \
   --in_ngslca data/in_ngslca.txt \
   --in_kraken data/in_kraken2.txt
 ```
-Outputs `db_coverage.tsv` with per-species database presence flags, and `species_in_both_dbs.txt` listing target taxids found in both databases. Only species in `species_in_both_dbs.txt` are used for downstream pipeline comparison.  
+Outputs `db_coverage.tsv` with per-species database presence flags, and `species_in_both_dbs.txt` listing target taxids found in both databases. Only species in `species_in_both_dbs.txt` are used for downstream pipeline comparison.
+
+**Modern DNA Comparison**
+To enable a direct comparison between simulated damaged aeDNA reads and undamaged modern reads, the same kraken2 → kraken-filter pipeline and bowtie2 → bamsort → ngsLCA → bamdam → bamdam-filter pipeline are applied to modern reads for the 7 species found in both databases. The corresponding `_modern` variants of each script (`bowtie2_modern.sbatch`, `bamsort_modern.sbatch`, `ngslca_modern.sbatch`, `bamdam_modern.sbatch`) are used with the same parameters as the aeDNA steps. Modern reads are generated again with `aeDNA_simulation.py`:
+```
+python3 aeDNA_simulation.py \
+  --assembly assembly_accession_genomic.fna \
+  --metadata all_availability2.tsv \
+```
