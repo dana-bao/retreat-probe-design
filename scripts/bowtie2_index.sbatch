@@ -19,17 +19,23 @@ IDXDIR="${BASE}/bowtie2_by_vol"
 mkdir -p "$IDXDIR"
 
 vol=$(printf "%02d" "${SLURM_ARRAY_TASK_ID}")
-fa_gz="${FADIR}/core_nt.${vol}.fasta.gz"
 prefix="${IDXDIR}/core_nt.${vol}"
+
+# Accept either compressed or plain FASTA
+if [[ -s "${FADIR}/core_nt.${vol}.fasta.gz" ]]; then
+  fa_gz="${FADIR}/core_nt.${vol}.fasta.gz"
+  INPUT_COMPRESSED=1
+elif [[ -s "${FADIR}/core_nt.${vol}.fasta" ]]; then
+  fa_gz="${FADIR}/core_nt.${vol}.fasta"
+  INPUT_COMPRESSED=0
+else
+  echo "ERROR: No input FASTA found for vol=$vol in $FADIR" >&2
+  exit 2
+fi
 
 echo "[$(date)] vol=$vol host=$(hostname) cpus=${SLURM_CPUS_PER_TASK:-32} mem=110G"
 echo "[$(date)] input=$fa_gz"
 echo "[$(date)] prefix=$prefix"
-
-if [ ! -s "$fa_gz" ]; then
-  echo "ERROR: Missing input FASTA: $fa_gz" >&2
-  exit 2
-fi
 
 # Skip if already built
 if ls "${prefix}".*.bt2 1>/dev/null 2>&1 || ls "${prefix}".*.bt2l 1>/dev/null 2>&1; then
@@ -46,8 +52,13 @@ mkdir -p "$WORKDIR"
 fa="${WORKDIR}/core_nt.${vol}.fasta"
 
 echo "[$(date)] workdir=$WORKDIR"
-echo "[$(date)] decompressing to $fa ..."
-gzip -dc "$fa_gz" > "$fa"
+if [[ "$INPUT_COMPRESSED" -eq 1 ]]; then
+  echo "[$(date)] decompressing to $fa ..."
+  gzip -dc "$fa_gz" > "$fa"
+else
+  echo "[$(date)] input already uncompressed, copying to workdir ..."
+  cp "$fa_gz" "$fa"
+fi
 
 # Sanity check (fast)
 head -n 2 "$fa" | sed 's/.*/[$(date)] &/'

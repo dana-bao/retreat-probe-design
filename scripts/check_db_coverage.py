@@ -1,8 +1,8 @@
 '''
 Check which target species have representation in both ngsLCA and Kraken2 databases.
 
-For species with a species-level assembly, the organism taxid is the species taxid.
-For species using a genus-representative assembly, the organism taxid is looked up
+For species with a species-level assembly, the assembly organism taxid is the species taxid.
+For species using a same-genus representative assembly, the assembly organism taxid is looked up
 from genus_metadata.tsv by matching the assembly accession.
 
 If --in_ngslca and --in_kraken are not provided, produces organism_taxid_mapping.tsv
@@ -33,12 +33,12 @@ import argparse
 import os
 import pandas as pd
 
-
+# building genus-level taxid mapping from all_availability.tsv and genus_metadata.tsv
 def build_organism_taxid_map(all_avail_path, genus_meta_path):
     all_avail = pd.read_csv(all_avail_path, sep='\t', dtype=str)
     genus_meta = pd.read_csv(genus_meta_path, sep='\t', dtype=str)
 
-    # Map assembly accession -> organism taxid from genus metadata
+    # map assembly accession -> organism taxid from genus metadata
     acc_to_org_taxid = dict(zip(
         genus_meta['Assembly Accession'],
         genus_meta['Organism Taxonomic ID']
@@ -52,7 +52,7 @@ def build_organism_taxid_map(all_avail_path, genus_meta_path):
         merge = str(row.get('_merge', '')).strip()
 
         if accession in ('', 'nan'):
-            # No assembly available
+            # no assembly available
             rows.append({
                 'target_taxid': target_taxid,
                 'organism_taxid': None,
@@ -62,10 +62,10 @@ def build_organism_taxid_map(all_avail_path, genus_meta_path):
             continue
 
         if has_species_assembly or merge == 'right_only':
-            # Species-level assembly: organism is the target species itself
+            # species-level assembly: organism is the target species itself
             organism_taxid = target_taxid
         else:
-            # Genus-representative assembly: look up from genus metadata
+            # genus-representative assembly: look up from genus metadata
             organism_taxid = acc_to_org_taxid.get(accession)
 
         rows.append({
@@ -77,7 +77,7 @@ def build_organism_taxid_map(all_avail_path, genus_meta_path):
 
     return pd.DataFrame(rows)
 
-
+# main functions
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--all_avail',   required=True, help='Path to all_availability.tsv')

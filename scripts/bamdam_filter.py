@@ -1,10 +1,6 @@
 '''
 Filter bamdam .shrunk.lca files to correct genus.
 
-Reads in .shrunk.lca are already filtered to genus level or below
-(by bamdam shrink --upto genus). This script further filters to reads
-where the assigned genus matches the true genus encoded in the read name.
-
 Read names expected in format: {true_species_taxid}|{contig}|{tile}|{pos}
 True species taxid is acquired from the filename:
   {species_id}.shrunk.lca  or  {species_id}_modern.shrunk.lca
@@ -14,9 +10,7 @@ True species taxid is acquired from the filename:
   Column 2: assigned taxid (0 = unclassified)
   Column 3+: additional fields (ignored)
 
-Produces per input:
-  1. correct_genus.lca: reads where assigned genus matches true genus
-  2. genus_level.lca:   all reads passing genus filter (same as input since bamdam already filtered)
+Output correct_genus.lca: reads where assigned genus matches true genus
 '''
 
 import argparse
@@ -24,7 +18,7 @@ import os
 import re
 import sys
 
-
+# import taxonomy information from nodes.dmp file, which includes taxid, parent taxid, and rank for each node in the taxonomy tree.
 def load_taxonomy(nodes_dmp):
     print(f"Loading taxonomy from {nodes_dmp} ...", flush=True)
     tax = {}
@@ -41,7 +35,7 @@ def load_taxonomy(nodes_dmp):
 
 _genus_cache = {}
 
-
+# find genus-level taxid using current taxid, returns none if no genus found or above genus level
 def get_genus_taxid(taxid, taxonomy):
     if taxid in _genus_cache:
         return _genus_cache[taxid]
@@ -74,8 +68,8 @@ def get_genus_taxid(taxid, taxonomy):
     _genus_cache[taxid] = result
     return result
 
-
-def filter_file(in_file, out_correct, out_genus, taxonomy, true_species_taxid):
+# filter based on the criteria described on top, writing correct genus reads only
+def filter_file(in_file, out_correct, taxonomy, true_species_taxid):
     true_genus = get_genus_taxid(true_species_taxid, taxonomy)
     if true_genus is None:
         print(f"  WARNING: no genus found for true species {true_species_taxid}", flush=True)
@@ -83,7 +77,7 @@ def filter_file(in_file, out_correct, out_genus, taxonomy, true_species_taxid):
     counts = {"total": 0, "unclassified": 0, "above_genus": 0,
               "correct_genus": 0, "wrong_genus": 0}
 
-    with open(in_file) as fin, open(out_correct, "w") as fout_correct, open(out_genus, "w") as fout_genus:
+    with open(in_file) as fin, open(out_correct, "w") as fout_correct:
         for line in fin:
             if not line.strip():
                 continue
@@ -103,14 +97,12 @@ def filter_file(in_file, out_correct, out_genus, taxonomy, true_species_taxid):
             elif assigned_genus == true_genus:
                 counts["correct_genus"] += 1
                 fout_correct.write(line)
-                fout_genus.write(line)
             else:
                 counts["wrong_genus"] += 1
-                fout_genus.write(line)
 
     return counts
 
-
+# find chunk .shrunk.lca files 
 def discover_files(lca_dir):
     pattern = re.compile(r"^(\d+)(_modern)?\.shrunk\.lca$")
     files = []
@@ -121,7 +113,7 @@ def discover_files(lca_dir):
                 files.append((int(m.group(1)), fname, os.path.join(root, fname)))
     return sorted(files, key=lambda x: x[1])
 
-
+# main functions
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--lca_dir", required=True,
@@ -146,22 +138,18 @@ def main():
     for species_id, fname, filepath in files:
         base = fname.replace(".shrunk.lca", "")
         out_correct_path = os.path.join(args.out_dir, f"{base}.shrunk.correct_genus.lca")
-        out_genus_path   = os.path.join(args.out_dir, f"{base}.shrunk.genus_level.lca")
 
-        if os.path.isfile(out_correct_path) and os.path.isfile(out_genus_path):
+        if os.path.isfile(out_correct_path):
             print(f"  species {species_id} ({fname}) -> already done, skipping.", flush=True)
             continue
 
         print(f"  species {species_id} ({fname}) -> {base}.shrunk.correct_genus.lca", flush=True)
-        counts = filter_file(filepath, out_correct_path, out_genus_path, taxonomy, species_id)
+        counts = filter_file(filepath, out_correct_path, taxonomy, species_id)
 
         total   = counts["total"]
         correct = counts["correct_genus"]
-        genus   = counts["correct_genus"] + counts["wrong_genus"]
         pct_correct = 100 * correct / total if total > 0 else 0
-        pct_genus   = 100 * genus   / total if total > 0 else 0
         print(f"    correct_genus: {correct:,} / {total:,} reads ({pct_correct:.3f}%)", flush=True)
-        print(f"    genus_level:   {genus:,} / {total:,} reads ({pct_genus:.3f}%)", flush=True)
 
 
 if __name__ == "__main__":

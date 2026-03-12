@@ -3,9 +3,9 @@
 #SBATCH --partition=icelake
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=8G
-#SBATCH --time=4:00:00
-#SBATCH --output=/rds/project/rds-FSWe0O6MFwc/users/zh384/logs/%x_%j.out
-#SBATCH --error=/rds/project/rds-FSWe0O6MFwc/users/zh384/logs/%x_%j.err
+#SBATCH --time=12:00:00
+#SBATCH --output=/rds/project/rds-FSWe0O6MFwc/users/hb676/logs/%x_%j.out
+#SBATCH --error=/rds/project/rds-FSWe0O6MFwc/users/hb676/logs/%x_%j.err
 
 set -euo pipefail
 export LC_ALL=C.UTF-8
@@ -13,9 +13,8 @@ export LANG=C.UTF-8
 
 # ---- EDIT ----
 SPECIES_ID="${SPECIES_ID:-134639}"
-SORTEDROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_sorted"
+SORTEDROOT="${SORTEDROOT:-/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_sorted}"
 N_CHUNKS=4
-b
 INFILE="$SORTEDROOT/$SPECIES_ID/${SPECIES_ID}.merged.sorted.sam.gz"
 CHUNK_PREFIX="$SORTEDROOT/$SPECIES_ID/${SPECIES_ID}.merged.sorted"
 

@@ -1,19 +1,12 @@
 import pandas as pd
 
 # File loadings
-#species_file_name = input("Enter species genome metadata TSV file name: ")
-#genus_file_name = input("Enter genus genome metadata TSV file name: ")
-#list_name = input("Enter species taxaID list file name (one taxid per line): ")
-#species_to_genus_name = input("Enter species-to-genus taxaID table TSV file name: ")
-#species_rep_to_genus_name = input("Enter species-rep-to-genus taxaID table TSV file name: ")
-#output_name = input("Enter output TSV file name: ")
-
-species_file_name = "species_metadata.tsv"
-genus_file_name = "genus_metadata.tsv"
-list_name = "species_id.txt"
-species_to_genus_name = "species_to_genus.tsv"
-species_rep_to_genus_name = "species_rep_to_genus.tsv"
-output_name = "all_availability.tsv"
+species_file_name = input("Enter species genome metadata TSV file name: ")
+genus_file_name = input("Enter genus genome metadata TSV file name: ")
+list_name = input("Enter species taxaID list file name (one taxid per line): ")
+species_to_genus_name = input("Enter species-to-genus taxaID table TSV file name: ")
+species_rep_to_genus_name = input("Enter species-rep-to-genus taxaID table TSV file name: ")
+output_name = input("Enter output TSV file name: ")
 
 species_df = pd.read_csv(species_file_name, sep="\t")
 genus_df = pd.read_csv(genus_file_name, sep="\t")

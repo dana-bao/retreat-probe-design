@@ -13,7 +13,7 @@ export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 
 # ---- EDIT ----
-SPECIES_ID="74982"   # change per run: 223866 or 74982
+SPECIES_ID="1398205"
 BAMROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_bam"
 PRESORT_ROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_presorted"
 

@@ -84,7 +84,7 @@ def main():
     accession = extract_assembly_accession(args.assembly)
     taxid = load_taxid_from_metadata(args.metadata, accession)
 
-    #creating output directory and file
+    # creating output directory and file
     os.makedirs(args.output_dir, exist_ok=True)
     out_path = os.path.join(
         args.output_dir,
@@ -93,14 +93,15 @@ def main():
 
     tile_count = 0
 
+    # Process assembly and write tiles to output
     with open(out_path, "w", encoding="utf-8") as out_fh:
         for record in SeqIO.parse(args.assembly, "fasta"):
-            read_code = record.id      # first token (e.g. AHBE01000541.1)
+            read_code = record.id
             seq = str(record.seq)
             L = len(seq)
 
             if L < args.tile_len:
-                tile = list(seq)  # full contig as one tile
+                tile = list(seq)
                 tile = apply_change(tile, args.tile_len, args.deamination, args.mutation, rng)
 
                 tile_idx = 1

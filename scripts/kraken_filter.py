@@ -107,8 +107,8 @@ def filter_file(in_file, out_correct, out_genus, taxonomy, true_species_taxid):
 
     return counts
 
-# only process files with confidence level 0.05 and extract species taxid
-def discover_files(results_dir, confidence="0.05"):
+# only process files with confidence level 0.2 and extract species taxid
+def discover_files(results_dir, confidence="0.2"):
     pattern = re.compile(r"^(\d+)(_modern)?_task\d+\.k2\.([\d.]+)\.core_nt\.out$")
     files = []
     for fname in sorted(os.listdir(results_dir)):

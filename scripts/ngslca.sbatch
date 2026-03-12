@@ -3,8 +3,8 @@
 #SBATCH --partition=icelake
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
-#SBATCH --time=36:00:00
-#SBATCH --array=0-43%10
+#SBATCH --time=12:00:00
+#SBATCH --array=0-110%10
 #SBATCH --output=/rds/project/rds-FSWe0O6MFwc/users/hb676/logs/%x_%A_%a.out
 #SBATCH --error=/rds/project/rds-FSWe0O6MFwc/users/hb676/logs/%x_%A_%a.err
 
@@ -12,11 +12,18 @@ set -euo pipefail
 
 # ---- EDIT PATHS ----
 SORTEDROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_sorted"
-OUTROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/ngslca_out"       # TODO: set output dir
+OUTROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/ngslca_out_new"       # TODO: set output dir
 
-NAMES="/rds/project/rds-FSWe0O6MFwc/users/hb676/taxonomy/names.dmp"
-NODES="/rds/project/rds-FSWe0O6MFwc/users/hb676/taxonomy/nodes.dmp"
-ACC2TAX="/rds/project/rds-FSWe0O6MFwc/users/hb676/taxonomy/nucl_gb.accession2taxid"
+K2TAX="/rds/project/rds-FSWe0O6MFwc/users/hb676/kraken2_taxonomy"
+NAMES="${K2TAX}/names.dmp"
+NODES="${K2TAX}/nodes.dmp"
+# Convert seqid2taxid.map to 4-column NCBI acc2tax format (once, then reuse)
+ACC2TAX="${K2TAX}/seqid2taxid.acc2tax"
+if [[ ! -s "$ACC2TAX" ]]; then
+    echo "Converting seqid2taxid.map to ngsLCA acc2tax format..."
+    awk 'BEGIN{OFS="\t"}{n=split($1,a,"|"); acc=a[n]; print acc, acc, $2, 0}' "${K2TAX}/seqid2taxid.map" > "$ACC2TAX"
+    echo "Done: $ACC2TAX"
+fi
 
 NGSLCA="/rds/project/rds-FSWe0O6MFwc/users/zw442/.envs/dnadamage/bin/ngsLCA"
 

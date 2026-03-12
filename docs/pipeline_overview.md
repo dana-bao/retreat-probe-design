@@ -4,7 +4,7 @@ This document contains step-by-step computational workflow used in this project,
 
 **Taxa List Synthesis**
 
-List of taxa that may respond to glacial retreat is synthesized from recent literature (see `taxids.txt`). Taxonomic ID at species level are extracted from NCBI.
+List of taxa that may respond to glacial retreat is synthesized from past literature (see `taxids.txt`). Taxonomic ID at species level are extracted from NCBI.
 
 **Genome Assemblies Acquisition**
 
@@ -41,7 +41,7 @@ refseq database, not reference genome, by assembly level
 If none of the standard met or multiple assemblies with the same hierarchy appear for one species, choose the assembly with largest total sequence length. Those with no genome are left blank. Certain species have their subspecies/strains identified under taxonomic IDs different from the original ones, and are also included.  
 Outputs are shown in `all_availability.tsv`.  
 
-Genomes are downloaded according to assembly accession using `download_assemblies.sh`.  
+Genomes are downloaded according to assembly accession using `download_assemblies.sbatch`.  
 
 **Ancient DNA Read Simulation**
 
@@ -72,7 +72,7 @@ head assemblies.list
 All 84 assemblies were tiled in parallel using `run_tiling_array.sbatch`.  
 Sample tiling output is in `1118155.fasta`.  
 
-**Reassigning Reads with Taxonomic Identification Algorithms - Kraken2**
+**Reassigning Reads with K-mer Based Taxonomic Identification Algorithms - Kraken2**
 
 An existing, wildly adopted taxonomic identification tools, Kraken2, is first used. 
 Kraken2 core_nt database is chosen as the reference database for the purpose of this project. Prebuild core_nt database is acquired from Kraken 2 index zone. It is subsequently run using `sbatch_mom2.sh` with the following relevant parameters: 
@@ -108,7 +108,7 @@ The Kraken2 outputs are then filtered using `kraken_filter.py`, which produces t
 * `--out_dir`: directory to write filtered output files 
 Sample output can be found in `129212_task1.k2.0.05.core_nt.correct_genus.out` and `129212_task1.k2.0.05.core_nt.genus_level.out`.  
 
-**Reassigning Reads with Taxonomic Identification Algorithms - Competitive Mapping**
+**Reassigning Reads with Local Alignment Based Taxonomic Identification Algorithms - Competitive Mapping**
 
 In addition, an in-house competitive mapping pipeline is used to compare the quality of resulting probes.  
 The pipeline requires bowtie2. To ensure that bowtie2 uses the same database as Kraken2, NCBI BLAST core_nt is acquired and converted to FASTA files via BLAST: 
@@ -135,9 +135,16 @@ After bowtie2 alignment, the output BAM files are merged and name-sorted with `b
 
 For species with exceptionally large intermediate tmp files, a two-phase approach is further used. `bamsort_presort.sbatch` first namesorts each bowtie2 shard BAM independently into SAM.gz, `bamsort_merge_presorted.sbatch` then performs a streaming merge with `sort -m` and splits the merged output into multiple chunks as these typically produce large outputs and would risk hitting downstream wall time if output as a single file.  
 
-For species that completed `bamsort_merge_sam.sbatch` successfully but hit downstream ngsLCA wall time limit, `bamsort_split.sbatch` is used to retroactively split the existing merged sorted SAM.gz into `*.chunkNN.sorted.sam.gz` files at read-name boundaries.  
+For species that completed `bamsort_merge_sam.sbatch` successfully but hit downstream ngsLCA wall time limit, `bamsort_split.sbatch` is used to retroactively split the existing merged sorted SAM.gz into `*.chunkNN.sorted.sam.gz` files at read-name boundaries.
 
-ngsLCA is then run on the sorted files with `ngslca.sbatch`, which prioritises chunk files over any full-length file for the same species. An example command with relevant parameters for a single species is:
+As an alternative to the GNU sort approach, the BAM headers of all alignment outputs can first be compressed using `compressbam.sbatch`, which remove the header lines that are not referred to in the alignment. The compressed shards are then merged, queryname-sorted, and split into 4 chunk BAMs using `bamsort_compressed.sbatch`. 
+
+ngsLCA is then run on the sorted files with `ngslca.sbatch`, which prioritises chunk files over any full-length file for the same species. Because the bowtie2 reference database was converted from the Kraken2 core_nt database, taxonomy files from Kraken2 are used directly: `nodes.dmp`, `names.dmp`, and `seqid2taxid.map`. `seqid2taxid.map` uses a Kraken2-specific key format (`kraken:taxid|TAXID|ACCESSION`) that does not match the bare accession names in the SAM RNAME field. It is therefore converted to a 4-column NCBI acc2tax format by stripping the prefix:
+```
+awk 'BEGIN{OFS="\t"}{n=split($1,a,"|"); acc=a[n]; print acc, acc, $2, 0}' \
+    seqid2taxid.map > seqid2taxid.acc2tax
+```
+An example ngsLCA command with relevant parameters for a single species is:
 ```
 ngsLCA \
     -simscorelow 0.95 \
@@ -145,20 +152,22 @@ ngsLCA \
     -fix-ncbi 0 \
     -names names.dmp \
     -nodes nodes.dmp \
-    -acc2tax nucl_gb.accession2taxid \
+    -acc2tax seqid2taxid.acc2tax \
     -bam species_id.merged.sorted.bam \
     -outnames species_id
 ```
 * `-simscorelow`: minimum alignment similarity score to consider a read
 * `-simscorehigh`: maximum alignment similarity score to consider a read
 * `-fix-ncbi`: whether to apply NCBI-specific accession fixes (0 = off)
-* `-names`: NCBI taxonomy names file
-* `-nodes`: NCBI taxonomy nodes file
+* `-names`: Kraken2 taxonomy names file
+* `-nodes`: Kraken2 taxonomy nodes file
 * `-acc2tax`: accession-to-taxid mapping file
 * `-bam`: input name-sorted BAM or SAM file
 * `-outnames`: prefix for output files
 
-Bamdam is then run on the ngsLCA outputs with `bamdam.sbatch` to filter the BAM and LCA files down to reads assigned at genus level or below. An example command with relevant parameters is:
+Each chunk file is processed as a separate SLURM array task, producing a corresponding `species_id_chunkNN.lca` file. For species that completed ngsLCA as a single full file but whose SAM was later split into chunks with `bamsort_split.sbatch`, `lca_split.sbatch` can retroactively split the full LCA to match the SAM chunk boundaries by scanning chunk SAM to find its first read name, building a boundary list for dividing LCA sequentially. This ensures the split is robust even when a read is absent from the LCA due to ngsLCA filtering.
+
+Bamdam is then run on the ngsLCA outputs with `bamdam.sbatch` to filter the BAM and LCA files down to reads assigned at genus level or below. When both a full LCA and chunk LCAs exist for the same species. only the chunk LCAs are processed. An example command with relevant parameters is:
 ```
 bamdam shrink \
     --in_bam species_id.merged.sorted.bam \
@@ -174,7 +183,7 @@ bamdam shrink \
 * `--out_lca`: output filtered LCA
 * `--stranded`: library strandedness (`ss` = single-stranded)
 * `--upto`: taxonomic rank to filter reads up to
-For species with sorted file in `.sam.gz` format, the script first converts it to BAM with `samtools view`, as bamdam requires BAM input.  
+For species with sorted file in `.sam.gz` format, the script first converts it to BAM with `samtools view`, as bamdam requires BAM input. For chunk items, bamdam produces per-chunk shrunk outputs. Once all chunks for a species are complete, `bamdam_merge.sbatch` merges the chunk BAMs with `samtools merge` and concatenates the chunk LCA files to produce a single output per species.  
 
 The shrunk LCA files are then further filtered using `bamdam_filter.py`, which produces two output files per species:
 1. `correct_genus.lca`: reads assigned at genus level or below where the assigned genus matches the true genus encoded in the read name
@@ -183,20 +192,6 @@ The shrunk LCA files are then further filtered using `bamdam_filter.py`, which p
 * `--lca_dir`: directory containing bamdam `.shrunk.lca` files
 * `--nodes`: path to `nodes.dmp` from the NCBI taxonomy
 * `--out_dir`: directory to write filtered output files
-
-**FASTA Extraction from Taxonomic Assignment Results**
-
-To prepare reads for probe design, the shrunk BAM files are converted to FASTA format using `bamdam_to_fasta.sbatch`. The script dynamically discovers all completed shrunk BAMs and extracts one FASTA record per read, skipping secondary and supplementary alignments:
-```
-samtools fasta \
-    -F 2304 \
-    -@ 4 \
-    species_id.shrunk.bam \
-    > species_id.shrunk.fasta
-```
-* `-F 2304`: exclude secondary (flag 256) and supplementary (flag 2048) alignments, ensuring one record per read
-* `-@`: number of threads for decompression
-Output FASTA files are written to `bamdam_fasta/`. The script skips species whose output FASTA already exists, so it can be safely rerun as new shrunk BAMs become available.  
 
 **Database Coverage Check**
 
@@ -228,11 +223,122 @@ python3 check_db_coverage.py \
 ```
 Outputs `db_coverage.tsv` with per-species database presence flags, and `species_in_both_dbs.txt` listing target taxids found in both databases. Only species in `species_in_both_dbs.txt` are used for downstream pipeline comparison.
 
+**Extending the Competitive Mapping Pipeline with New Assemblies**
+
+A key advantage of the competitive mapping pipeline over the Kraken2 approach is its ability to incorporate new assemblies without rebuilding the full database: while Kraken2's k-mer index must be reconstructed from scratch whenever new sequences are added, new assemblies can be appended to the core_nt database and indexed as additional bowtie2 shards, allowing reads to be mapped against the extended database incrementally. The competitive mapping database is thus extended to include the assemblies of target species and representative speices that were absent from the original core_nt database. 
+
+New assemblies are added to core_nt as shards 78, 79, and 80. The bowtie2 index for these new shards is built using `bowtie2_index_shard78.sbatch`. Reads are then aligned against these shards using `bowtie2_run_shard78.sbatch`. The compressed shard BAMs are then merged, queryname-sorted, and split into chunks with the alignments of previously existed shards. The resulting chunk BAMs feed into the same ngsLCA → bamdam → bamdam_filter pipeline, with the taxonomy files updated to include the new assemblies using `make_seqid2taxid_shard78.py`. This is done using corresponding `_compressed` variants of each script (`ngslca_compressed.sbatch`, `bamdam_compressed.sbatch`, `bamdam_filter_compressed.py`).  
+
 **Modern DNA Comparison**
 
-To enable a direct comparison between simulated damaged aeDNA reads and undamaged modern reads, the same kraken2 → kraken-filter pipeline and bowtie2 → bamsort → ngsLCA → bamdam → bamdam-filter pipeline are applied to modern reads for the 7 species found in both databases. The corresponding `_modern` variants of each script (`bowtie2_modern.sbatch`, `bamsort_modern.sbatch`, `ngslca_modern.sbatch`, `bamdam_modern.sbatch`) are used with the same parameters as the aeDNA steps. Modern reads are generated again with `aeDNA_simulation.py`:
+To enable a direct comparison between simulated damaged aeDNA reads and undamaged modern reads, the same kraken2 → kraken-filter pipeline and bowtie2 → bamsort → ngsLCA → bamdam → bamdam-filter pipeline are applied to modern reads for the 7 species found in both databases. The corresponding `_modern` variants of each script (`bowtie2_modern.sbatch`, `bowtie2_run_shard78_modern.sbatch`, `compressbam_modern.sbatch`, `bamsort_modern.sbatch`, `bamsort_compressed_modern.sbatch`, `ngslca_modern.sbatch`, `ngslca_compressed_modern.sbatch`, `bamdam_modern.sbatch`, `bamdam_compressed_modern.sbatch`, `bamdam_filter_compressed_modern.sbatch`) are used with the same parameters as the aeDNA steps. Modern reads are generated again with `aeDNA_simulation.py`:
 ```
 python3 aeDNA_simulation.py \
   --assembly assembly_accession_genomic.fna \
   --metadata all_availability2.tsv \
 ```
+
+**Biophysical Filter**
+
+To prepare eprobe input, the overlap of reads correctly assigned at genus level by both Kraken2 and the competitive mapping pipeline is computed for each species, then extracted from the undamaged modern tiled FASTAs using `eprobe_input_extract.py`. The script accepts the following arguments:
+* `--species_id`: species taxid to process
+* `--kraken_filt_dir`: directory containing Kraken2 `correct_genus.out` files
+* `--bamdam_filt_dir`: directory containing bamdam `correct_genus.lca` files
+* `--modern_tiled_dir`: directory containing modern tiled FASTA files
+* `--out_dir`: output directory for eprobe input FASTAs
+Using its sbatch wrapper `eprobe_input_extract.sbatch`, output files are named as `{sid}.fasta`.  
+
+For species where the overlap is too low to yield sufficient input reads, `eprobe_input_bamdam_only.py` is used instead, extracting sequences based on bamdam-filtered read names only without requiring Kraken2 agreement. These species (56490, 346724, 370026, 2905844, 596920, 29771, 1483842) are run with `eprobe_input_bamdam_only.sbatch` and output as `{sid}_bamdam.fasta`.  
+
+The eProbe biophysical filter is then applied to each input FASTA using `eprobe_filter.sbatch`, which runs as a SLURM array with one task per species. An example command with relevant parameters for a single task is:
+```
+eprobe util filter \
+    --input  species_id.fasta \
+    --output species_id \
+    --step   biophysical \
+    --threads 4
+```
+Output filtered FASTAs are written as `{species_id}.filtered.fa`.  
+
+For species with very large input FASTAs that cause memory errors in the eprobe dimer filter, `subsample_fasta.py` is used to randomly subsample to 300,000 reads before proceeding. It accepts the following arguments:
+* `--input`: input FASTA file
+* `--output`: output FASTA file
+* `--n`: number of reads to sample
+* `--seed`: random seed, optional
+Output subsampled FASTAs are written as `{species_id}_sub300k.fasta`.  
+
+Filter results per species are summarized using `eprobe_summary.py`, which counts input, passed, and rejected sequences for each species and records the input type (plain, bamdam, sub300k, or bamdam_sub300k). It accepts the following arguments:
+* `--eprobe_input_dir`: eprobe_input directory
+* `--eprobe_filtered_dir`: eprobe_filtered directory
+* `--out`: output CSV file path
+Output is shown in `eprobe_summary.csv`.   
+
+
+**Shuffle and Deduplication**
+
+Before deduplication, each species' eprobe-filtered output is subsampled according to a pre-computed plan in `subsample_plan.csv` using `subsample_for_cdhit.py`. `subsample_plan.csv` contains four columns per species: `species_id`, `eprobe_passed`, `target` (proportional probe target number), and `ratio` (eprobe_passed / target). The script compares each species' ratio against a set threshold, then species with ratio above the threshold are subsampled down to target × threshold number of reads, while species at or below the threshold retain all available reads. The script accepts the following arguments:
+* `--plan`: subsample plan CSV
+* `--filtered_dir`: eprobe_filtered directory
+* `--out_dir`: output directory for subsampled FASTAs
+* `--threshold`: ratio threshold above which subsampling is applied (default: 5.0)
+* `--seed`: random seed for reproducibility (optional)
+Output FASTAs are written to `deduplicate_input/` as `{species_id}.fasta`.  
+
+All subsampled FASTAs are then pooled and deduplicated across species using `cdhit.sbatch`, which concatenates all inputs into a single `pooled.fasta` and runs CD-HIT-EST with the following parameters:
+```
+cd-hit-est \
+    -i  pooled.fasta \
+    -o  pooled_dedup \
+    -c  0.9 \
+    -n  8 \
+    -aS 1.0 \
+    -r  1 \
+    -d  0
+```
+* `-c`: sequence identity threshold
+* `-n`: word length
+* `-aS`: minimum alignment coverage of the shorter sequence
+* `-r`: align both strands
+* `-d`: full FASTA header in cluster file
+Outputs are `pooled_dedup`, which contains one representative sequence per cluster, and `pooled_dedup.fasta.clstr`, which shows the cluster assignments. The final probe panel contains 53957 reads.  
+
+**Summary, Analysis and Visualization**
+
+Off-target alignment analysis is performed using `primary_secondary_analysis.py`, which reads the merged bowtie2 BAM for each species, computes alignment similarity using `(aligned_length − NM) / aligned_length` for each alignment, collapses hits to the best similarity per taxonomic group at genus level, excludes the target genus, and reports what fraction of reads have off-target hits above the similarity threshold, and the top off-target taxa. It accepts the following arguments:
+* `--sam`: input SAM / SAM.gz / BAM file or stdin
+* `--target_taxid`: target species taxid whose genus ancestor will be excluded
+* `--acc2tax`: accession-to-taxid mapping file
+* `--nodes`: path to `nodes.dmp`
+* `--names`: path to `names.dmp`
+* `--out_summary`: output summary text file
+* `--level`: taxonomic level to collapse hits to (default: genus)
+* `--simscorelow`: similarity threshold (default: 0.95)
+* `--top`: number of reported top off-target taxa (default: 20)
+This is ran via `primary_secondary_lowsignal.sbatch` for 20 low-signal simulated ancient species, 1 low-signal simulated modern species, and 1 high-signal simulated ancient species as comparison.  
+
+Read counts at each pipeline stage per species are acquired using `count_stats.py` and `count_stats_compressed.py`. These scripts collect counts across the tiled reads, ngsLCA output, bamdam output, bamdam correct_genus, Kraken2 total, Kraken2 genus level, Kraken2 correct_genus, and eprobe input overlap columns. `count_stats_compressed.py` handles chunk-based outputs from the compressed pipeline by summing across chunk files. Output can be seen at `pipeline_stats.csv` and `pipeline_stats_compressed.csv` respectively.  
+
+Pipeline results for the 7 species found in both databases are visualized using `pipeline_visualize.py` and `pipeline_visualize_compressed.py`. Both scripts produce three figures comparing the Kraken2 and competitive mapping pipelines for simulated aeDNA-damaged and modern reads side by side:
+1. `kraken_summary.png`: grouped bar chart of read counts at each Kraken2 stage per species
+2. `competitive_summary.png`: grouped bar chart of read counts at each competitive mapping stage per species
+3. `intersection.png`: stacked bar chart of correct-genus read overlap between Kraken2 and competitive mapping per species
+A `summary_table.csv` is also written with all counts and overlaps for reference. `pipeline_visualize_compressed.py` uses the compressed pipeline outputs.  
+
+Read count comparisons across pipeline stages for the 7 species are produced by `pipeline_compare.py` and `pipeline_compare_compressed.py`, outputting one row per (species, mode) combination to `pipeline_comparison.csv`. All directory arguments are optional, with missing files reported as empty cells.  
+
+`taxonomy_availability_plot.py` produces a stacked bar chart grouping retreat species by taxonomic group (default: phylum), coloured by assembly availability (species-level assembly, genus-level assembly, or none). Higher-level taxonomy is fetched from NCBI Entrez with results cached locally for subsequent runs. It accepts the following arguments:
+* `--input`: path to `all_availability.tsv`
+* `--out`: output directory for the figure
+* `--email`: email address for NCBI Entrez
+* `--rank`: taxonomic rank for grouping (default: phylum)
+* `--cache`: TSV cache file for NCBI taxonomy lookups (default: `data/taxonomy_cache.tsv`)
+Output figure can be seen at `taxonomy_availability_{rank}.png`.
+
+`probe_funnel_plot.py` produces a Sankey-style funnel plot showing read count changes across the four probe design stages: eprobe input, epobre biophysical filter, shuffle with subsampling, and CD-HIT deduplication. Each bar represents 100% of reads entering that stage, with the coloured portion showing what fraction is retained and the grey portion showing what is dropped. Percentages of read kept are computed relative to the previous stage, with absolute read counts shown above each bar. It accepts the following arguments:
+* `--summary`: path to `eprobe_summary.csv`
+* `--plan`: path to `subsample_plan.csv`
+* `--post_dedup`: read count after CD-HIT deduplication (integer)
+* `--threshold`: subsample ratio threshold used (default: 5.0)
+* `--out`: output figure path (default: `figures/probe_funnel.png`)
+Output figure can be seen at `probe_funnel.png`.  
+

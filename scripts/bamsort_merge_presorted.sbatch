@@ -3,7 +3,7 @@
 #SBATCH --partition=icelake
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
-#SBATCH --time=12:00:00
+#SBATCH --time=36:00:00
 #SBATCH --output=/rds/project/rds-FSWe0O6MFwc/users/zh384/logs/%x_%j.out
 #SBATCH --error=/rds/project/rds-FSWe0O6MFwc/users/zh384/logs/%x_%j.err
 
@@ -12,7 +12,7 @@ export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 
 # ---- EDIT ----
-SPECIES_ID="223866"   # change per run: 223866 or 74982
+SPECIES_ID="1398205"
 BAMROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_bam"
 PRESORT_ROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_presorted"
 OUTROOT="/rds/project/rds-FSWe0O6MFwc/users/hb676/bowtie2_sorted"
