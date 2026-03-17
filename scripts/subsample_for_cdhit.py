@@ -11,8 +11,10 @@ Usage:
         [--seed        SEED]
 
 For each species:
-    if ratio > threshold -> subsample to target * threshold
+    if ratio > threshold -> subsample to 625 * threshold
     ratio <= threshold -> copy all sequences unchanged
+
+Target is fixed at 625 for all species.
 """
 
 import argparse
@@ -77,10 +79,11 @@ def main():
     total_written = 0
     skipped = []
 
+    TARGET = 625
+
     for row in plan:
-        sid    = row['species_id']
-        target = float(row['target'])
-        ratio  = float(row['ratio'])
+        sid   = row['species_id']
+        ratio = float(row['ratio'])
 
         fasta_path = find_filtered_fa(args.filtered_dir, sid)
         if fasta_path is None:
@@ -93,7 +96,7 @@ def main():
         n_avail = len(records)
 
         if ratio > args.threshold:
-            subsample_to = round(target * args.threshold)
+            subsample_to = round(TARGET * args.threshold)
             if n_avail <= subsample_to:
                 print(f'[WARN] {sid}: only {n_avail} records available, '
                       f'wanted {subsample_to} — using all', file=sys.stderr)

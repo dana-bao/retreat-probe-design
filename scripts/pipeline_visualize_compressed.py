@@ -169,7 +169,7 @@ def count_ngslca_assigned(path):
 def make_kraken_plot(species_ids, data, out_path, y_top=None):
     fig, axes = plt.subplots(1, 2, figsize=(14, 5), sharey=True)
     modes = ['aeDNA', 'modern']
-    colors = {'classified': '#88CCEE', 'genus_level': '#44AA99', 'correct_genus': '#CC6677'}
+    colors = {'classified': '#2B8CBE', 'genus_level': '#A6BDDB', 'correct_genus': '#ECE7F2'}
     labels = {'classified': 'Classified', 'genus_level': 'Genus level', 'correct_genus': 'Correct genus'}
 
     for ax, mode in zip(axes, modes):
@@ -202,7 +202,7 @@ def make_kraken_plot(species_ids, data, out_path, y_top=None):
 def make_competitive_plot(species_ids, data, out_path, y_top=None):
     fig, axes = plt.subplots(1, 2, figsize=(14, 5), sharey=True)
     modes = ['aeDNA', 'modern']
-    colors = {'classified': '#88CCEE', 'genus_level': '#44AA99', 'correct_genus': '#CC6677'}
+    colors = {'classified': '#2B8CBE', 'genus_level': '#A6BDDB', 'correct_genus': '#ECE7F2'}
     labels = {'classified': 'Classified', 'genus_level': 'Genus level', 'correct_genus': 'Correct genus'}
 
     for ax, mode in zip(axes, modes):
@@ -245,10 +245,10 @@ def make_intersection_plot(species_ids, data, out_path):
             both_vals.append(data[sid][mode]['overlap'])
             b_only_vals.append(data[sid][mode]['c_only'])
 
-        ax.bar(x, k_only_vals, label='K-mer-based only',      color='#66C2A5')
-        ax.bar(x, both_vals,   label='Overlap',                color='#8DA0CB',
+        ax.bar(x, k_only_vals, label='K-mer-based only',      color='#2C7FB8')
+        ax.bar(x, both_vals,   label='Overlap',                color='#41B6C4',
                bottom=k_only_vals)
-        ax.bar(x, b_only_vals, label='Local alignment only',  color='#FC8D62',
+        ax.bar(x, b_only_vals, label='Local alignment only',  color='#7FCDBB',
                bottom=[k + b for k, b in zip(k_only_vals, both_vals)])
 
         ax.set_title(f'{MODE_LABEL[mode]}', fontsize=13)

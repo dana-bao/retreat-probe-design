@@ -75,6 +75,20 @@ def load_availability(path):
     return rows
 
 
+def load_strain_taxids(path):
+    """
+    Return a list of taxids for 'right_only' rows (strain/subspecies variants).
+    These are excluded from the plot but their taxonomy is cached for other scripts.
+    """
+    taxids = []
+    with open(path, newline='') as f:
+        reader = csv.DictReader(f, delimiter='\t')
+        for row in reader:
+            if row.get('_merge', '').strip() == 'right_only':
+                taxids.append(row['Species Taxonomic ID'].strip())
+    return taxids
+
+
 # NCBI taxonomy lookup with caching
 def fetch_group(taxid, rank, cache):
     """
@@ -189,16 +203,23 @@ def main():
     species = load_availability(args.input)
     print(f'Loaded {len(species)} retreat species')
 
+    strain_taxids = load_strain_taxids(args.input)
+    print(f'Found {len(strain_taxids)} strain/subspecies variants (cached but excluded from plot)')
+
     # fetch taxonomy (with cache)
     cache = load_cache(args.cache)
-    n_to_fetch = sum(1 for sp in species if sp['taxid'] not in cache)
-    print(f'Fetching taxonomy for {n_to_fetch} species from NCBI '
+    all_taxids = [sp['taxid'] for sp in species] + strain_taxids
+    n_to_fetch = sum(1 for t in all_taxids if t not in cache)
+    print(f'Fetching taxonomy for {n_to_fetch} taxids from NCBI '
           f'(rank={args.rank})...')
 
     for i, sp in enumerate(species):
         sp['group'] = fetch_group(sp['taxid'], args.rank, cache)
         if (i + 1) % 20 == 0 or (i + 1) == len(species):
             print(f'  {i + 1}/{len(species)}')
+
+    for taxid in strain_taxids:
+        fetch_group(taxid, args.rank, cache)
 
     save_cache(cache, args.cache)
 

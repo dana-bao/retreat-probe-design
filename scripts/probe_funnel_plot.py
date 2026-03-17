@@ -39,10 +39,9 @@ def load_totals(summary_csv, plan_csv, threshold):
     with open(plan_csv) as f:
         for row in csv.DictReader(f):
             passed = int(row['eprobe_passed'])
-            target = float(row['target'])
             ratio  = float(row['ratio'])
             if ratio > threshold:
-                subsampled_total += min(passed, round(target * threshold))
+                subsampled_total += min(passed, round(625 * threshold))
             else:
                 subsampled_total += passed
 
