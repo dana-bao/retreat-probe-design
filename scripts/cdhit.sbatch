@@ -29,7 +29,7 @@ echo "[$(date)] Running cd-hit-est..."
 cd-hit-est \
     -i  "$POOLED" \
     -o  "$OUT" \
-    -c  0.9 \
+    -c  0.95 \
     -n  8 \
     -aS 1.0 \
     -r  1 \

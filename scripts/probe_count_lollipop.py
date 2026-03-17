@@ -113,6 +113,57 @@ def fetch_group(taxid, rank, cache):
     return cache[taxid]
 
 
+def abbreviate_name(name):
+    """
+    Shorten a species name for axis labels:
+      'Silene acaulis'                            -> 'S. acaulis'
+      'Anthyllis vulneraria subsp. alpestris'     -> 'A. vulneraria subsp. alp.'
+      'Debaryomyces hansenii var. hansenii MTCC 234' -> 'D. hansenii var. hans. MTCC 234'
+      'Debaryomyces hansenii CBS767'              -> 'D. hansenii CBS767'
+    Rules:
+      1. Genus -> first letter + '.'
+      2. Species epithet kept in full
+      3. subsp./var./f. marker kept, followed by first 4 chars of infraspecific name + '.'
+      4. Strain codes (all-caps tokens or alphanumeric like CBS767) appended as-is
+      5. Result capped at 26 chars (with trailing '…' if needed)
+    """
+    import re
+    tokens = name.split()
+    if not tokens:
+        return name
+
+    result = tokens[0][0] + '.'          # G.
+    if len(tokens) > 1:
+        result += ' ' + tokens[1]        # G. species
+
+    i = 2
+    while i < len(tokens):
+        tok = tokens[i]
+        if tok.lower() in ('subsp.', 'var.', 'f.', 'subsp', 'var', 'f'):
+            marker = tok if tok.endswith('.') else tok + '.'
+            if i + 1 < len(tokens):
+                infra = tokens[i + 1]
+                result += f' {marker} {infra[:4]}.'
+                i += 2
+            else:
+                result += f' {marker}'
+                i += 1
+        elif re.match(r'^[A-Z]{2,}[0-9]*$', tok) or re.match(r'^[A-Z]+\d+$', tok):
+            # strain code like CBS767, MTCC, ATCC
+            strain = tok
+            if i + 1 < len(tokens) and tokens[i + 1].isdigit():
+                strain += ' ' + tokens[i + 1]
+                i += 1
+            result += ' ' + strain
+            i += 1
+        else:
+            i += 1
+
+    if len(result) > 26:
+        result = result[:25] + '…'
+    return result
+
+
 def make_plot(species_data, rank, out_path):
     """
     species_data: list of dicts with keys sid, name, phylum, count
@@ -155,7 +206,7 @@ def make_plot(species_data, rank, out_path):
     ax.set_xlim(-0.8, len(species_data) - 0.2)
     ax.set_xticks(xs)
     ax.set_xticklabels(
-        [r['name'] for r in species_data],
+        [abbreviate_name(r['name']) for r in species_data],
         rotation=90, fontsize=6.5, ha='center'
     )
     ax.set_ylabel('Probe count (pooled_dedup)', fontsize=11)
