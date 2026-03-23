@@ -582,8 +582,6 @@ Organism Taxonomic ID	Organism Name	Assembly Accession	Source Database	Assembly 
 3469	Papaver somniferum	GCA_003573695.1	SOURCE_DATABASE_GENBANK	Chromosome	2715377404	reference genome	current	2018-09-18
 3469	Papaver somniferum	GCA_010119955.1	SOURCE_DATABASE_GENBANK	Chromosome	190070007		current	2020-02-04
 3469	Papaver somniferum	GCA_010119995.1	SOURCE_DATABASE_GENBANK	Chromosome	2637752765		current	2020-02-04
-330961	Pardosa pseudoannulata	GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	2416637544	reference genome	current	2023-10-04
-330961	Pardosa pseudoannulata	GCA_008065355.1	SOURCE_DATABASE_GENBANK	Scaffold	4207954893		current	2019-08-22
 2316158	Phialocephala sp. D728	GCA_003988865.1	SOURCE_DATABASE_GENBANK	Scaffold	50315576		current	2018-12-31
 576137	Phialocephala subalpina	GCA_900073065.1	SOURCE_DATABASE_GENBANK	Scaffold	69693031	reference genome	current	2016-12-03
 153785	Phratora vitellinae	GCA_977071015.1	SOURCE_DATABASE_GENBANK	Chromosome	565066841	reference genome	current	2025-11-29

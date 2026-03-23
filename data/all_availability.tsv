@@ -15,9 +15,6 @@ Species Taxonomic ID	Species Name	Species level Assembly	Genus Taxonomic ID	Genu
 52153	Festuca rubra	no	4605.0		GCA_051419415.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2025-07-20	1188724153.0	Genbank reference genome, scaffold	left_only
 56490	Thelephora americana	no	56489.0		GCA_014904855.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2020-10-20	36335475.0	Genbank reference genome, scaffold	left_only
 62722	Phialocephala fortinii	no	150173.0		GCA_900073065.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2016-12-03	69693031.0	Genbank reference genome, scaffold	left_only
-74982	Pardosa nigra	no	74980.0		GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-04	2416637544.0	Genbank reference genome, chromosome	left_only
-74988	Pardosa pullata	no	74980.0		GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-04	2416637544.0	Genbank reference genome, chromosome	left_only
-74994	Pardosa lugubris	no	74980.0		GCA_032207245.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2023-10-04	2416637544.0	Genbank reference genome, chromosome	left_only
 77067	Salix serpyllifolia	no	40685.0		GCA_040801865.1	SOURCE_DATABASE_GENBANK	Complete Genome	reference genome	current	2024-07-22	335997017.0	Genbank reference genome, complete genome	left_only
 81839	Bathyphantes gracilis	no	81838.0										left_only
 83410	Saxifraga exarata	no	3798.0		GCA_965199075.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-03-13	1445080489.0	Genbank reference genome, chromosome	left_only

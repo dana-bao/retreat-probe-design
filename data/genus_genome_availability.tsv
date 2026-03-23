@@ -172,9 +172,6 @@ Organism Taxonomic ID	Organism Name	Assembly Accession	Source Database	Assembly 
 73102	Gaultheria shallon	GCA_046119095.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2024-12-17	1.0	reference genome	right_only
 74822	Papaver californicum	GCA_023531435.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-05-23	1.0	reference genome	right_only
 74823	Papaver nudicaule	GCA_023529015.1	SOURCE_DATABASE_GENBANK	Scaffold	reference genome	current	2022-05-23	1.0	reference genome	right_only
-74980										left_only
-74980										left_only
-74980										left_only
 75699	Salix arbutifolia	GCA_025169955.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2022-09-14	1.0	reference genome	right_only
 75706	Salix babylonica	GCA_040801835.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2024-07-22	1.0	reference genome	right_only
 75717	Salix reticulata	GCA_965648395.1	SOURCE_DATABASE_GENBANK	Chromosome	reference genome	current	2025-07-28	1.0	reference genome	right_only

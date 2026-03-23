@@ -194,6 +194,9 @@ def main():
                          'Try "class" for finer splits within Arthropoda/Tracheophyta.')
     ap.add_argument('--cache',  default='data/taxonomy_cache.tsv',
                     help='TSV cache for NCBI taxonomy lookups')
+    ap.add_argument('--out-tsv', default=None,
+                    help='Path to write summary TSV '
+                         '(default: data/assembly_availability_by_<rank>.tsv)')
     args = ap.parse_args()
 
     Entrez.email = args.email
@@ -241,6 +244,28 @@ def main():
 
     out_path = os.path.join(args.out, f'taxonomy_availability_{args.rank}.png')
     make_plot(counts, groups, args.rank, out_path)
+
+    # write summary TSV
+    tsv_path = args.out_tsv or f'data/assembly_availability_by_{args.rank}.tsv'
+    with open(tsv_path, 'w', newline='') as f:
+        writer = csv.writer(f, delimiter='\t')
+        writer.writerow([args.rank, 'total',
+                         'species_level', 'species_pct',
+                         'genus_only',    'genus_pct',
+                         'no_assembly',   'no_assembly_pct'])
+        for g in groups:
+            c     = counts[g]
+            total = sum(c.values())
+            s     = c[AVAIL_SPECIES]
+            gn    = c[AVAIL_GENUS]
+            n     = c[AVAIL_NONE]
+            writer.writerow([
+                g, total,
+                s,  round(s  / total * 100, 1),
+                gn, round(gn / total * 100, 1),
+                n,  round(n  / total * 100, 1),
+            ])
+    print(f'Saved: {tsv_path}')
 
 
 if __name__ == '__main__':

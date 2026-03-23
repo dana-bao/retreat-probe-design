@@ -15,9 +15,6 @@ target_taxid	organism_taxid	assembly_accession	note
 52153	464072	GCA_051419415.1	genus_representative
 56490	370292	GCA_014904855.1	genus_representative
 62722	576137	GCA_900073065.1	genus_representative
-74982	330961	GCA_032207245.1	genus_representative
-74988	330961	GCA_032207245.1	genus_representative
-74994	330961	GCA_032207245.1	genus_representative
 77067	1413687	GCA_040801865.1	genus_representative
 81839			no_assembly
 83410	102714	GCA_965199075.1	genus_representative

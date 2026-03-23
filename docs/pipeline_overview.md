@@ -4,7 +4,7 @@ This document contains step-by-step computational workflow used in this project,
 
 **Taxa List Synthesis**
 
-List of taxa that may respond to glacial retreat is synthesized from past literature (see `taxids.txt`). Taxonomic ID at species level are extracted from NCBI.  
+List of taxa that may respond to glacial retreat is synthesized from past literature (see `species_id.txt`). Taxonomic ID at species level are extracted from NCBI.  
 
 **Genome Assemblies Acquisition**
 
@@ -196,13 +196,15 @@ The shrunk LCA files are then further filtered using `bamdam_filter.py`, which p
 
 **Database Coverage Check**
 
-To ensure a fair comparison between the competitive mapping (ngsLCA) and Kraken2 pipelines, only species represented in both databases are used. If a species is absent from one database, reads from that species cannot be classified regardless of probe quality, introducing bias in the comparison. This is done using `check_db_coverage.py`, which first checks for the list of representative species taxid by referring to `all_availability.tsv` and `genus_metadata.tsv`: 
+As the presence or absence of targeted or representative species assmebly in the database may affect the performance of both pipelines, to assess their corresponding performance under different level of database coverage, species that have any genetic assembly in the database is identified. This is done using `check_db_coverage.py`, which first checks for the list of representative species taxid by referring to `all_availability.tsv` and `genus_metadata.tsv`: 
 ```
 python3 check_db_coverage.py \
   --all_avail data/all_availability.tsv \
   --genus_meta data/genus_metadata.tsv \
   --out_dir data/
 ```
+It is important to point out that this only checks for the presence of any genetic assembly of these targeted or representative species, as search for the exact assembly used for tiling have been done and revealed that no species have their exact assembly accession representation in the database.  
+
 Outputs `organism_taxid_mapping.tsv` and `organism_taxids_to_check.txt` are then compared to ngsLCA and Kraken2 accession-taxid metadata: 
 ```
 awk 'NR==FNR{t[$1]=1;next} $3 in t {print $3}' \
@@ -224,9 +226,9 @@ python3 check_db_coverage.py \
 ```
 Outputs `db_coverage.tsv` with per-species database presence flags, and `species_in_both_dbs.txt` listing target taxids found in both databases. Only species in `species_in_both_dbs.txt` are used for downstream pipeline comparison.  
 
-**Extending the Competitive Mapping Pipeline with New Assemblies**
+**Extending the Local Alignment Pipeline with New Assemblies**
 
-A key advantage of the competitive mapping pipeline over the Kraken2 approach is its ability to incorporate new assemblies without rebuilding the full database: while Kraken2's k-mer index must be reconstructed from scratch whenever new sequences are added, new assemblies can be appended to the core_nt database and indexed as additional bowtie2 shards, allowing reads to be mapped against the extended database incrementally. The competitive mapping database is thus extended to include the assemblies of target species and representative speices that were absent from the original core_nt database.  
+A key advantage of the local alignment pipeline over the k-mer based pipeline is its modularity. While Kraken2's k-mer index must be reconstructed from scratch whenever new sequences are added, with local alignment pipeline, new assemblies can be appended to the core_nt database and indexed as additional bowtie2 shards, allowing reads to be mapped against the extended database incrementally. The local alignment database is thus extended to include the assemblies of target species and representative speices that were absent from the original core_nt database.  
 
 New assemblies are added to core_nt as shards 78, 79, and 80. The bowtie2 index for these new shards is built using `bowtie2_index_shard78.sbatch`. Reads are then aligned against these shards using `bowtie2_run_shard78.sbatch`. The compressed shard BAMs are then merged, queryname-sorted, and split into chunks with the alignments of previously existed shards. The resulting chunk BAMs feed into the same ngsLCA → bamdam → bamdam_filter pipeline, with the taxonomy files updated to include the new assemblies using `make_seqid2taxid_shard78.py`. This is done using corresponding `_compressed` variants of each script (`ngslca_compressed.sbatch`, `bamdam_compressed.sbatch`, `bamdam_filter_compressed.py`).  
 
@@ -241,7 +243,7 @@ python3 aeDNA_simulation.py \
 
 **Biophysical Filter**
 
-To prepare eprobe input, the overlap of reads correctly assigned at genus level by both Kraken2 and the competitive mapping pipeline is computed for each species, then extracted from the undamaged modern tiled FASTAs using `eprobe_input_extract.py`. The script accepts the following arguments:
+To prepare eprobe input, the overlap of reads correctly assigned at genus level by both k-mer and the local alignment pipeline is computed for each species, then extracted from the undamaged modern tiled FASTAs using `eprobe_input_extract.py`. The script accepts the following arguments:
 * `--species_id`: species taxid to process
 * `--kraken_filt_dir`: directory containing Kraken2 `correct_genus.out` files
 * `--bamdam_filt_dir`: directory containing bamdam `correct_genus.lca` files
@@ -274,13 +276,13 @@ Filter results per species are summarized using `eprobe_summary.py`, which count
 Output is shown in `eprobe_summary.csv`.   
 
 
-**Shuffle and Deduplication**
+**Shuffle, Subsampling and Deduplication**
 
 Before deduplication, each species' eprobe-filtered output is subsampled according to a pre-computed plan in `subsample_plan.csv` using `subsample_for_cdhit.py`. `subsample_plan.csv` contains three columns per species: `species_id`, `eprobe_passed`, and `ratio` (eprobe_passed / 625). The target number of reads is fixed at 625 for all species. The script compares each species' ratio against a set threshold; species with ratio above the threshold are subsampled down to 625 × threshold reads, while species at or below the threshold retain all available reads. The script accepts the following arguments:
 * `--plan`: subsample plan CSV
 * `--filtered_dir`: eprobe_filtered directory
 * `--out_dir`: output directory for subsampled FASTAs
-* `--threshold`: ratio threshold above which subsampling is applied, default 5.0
+* `--threshold`: ratio threshold above which subsampling is applied, default 5.0; 4.0 is used for this project
 * `--seed`: random seed for reproducibility (optional)
 Output FASTAs are written to `deduplicate_input/` as `{species_id}.fasta`.  
 
@@ -318,10 +320,10 @@ This is ran via `primary_secondary_lowsignal.sbatch` for 20 low-signal simulated
 
 Read counts at each pipeline stage per species are acquired using `count_stats.py` and `count_stats_compressed.py`. These scripts collect counts across the tiled reads, ngsLCA output, bamdam output, bamdam correct_genus, Kraken2 total, Kraken2 genus level, Kraken2 correct_genus, and eprobe input overlap columns. `count_stats_compressed.py` handles chunk-based outputs from the compressed pipeline by summing across chunk files. Output can be seen at `pipeline_stats.csv` and `pipeline_stats_compressed.csv` respectively.  
 
-Pipeline results for the 7 species found in both databases are visualized using `pipeline_visualize.py` and `pipeline_visualize_compressed.py`. Both scripts produce three figures comparing the Kraken2 and competitive mapping pipelines for simulated aeDNA-damaged and modern reads side by side:
-1. `kraken_summary.png`: grouped bar chart of read counts at each Kraken2 stage per species
-2. `competitive_summary.png`: grouped bar chart of read counts at each competitive mapping stage per species
-3. `intersection.png`: stacked bar chart of correct-genus read overlap between Kraken2 and competitive mapping per species
+Pipeline results for the 7 species found in both databases are visualized using `pipeline_visualize.py` and `pipeline_visualize_compressed.py`. Both scripts produce three figures comparing the k-mer based and local alignment based pipelines for simulated aeDNA-damaged and modern reads side by side:
+1. `kraken_summary.png`: grouped bar chart of read counts at each k-mer stage per species
+2. `competitive_summary.png`: grouped bar chart of read counts at each local alignment stage per species
+3. `intersection.png`: stacked bar chart of correct-genus read overlap between k-mer and local alignment per species
 A `summary_table.csv` is also written with all counts and overlaps for reference. `pipeline_visualize_compressed.py` uses the compressed pipeline outputs.  
 
 Read count comparisons across pipeline stages for the 7 species are produced by `pipeline_compare.py` and `pipeline_compare_compressed.py`, outputting one row per (species, mode) combination to `pipeline_comparison.csv`. All directory arguments are optional, with missing files reported as empty cells.  
@@ -338,7 +340,7 @@ Output figure can be seen at `taxonomy_availability_{rank}.png`.
 * `--summary`: path to `eprobe_summary.csv`
 * `--plan`: path to `subsample_plan.csv`
 * `--post_dedup`: read count after CD-HIT deduplication (integer)
-* `--threshold`: subsample ratio threshold used, default 5.0
+* `--threshold`: subsample ratio threshold used, default 5.0; 4.0 is used for this project
 * `--out`: output figure path, default `figures/probe_funnel.png`
 Output figure can be seen at `probe_funnel.png`.  
 
@@ -359,5 +361,17 @@ Output figures can be seen at `pooled_dedup_piechart.png` and `species_piechart.
 * `--email`: email for NCBI Entrez, required only if taxids are missing from cache
 * `--rank`: taxonomic rank for grouping and colouring, default phylum
 * `--out`: output figure path, default `figures/probe_count_lollipop.png`
-Output figure can be seen at `probe_count_lollipop.png`.  
+Output figure can be seen at `probe_count_lollipop.png`.
+
+`pooled_dedup_counts.py` counts the number of probes per species in the `pooled_dedup` FASTA, attaches species names and phylum from the taxonomy cache, and outputs a sorted TSV table. It accepts the following arguments:
+* `--pooled_dedup`: path to the `pooled_dedup` FASTA from CD-HIT
+* `--names`: path to NCBI `names.dmp` for species name lookup
+* `--cache`: TSV taxonomy cache file, default `data/taxonomy_cache.tsv`
+* `--out`: output TSV path, default `data/pooled_dedup_counts.tsv`
+Output is written to `pooled_dedup_counts.tsv` and also printed to stdout.
+
+`correct_rate_correlation.py` produces a scatter plot comparing the local alignment correct rate against the k-mer correct rate per species. It accepts the following arguments:
+* `--input`: path to `pipeline_stats_compressed.csv`, default `data/pipeline_stats_compressed.csv`
+* `--out`: output figure path, default `figures/correct_rate_correlation_compressed.png`
+Output figure can be seen at `correct_rate_correlation_compressed.png`.  
 
