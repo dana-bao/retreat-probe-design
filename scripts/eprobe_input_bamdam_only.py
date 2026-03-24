@@ -12,7 +12,7 @@ Usage:
         --modern_tiled_dir /rds/.../modern_tiled \
         --out_dir         /rds/.../eprobe_input
 
-variant of eprobe_input.py, for annotation see eprobe_input.py
+variant of eprobe_input_extract.py, for annotation see eprobe_input_extract.py
 """
 
 import argparse

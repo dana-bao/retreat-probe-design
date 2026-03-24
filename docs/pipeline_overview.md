@@ -375,3 +375,23 @@ Output is written to `pooled_dedup_counts.tsv` and also printed to stdout.
 * `--out`: output figure path, default `figures/correct_rate_correlation_compressed.png`
 Output figure can be seen at `correct_rate_correlation_compressed.png`.  
 
+**Declaration of AI Usage**
+
+All sbatch scripts are written with Claude Code Sonnet 4.6, then proofread and annotated by me, except `sbatch_mom2.sh`, which is provided by Prof. Anton Enright, CGS, Department of Pathology, University of Cambridge.  
+
+Python scripts written and annotated by me, debug with ChatGPT or Claude Code Sonnet 4.6:
+```
+taxa_extraction.py
+availability_check.py
+aeDNA_simulation.py
+kraken_filter.py
+bamdam_filter_compressed.py (based on bamdam_filter.py)
+eprobe_input_bamdam_only.py (based on eprobe_input_extract.py)
+eprobe_summary.py
+subsample_fasta.py
+subsample_for_cdhit.py
+count_stats_compressed.py (based on count_stats.py)
+pipeline_visualize_compressed.py (based on pipeline_visualize.py)
+pipeline_compare_compressed.py (based on pipeline_compare.py)
+```
+The rest of the python scripts are written with Claude Code Sonnet 4.6, then proofread and annotated by me. 
