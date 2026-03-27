@@ -29,10 +29,9 @@ perl ./gargammel.pl -c 1 -f ./src/sizefreq.size.gz -matfile ./src/matrices/singl
 As empirical evidence for frequency and deamination of aeDNA in glacial retreat context is lacking, precalculated values provided by gargammel based on chosen studies are used (`sizefreq.size.gz` and `src/matrices/`).  
 Gargammel read simulation adopts a structure similar to sequencing for generating reads from reference genome, instead of using deterministic, tiling approach. Therefore, to ensure the reads to cover as much of the full assemblies as possible without compromising memory space and efficiency, test runs with different coverage is done with one specific assembly, `GCA_000239015.2`.  
 The file sizes of input and respective output files are as follow:
-``` 
+```
 input file:
 12M Jan 30 16:02 GCA_000239015.2_ASM23901v2_genomic.fna
-
 output files:
 8.7M Jan 30 16:09 c1_test_output_s1.fq.gz
 9.0M Jan 30 16:09 c1_test_output_s2.fq.gz
@@ -44,7 +43,7 @@ output files:
 45M Jan 30 17:03 c5_test_output_s2.fq.gz
 87M Jan 30 17:09 c10_test_output_s1.fq.gz
 90M Jan 30 17:09 c10_test_output_s2.fq.gz
-``` 
+```
 From the test runs, it can be inferred that the output file size shares a relatively linear relationship with coverages. This is later used as a reference to infer the appropriate coverage to avoid storage issue.  
 To acquire the optimal coverage, we assume that read assignment follows a poisson distribution and calculate as follow: 
 $C = - \ln\left(1 - P^{L/G}\right)$
@@ -96,3 +95,11 @@ To evaluate the best confidence threshold, 4 different values (0, 0.05, 0.1, 0.2
 * `--nodes`: path to `nodes.dmp` from the Kraken2 database taxonomy
 * `--out`: output CSV file path, default to `kraken_eval.csv`
 The 10 sample species can be found in `sample_10_species.txt`, with evaluation results in `kraken_eval.csv`. For this specific project, the most ideal confidence threshold has been identified as 0.05 based on f1 score, but literature search for appropriate parameters has demonstrated 0.05 to 0.2 all having tests supporting their performance. Further consideration has deemed that to avoid including conserved tiles in the final candidate, a higher confidence threshold is necessary, and 0.2 is thus adopted.  
+
+**References**
+
+- Wood et al. (2019). Kraken2. https://doi.org/10.1186/s13059-019-1891-0  
+- Wang et al. (2022). ngsLCA. https://doi.org/10.1111/2041-210X.14006
+- Danecek et al. (2021). SAMtools. https://doi.org/10.1093/gigascience/giab008
+- Lu et al. (2022). From defaults to databases: parameter and database choice dramatically impact the performance of metagenomic taxonomic classification tools. https://doi.org/10.1099/mgen.0.000949  
+- Renaud et al. (2017). gargammel: a sequence simulator for ancient DNA. https://doi.org/10.1093/bioinformatics/btx512  

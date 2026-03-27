@@ -135,6 +135,8 @@ For species that completed `bamsort_merge_sam.sbatch` successfully but hit downs
 
 As an alternative to the GNU sort approach, the BAM headers of all alignment outputs can first be compressed using `compressbam.sbatch`, which remove the header lines that are not referred to in the alignment. The compressed shards are then merged, queryname-sorted, and split into 4 chunk BAMs using `bamsort_compressed.sbatch`.  
 
+Target species 223866, Artemisia genipi, lacks a species-level assembly and is represented by representative species 259893, Artemisia argyi, generate unexpectedly high amount of alignments. Search through literature reveal that its genome is highly repetitive (81.03% of repetitive rate), mainly due to high transposable element level, widespread gene duplication, and a recent whole-genome duplication events (Chen et al., 2023). This substantial redundancy results in inflated alignment counts, and is thus excluded from downstream analysis.  
+
 ngsLCA is then run on the sorted files with `ngslca.sbatch`, which prioritises chunk files over any full-length file for the same species. Because the bowtie2 reference database was converted from the Kraken2 core_nt database, taxonomy files from Kraken2 are used directly: `nodes.dmp`, `names.dmp`, and `seqid2taxid.map`. `seqid2taxid.map` uses a Kraken2-specific key format (`kraken:taxid|TAXID|ACCESSION`) that does not match the bare accession names in the SAM RNAME field. It is therefore converted to a 4-column NCBI acc2tax format by stripping the prefix:
 ```
 awk 'BEGIN{OFS="\t"}{n=split($1,a,"|"); acc=a[n]; print acc, acc, $2, 0}' \
@@ -389,3 +391,21 @@ pipeline_visualize_compressed.py (based on pipeline_visualize.py)
 pipeline_compare_compressed.py (based on pipeline_compare.py)
 ```
 The rest of the python scripts are written with Claude Code Sonnet 4.6, then proofread and annotated by me. 
+
+**References**
+
+- NCBI
+Sayers et al. (2026). Database resources of the National Center for Biotechnology Information. https://doi.org/10.1093/nar/gkaf1060
+- Kraken 2
+Wood, D.E., Lu, J. and Langmead, B. (2019). Improved metagenomic analysis with Kraken 2. Genome Biology, 20, 257. https://doi.org/10.1186/s13059-019-1891-0
+- Bowtie 2
+Langmead, B. and Salzberg, S.L. (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods, 9(4), pp.357–359. https://doi.org/10.1038/nmeth.1923
+- SAMtools
+Danecek, P. et al. (2021). Twelve years of SAMtools and BCFtools. GigaScience, 10(2), giab008. https://doi.org/10.1093/gigascience/giab008
+- ngsLCA
+Wang et al. (2022). ngsLCA: A toolkit for fast and flexible lowest common ancestor inference and taxonomic profiling of metagenomic data. 
+https://doi.org/10.1111/2041-210X.14006
+- CD-HIT
+Li, W. and Godzik, A. (2006). Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics, 22(13), pp.1658–1659. https://doi.org/10.1093/bioinformatics/btl158
+- Chen et al. (2023). A chromosome-scale genome assembly of Artemisia argyi. 
+https://doi.org/10.1016/j.xplc.2023.100516
