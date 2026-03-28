@@ -373,7 +373,7 @@ Output figure can be seen at `correct_rate_correlation_compressed.png`.
 
 **Declaration of AI Usage**
 
-All sbatch scripts are written with Claude Code Sonnet 4.6, then proofread and annotated by me, except `sbatch_mom2.sh`, which is provided by Prof. Anton Enright, CGS, Department of Pathology, University of Cambridge.  
+All SLURM batch scripts are written with Claude Code Sonnet 4.6, then proofread and annotated by me, except `sbatch_mom2.sh`, which is provided by Prof. Anton Enright, CGS, Department of Pathology, University of Cambridge.  
 
 Python scripts written and annotated by me, debug with ChatGPT or Claude Code Sonnet 4.6:
 ```
